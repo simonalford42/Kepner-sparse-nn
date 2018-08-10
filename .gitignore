@@ -4,4 +4,3 @@
 # except...
 !.gitignore
 !x_net.py
-!julia_implementation/*

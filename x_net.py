@@ -131,7 +131,7 @@ def kronecker_emr_network(radix_lists, B):
       / sum(layer.size for layer in expanded_layers))
   assert sparsity_one == sparsity_two
 
-  return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron', connections_per_neuron, 'sparsity', sparsity}
+  return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron': connections_per_neuron, 'sparsity': sparsity}
 
       
 if __name__ == '__main__':
