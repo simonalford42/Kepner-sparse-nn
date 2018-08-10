@@ -105,10 +105,10 @@ def kronecker_emr_network(radix_lists, B):
   num_layers = len(emr_layers)
   emr_shape, emr_paths, emr_connections_per_neuron = info['shape'], info['paths'],\
       info['connections_per_neuron']
-  shape = [emr_shape[i] * B[i] for i in range(len(shape))]
+  shape = [emr_shape[i] * B[i] for i in range(len(emr_layers))]
   # the first and last numbers in B do not add paths, but increase the
   # number of input and output neurons.
-  paths *= np.prod(B[1:-1]) 
+  paths = np.prod(B[1:-1]) 
 
   # check valid input for B
   if len(B) - 1 != num_layers:
