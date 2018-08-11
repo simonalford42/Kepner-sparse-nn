@@ -60,7 +60,7 @@ def extended_mixed_radix_network(radix_lists):
     place_value = 1 
     for radix in radix_list:
       layer = np.sum(
-          [np.roll(I, j * place_value, axis=1) for j in range(radix)], axis=0)
+          [np.roll(I, -j * place_value, axis=1) for j in range(radix)], axis=0)
       layers.append(layer)
       place_value *= radix 
   

@@ -4,7 +4,7 @@ from sys import argv
 
 Ws = []
 datas = []
-with open("tests/emr/emr"+argv[1]+".txt", "r") as f:
+with open("test/emr/emr"+argv[1]+".txt", "r") as f:
 	for line in f:
 		W, data = extended_mixed_radix_network(eval(line[:-1]))
 		Ws.append(W)
@@ -17,7 +17,7 @@ for W in Ws:
 
 Ws = []
 datas = []
-with open("tests/kemr/kemr"+argv[1]+".txt", "r") as f:
+with open("test/kemr/kemr"+argv[1]+".txt", "r") as f:
 	for line in f:
 		toople = eval(line[:-1])
 		W, data = kronecker_emr_network(toople[0], toople[1])
@@ -25,6 +25,6 @@ with open("tests/kemr/kemr"+argv[1]+".txt", "r") as f:
 		datas.append(data)
 
 for W in Ws:
-	W = [w.astype(int).tolist() for w in W]
+	WW = [w.astype(int).tolist() for w in W]
 	with open("test/kemr.txt", "w") as f:
-		f.write(str(W)+"\n")
+		f.write(str(WW)+"\n")

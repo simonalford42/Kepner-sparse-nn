@@ -2,7 +2,6 @@ using Permutations
 
 function k_rich_method(Ns::Array{Array{Int, 1}, 1}, B::Array{Int, 1})
 	b = sum(map(x -> length(x), Ns))
-	B = ones(Int32, b+1)
 	D = ones(Int32, b)
 
 	gN = prod(Ns[1])
@@ -44,7 +43,7 @@ function k_rich_method(Ns::Array{Array{Int, 1}, 1}, B::Array{Int, 1})
 
 	W = Array{SparseMatrixCSC{Int32, Int32}, 1}()
 	for j in 1:length(preW)
-		push!(W, kron(ones(Int64, (B[j-1], B[j])), preW[j]))
+		push!(W, kron(ones(Int64, (B[j], B[j+1])), preW[j]))
 	end
 
 	return W
