@@ -60,7 +60,7 @@ def extended_mixed_radix_network(radix_lists):
     place_value = 1 
     for radix in radix_list:
       layer = np.sum(
-          [np.roll(I, j * place_value, axis=1) for j in range(radix)], axis=0)
+          [np.roll(I, -j * place_value, axis=1) for j in range(radix)], axis=0)
       layers.append(layer)
       place_value *= radix 
   
@@ -105,10 +105,10 @@ def kronecker_emr_network(radix_lists, B):
   num_layers = len(emr_layers)
   emr_shape, emr_paths, emr_connections_per_neuron = info['shape'], info['paths'],\
       info['connections_per_neuron']
-  shape = [emr_shape[i] * B[i] for i in range(len(shape))]
+  shape = [emr_shape[i] * B[i] for i in range(len(emr_layers))]
   # the first and last numbers in B do not add paths, but increase the
   # number of input and output neurons.
-  paths *= np.prod(B[1:-1]) 
+  paths = np.prod(B[1:-1]) 
 
   # check valid input for B
   if len(B) - 1 != num_layers:
@@ -119,7 +119,7 @@ def kronecker_emr_network(radix_lists, B):
 
   expanded_layers = [np.kron(B_layer, emr_layer)
       for (B_layer, emr_layer) in zip(B_layers, emr_layers)]
-
+  """
   # calculate info statistics
   connections_per_neuron = (sum(shape[i]*connections_per_neuron*B[i+1]
     for i in range(num_layers)) / sum(shape[:-1]))
@@ -130,8 +130,10 @@ def kronecker_emr_network(radix_lists, B):
   sparsity_two = (sum(np.count_nonzero(layer==0) for layer in expanded_layers) \
       / sum(layer.size for layer in expanded_layers))
   assert sparsity_one == sparsity_two
+  """
 
-  return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron', connections_per_neuron, 'sparsity', sparsity}
+  # return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron': connections_per_neuron, 'sparsity': sparsity}
+  return expanded_layers, {}
 
       
 if __name__ == '__main__':
