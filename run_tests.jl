@@ -1,8 +1,8 @@
-include("rich_method.jl")
+include("x_net.jl")
 f = open("test/emr/emr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
-	W = map(x -> Array(x), rich_method(eval(parse(line))))
+	W = map(x -> Array(x), extended_mixed_radix_network(eval(parse(line))))
 	push!(Ws, W)
 end
 
@@ -44,12 +44,11 @@ end
 
 println(cond)
 
-include("k_rich_method.jl")
 f = open("test/kemr/kemr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
 	toople = eval(parse(line))
-	W = map(x -> Array(x), k_rich_method(toople[1], toople[2]))
+	W = map(x -> Array(x), kronecker_emr_network(toople[1], toople[2]))
 	push!(Ws, W)
 end
 
