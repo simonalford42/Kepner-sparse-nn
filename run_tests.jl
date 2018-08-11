@@ -77,29 +77,9 @@ for (W, pyW) in zip(Ws, pyWs)
 		error("length(W) != length(pyW)")
 	end
 	for (w, pyw) in zip(W, pyW)
-#		seiz = size(pyw)
-#		vals = Array{Int64, 1}()
-#		for j in 1:seiz[1]
-##			for val in pyw[j, :]
-#				push!(vals, val)
-#			end
-#		end
-#		gnu = transpose(reshape(vals, seiz))
-#		gnu = reshape(vals, (seiz[2], seiz[1]))
-#		if w != gnu
 		if w != pyw
 			println("size(w): $(size(w))")
-#			println("size(gnu): $(size(gnu))")
 			println("size(pyw): $(size(pyw))")
-			println("w:")
-			for j in 1:seiz[2]
-				println(w[j, :])
-			end
-			println("\ngnu:")
-			for j in 1:seiz[2]
-				println(gnu[j, :])
-			end
-			println("\n\n")
 			cond[1] = false
 		end
 	end
