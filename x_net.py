@@ -119,7 +119,7 @@ def kronecker_emr_network(radix_lists, B):
 
   expanded_layers = [np.kron(B_layer, emr_layer)
       for (B_layer, emr_layer) in zip(B_layers, emr_layers)]
-
+  """
   # calculate info statistics
   connections_per_neuron = (sum(shape[i]*connections_per_neuron*B[i+1]
     for i in range(num_layers)) / sum(shape[:-1]))
@@ -130,8 +130,10 @@ def kronecker_emr_network(radix_lists, B):
   sparsity_two = (sum(np.count_nonzero(layer==0) for layer in expanded_layers) \
       / sum(layer.size for layer in expanded_layers))
   assert sparsity_one == sparsity_two
+  """
 
-  return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron': connections_per_neuron, 'sparsity': sparsity}
+  # return expanded_layers, {'shape': shape, 'paths': paths, 'connections_per_neuron': connections_per_neuron, 'sparsity': sparsity}
+  return expanded_layers, {}
 
       
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 include("rich_method.jl")
-f = open("emr_vars.txt")
+f = open("test/emr/emr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
 	W = map(x -> Array(x), rich_method(eval(parse(line))))
@@ -19,6 +19,10 @@ for preW in preWs
 end
 
 if length(Ws) != length(pyWs)
+	println("length(Ws): $(length(Ws))")
+	println("length(pyWs): $(length(pyWs))")
+	println("typeof(Ws): $(typeof(Ws))")
+	println("typeof(pyWs): $(typeof(pyWs))")
 	error("length(Ws) != length(pyWs)")
 end
 
@@ -40,10 +44,8 @@ end
 
 println(cond)
 
-if false
-
 include("k_rich_method.jl")
-f = open("emr_vars.txt")
+f = open("test/kemr/kemr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
 	toople = eval(parse(line))
@@ -84,6 +86,3 @@ for (W, pyW) in zip(Ws, pyWs)
 end
 
 println(cond)
-
-
-end

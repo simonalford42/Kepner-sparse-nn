@@ -1,7 +1,10 @@
 #!/bin/bash
 
-rm -rf test
-mkdir test
+rm -f test/emr.txt test/kemr.txt
 
-python3 run_tests.py
-julia run_tests.jl
+nums=(1 2 3 4 5)
+for j in ${nums[@]}
+do
+	python3 run_tests.py $j
+	julia run_tests.jl $j
+done

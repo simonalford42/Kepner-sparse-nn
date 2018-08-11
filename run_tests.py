@@ -1,9 +1,10 @@
 import numpy as np
 from x_net import *
+from sys import argv
 
 Ws = []
 datas = []
-with open("emr_vars.txt", "r") as f:
+with open("tests/emr/emr"+argv[1]+".txt", "r") as f:
 	for line in f:
 		W, data = extended_mixed_radix_network(eval(line[:-1]))
 		Ws.append(W)
@@ -16,7 +17,7 @@ for W in Ws:
 
 Ws = []
 datas = []
-with open("kemr_vars.txt", "r") as f:
+with open("tests/kemr/kemr"+argv[1]+".txt", "r") as f:
 	for line in f:
 		toople = eval(line[:-1])
 		W, data = kronecker_emr_network(toople[0], toople[1])
@@ -27,4 +28,3 @@ for W in Ws:
 	W = [w.astype(int).tolist() for w in W]
 	with open("test/kemr.txt", "w") as f:
 		f.write(str(W)+"\n")
-
