@@ -1,0 +1,505 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Using default config.
+INFO:tensorflow:Using config: {'_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_tf_random_seed': 1, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_save_checkpoints_steps': None, '_model_dir': '/home/gridsan/salford/tf/saved/lenet5_0.2/', '_save_summary_steps': 100}
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-07-18 16:32:41.068139: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-18 16:32:41.121937: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:32:41.122056: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:32:41.122097: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:32:41.133869: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:32:41.133917: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:32:41.133951: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 1 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 2.3322527, step = 1
+INFO:tensorflow:global_step/sec: 2.12655
+INFO:tensorflow:loss = 0.28088474, step = 101 (47.025 sec)
+INFO:tensorflow:global_step/sec: 2.34467
+INFO:tensorflow:loss = 0.2392139, step = 201 (42.651 sec)
+INFO:tensorflow:global_step/sec: 2.41677
+INFO:tensorflow:loss = 0.07845673, step = 301 (41.377 sec)
+INFO:tensorflow:global_step/sec: 2.21874
+INFO:tensorflow:loss = 0.058149453, step = 401 (45.071 sec)
+INFO:tensorflow:global_step/sec: 2.28095
+INFO:tensorflow:loss = 0.1540493, step = 501 (43.842 sec)
+INFO:tensorflow:global_step/sec: 2.27654
+INFO:tensorflow:loss = 0.07378318, step = 601 (43.925 sec)
+INFO:tensorflow:global_step/sec: 2.19036
+INFO:tensorflow:loss = 0.031279173, step = 701 (45.656 sec)
+INFO:tensorflow:global_step/sec: 2.29285
+INFO:tensorflow:loss = 0.08602612, step = 801 (43.613 sec)
+INFO:tensorflow:global_step/sec: 2.29214
+INFO:tensorflow:loss = 0.067838885, step = 901 (43.628 sec)
+INFO:tensorflow:Saving checkpoints for 1000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.03595717.
+INFO:tensorflow:Starting evaluation at 2018-07-18-20:40:02
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-1000
+2018-07-18 16:40:02.762429: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:40:02.762544: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:40:02.762595: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:40:02.776510: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:40:02.776645: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:40:02.776700: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-20:40:14
+INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.9838, global_step = 1000, loss = 0.050029177
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-1000
+2018-07-18 16:40:15.057649: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:40:15.057767: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:40:15.057851: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:40:15.071529: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:40:15.071600: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:40:15.071642: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 1001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.053007904, step = 1001
+INFO:tensorflow:global_step/sec: 2.38321
+INFO:tensorflow:loss = 0.008140246, step = 1101 (41.961 sec)
+INFO:tensorflow:global_step/sec: 2.34666
+INFO:tensorflow:loss = 0.04334409, step = 1201 (42.613 sec)
+INFO:tensorflow:global_step/sec: 2.37034
+INFO:tensorflow:loss = 0.01285232, step = 1301 (42.190 sec)
+INFO:tensorflow:global_step/sec: 2.29246
+INFO:tensorflow:loss = 0.07783906, step = 1401 (43.619 sec)
+INFO:tensorflow:global_step/sec: 2.24321
+INFO:tensorflow:loss = 0.025279189, step = 1501 (44.582 sec)
+INFO:tensorflow:global_step/sec: 2.30164
+INFO:tensorflow:loss = 0.02627861, step = 1601 (43.444 sec)
+INFO:tensorflow:global_step/sec: 2.29884
+INFO:tensorflow:loss = 0.027413111, step = 1701 (43.502 sec)
+INFO:tensorflow:global_step/sec: 2.34809
+INFO:tensorflow:loss = 0.03438785, step = 1801 (42.586 sec)
+INFO:tensorflow:global_step/sec: 2.2857
+INFO:tensorflow:loss = 0.011702671, step = 1901 (43.753 sec)
+INFO:tensorflow:Saving checkpoints for 2000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.02414133.
+INFO:tensorflow:Starting evaluation at 2018-07-18-20:47:28
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-2000
+2018-07-18 16:47:28.745255: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:47:28.745351: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:47:28.745395: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:47:28.759339: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:47:28.759391: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:47:28.759429: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-20:47:40
+INFO:tensorflow:Saving dict for global step 2000: accuracy = 0.99, global_step = 2000, loss = 0.02769367
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-2000
+2018-07-18 16:47:41.252789: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:47:41.252919: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:47:41.252973: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:47:41.265823: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:47:41.265937: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:47:41.265983: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 2001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.048901647, step = 2001
+INFO:tensorflow:global_step/sec: 2.23416
+INFO:tensorflow:loss = 0.015048772, step = 2101 (44.760 sec)
+INFO:tensorflow:global_step/sec: 2.1465
+INFO:tensorflow:loss = 0.01220351, step = 2201 (46.587 sec)
+INFO:tensorflow:global_step/sec: 2.39329
+INFO:tensorflow:loss = 0.026632233, step = 2301 (41.784 sec)
+INFO:tensorflow:global_step/sec: 2.25889
+INFO:tensorflow:loss = 0.016362904, step = 2401 (44.270 sec)
+INFO:tensorflow:global_step/sec: 2.4654
+INFO:tensorflow:loss = 0.014071027, step = 2501 (40.561 sec)
+INFO:tensorflow:global_step/sec: 2.31062
+INFO:tensorflow:loss = 0.06932865, step = 2601 (43.279 sec)
+INFO:tensorflow:global_step/sec: 2.24828
+INFO:tensorflow:loss = 0.0023287402, step = 2701 (44.479 sec)
+INFO:tensorflow:global_step/sec: 2.19764
+INFO:tensorflow:loss = 0.068476394, step = 2801 (45.510 sec)
+INFO:tensorflow:global_step/sec: 2.39984
+INFO:tensorflow:loss = 0.03001127, step = 2901 (41.663 sec)
+INFO:tensorflow:Saving checkpoints for 3000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.1092972.
+INFO:tensorflow:Starting evaluation at 2018-07-18-20:54:58
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-3000
+2018-07-18 16:54:59.011873: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:54:59.012020: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:54:59.012068: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:54:59.025709: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:54:59.025765: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:54:59.025805: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-20:55:09
+INFO:tensorflow:Saving dict for global step 3000: accuracy = 0.9896, global_step = 3000, loss = 0.033095956
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-3000
+2018-07-18 16:55:10.697931: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:55:10.698014: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:55:10.698058: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 16:55:10.710022: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 16:55:10.710073: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 16:55:10.710113: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 3001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.031221416, step = 3001
+INFO:tensorflow:global_step/sec: 2.23625
+INFO:tensorflow:loss = 0.012298423, step = 3101 (44.719 sec)
+INFO:tensorflow:global_step/sec: 2.36869
+INFO:tensorflow:loss = 0.011184173, step = 3201 (42.217 sec)
+INFO:tensorflow:global_step/sec: 2.16745
+INFO:tensorflow:loss = 0.005137344, step = 3301 (46.140 sec)
+INFO:tensorflow:global_step/sec: 2.34887
+INFO:tensorflow:loss = 0.017186709, step = 3401 (42.570 sec)
+INFO:tensorflow:global_step/sec: 2.3368
+INFO:tensorflow:loss = 0.0053418186, step = 3501 (42.793 sec)
+INFO:tensorflow:global_step/sec: 2.33923
+INFO:tensorflow:loss = 0.0059629874, step = 3601 (42.750 sec)
+INFO:tensorflow:global_step/sec: 2.30849
+INFO:tensorflow:loss = 0.032083753, step = 3701 (43.318 sec)
+INFO:tensorflow:global_step/sec: 2.27161
+INFO:tensorflow:loss = 0.0072833663, step = 3801 (44.022 sec)
+INFO:tensorflow:global_step/sec: 2.30469
+INFO:tensorflow:loss = 0.027569884, step = 3901 (43.390 sec)
+INFO:tensorflow:Saving checkpoints for 4000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.012875791.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:02:30
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-4000
+2018-07-18 17:02:30.391419: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:02:30.391539: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:02:30.391588: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:02:30.406183: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:02:30.406258: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:02:30.406299: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:02:41
+INFO:tensorflow:Saving dict for global step 4000: accuracy = 0.9917, global_step = 4000, loss = 0.028103122
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-4000
+2018-07-18 17:02:42.658032: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:02:42.658116: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:02:42.658162: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:02:42.670247: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:02:42.670324: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:02:42.670370: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 4001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.004421283, step = 4001
+INFO:tensorflow:global_step/sec: 2.29121
+INFO:tensorflow:loss = 0.0054907757, step = 4101 (43.646 sec)
+INFO:tensorflow:global_step/sec: 2.38482
+INFO:tensorflow:loss = 0.014832509, step = 4201 (41.931 sec)
+INFO:tensorflow:global_step/sec: 2.29798
+INFO:tensorflow:loss = 0.00165972, step = 4301 (43.517 sec)
+INFO:tensorflow:global_step/sec: 2.10955
+INFO:tensorflow:loss = 0.040950354, step = 4401 (47.404 sec)
+INFO:tensorflow:global_step/sec: 2.19671
+INFO:tensorflow:loss = 0.003119107, step = 4501 (45.525 sec)
+INFO:tensorflow:global_step/sec: 2.27903
+INFO:tensorflow:loss = 0.0073636645, step = 4601 (43.875 sec)
+INFO:tensorflow:global_step/sec: 2.38535
+INFO:tensorflow:loss = 0.0073372736, step = 4701 (41.925 sec)
+INFO:tensorflow:global_step/sec: 2.2324
+INFO:tensorflow:loss = 0.03000715, step = 4801 (44.793 sec)
+INFO:tensorflow:global_step/sec: 2.18847
+INFO:tensorflow:loss = 0.010255415, step = 4901 (45.697 sec)
+INFO:tensorflow:Saving checkpoints for 5000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.003487113.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:10:07
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-5000
+2018-07-18 17:10:07.698663: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:10:07.698774: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:10:07.698821: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:10:07.715977: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:10:07.716074: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:10:07.716119: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:10:18
+INFO:tensorflow:Saving dict for global step 5000: accuracy = 0.9921, global_step = 5000, loss = 0.024916025
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-5000
+2018-07-18 17:10:19.276260: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:10:19.276385: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:10:19.276440: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:10:19.288857: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:10:19.288987: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:10:19.289033: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 5001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.008706055, step = 5001
+INFO:tensorflow:global_step/sec: 2.38713
+INFO:tensorflow:loss = 0.0066576274, step = 5101 (41.892 sec)
+INFO:tensorflow:global_step/sec: 2.51144
+INFO:tensorflow:loss = 0.01598907, step = 5201 (39.818 sec)
+INFO:tensorflow:global_step/sec: 2.17426
+INFO:tensorflow:loss = 0.023498397, step = 5301 (45.993 sec)
+INFO:tensorflow:global_step/sec: 2.33272
+INFO:tensorflow:loss = 0.0016499741, step = 5401 (42.868 sec)
+INFO:tensorflow:global_step/sec: 2.35765
+INFO:tensorflow:loss = 0.0029748573, step = 5501 (42.415 sec)
+INFO:tensorflow:global_step/sec: 2.31474
+INFO:tensorflow:loss = 0.007642142, step = 5601 (43.203 sec)
+INFO:tensorflow:global_step/sec: 2.18902
+INFO:tensorflow:loss = 0.015467224, step = 5701 (45.681 sec)
+INFO:tensorflow:global_step/sec: 2.23597
+INFO:tensorflow:loss = 0.0020247714, step = 5801 (44.723 sec)
+INFO:tensorflow:global_step/sec: 2.17425
+INFO:tensorflow:loss = 0.0007568701, step = 5901 (45.993 sec)
+INFO:tensorflow:Saving checkpoints for 6000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0155099835.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:17:35
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-6000
+2018-07-18 17:17:36.027124: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:17:36.027230: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:17:36.027275: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:17:36.040924: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:17:36.040988: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:17:36.041028: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:17:47
+INFO:tensorflow:Saving dict for global step 6000: accuracy = 0.9924, global_step = 6000, loss = 0.024956537
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-6000
+2018-07-18 17:17:48.251713: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:17:48.251797: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:17:48.251843: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:17:48.263863: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:17:48.263914: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:17:48.263954: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 6001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.0009052253, step = 6001
+INFO:tensorflow:global_step/sec: 2.48557
+INFO:tensorflow:loss = 0.0011706867, step = 6101 (40.232 sec)
+INFO:tensorflow:global_step/sec: 2.24519
+INFO:tensorflow:loss = 0.0095873745, step = 6201 (44.540 sec)
+INFO:tensorflow:global_step/sec: 2.27094
+INFO:tensorflow:loss = 0.00083269924, step = 6301 (44.036 sec)
+INFO:tensorflow:global_step/sec: 2.51224
+INFO:tensorflow:loss = 0.0028240373, step = 6401 (39.805 sec)
+INFO:tensorflow:global_step/sec: 2.28181
+INFO:tensorflow:loss = 0.009440042, step = 6501 (43.823 sec)
+INFO:tensorflow:global_step/sec: 2.45376
+INFO:tensorflow:loss = 0.0012547178, step = 6601 (40.755 sec)
+INFO:tensorflow:global_step/sec: 2.26126
+INFO:tensorflow:loss = 0.00063681096, step = 6701 (44.222 sec)
+INFO:tensorflow:global_step/sec: 2.24585
+INFO:tensorflow:loss = 0.0021650514, step = 6801 (44.527 sec)
+INFO:tensorflow:global_step/sec: 3.05931
+INFO:tensorflow:loss = 0.0023971272, step = 6901 (32.687 sec)
+INFO:tensorflow:Saving checkpoints for 7000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.00049522246.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:24:33
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-7000
+2018-07-18 17:24:33.771409: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:24:33.771515: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:24:33.771563: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:24:33.785031: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:24:33.785081: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:24:33.785120: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:24:42
+INFO:tensorflow:Saving dict for global step 7000: accuracy = 0.9918, global_step = 7000, loss = 0.0263494
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-7000
+2018-07-18 17:24:43.060121: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:24:43.060216: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:24:43.060267: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:24:43.072302: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:24:43.072362: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:24:43.072404: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 7001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.02184879, step = 7001
+INFO:tensorflow:global_step/sec: 3.34093
+INFO:tensorflow:loss = 0.07332449, step = 7101 (29.933 sec)
+INFO:tensorflow:global_step/sec: 3.645
+INFO:tensorflow:loss = 0.010359993, step = 7201 (27.434 sec)
+INFO:tensorflow:global_step/sec: 3.56098
+INFO:tensorflow:loss = 0.005807562, step = 7301 (28.085 sec)
+INFO:tensorflow:global_step/sec: 3.31718
+INFO:tensorflow:loss = 0.008356213, step = 7401 (30.143 sec)
+INFO:tensorflow:global_step/sec: 3.50361
+INFO:tensorflow:loss = 0.022758393, step = 7501 (28.542 sec)
+INFO:tensorflow:global_step/sec: 3.98323
+INFO:tensorflow:loss = 0.0039683627, step = 7601 (25.107 sec)
+INFO:tensorflow:global_step/sec: 3.70422
+INFO:tensorflow:loss = 0.0026738695, step = 7701 (26.995 sec)
+INFO:tensorflow:global_step/sec: 3.6848
+INFO:tensorflow:loss = 0.0020686993, step = 7801 (27.137 sec)
+INFO:tensorflow:global_step/sec: 3.80404
+INFO:tensorflow:loss = 0.004316522, step = 7901 (26.288 sec)
+INFO:tensorflow:Saving checkpoints for 8000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0012675151.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:29:21
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-8000
+2018-07-18 17:29:21.812998: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:29:21.813099: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:29:21.813147: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:29:21.830005: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:29:21.830078: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:29:21.830152: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:29:32
+INFO:tensorflow:Saving dict for global step 8000: accuracy = 0.991, global_step = 8000, loss = 0.030262042
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-8000
+2018-07-18 17:29:33.054648: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:29:33.054748: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:29:33.054796: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:29:33.067252: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:29:33.067304: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:29:33.067342: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 8001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.0020603898, step = 8001
+INFO:tensorflow:global_step/sec: 2.75829
+INFO:tensorflow:loss = 0.010580641, step = 8101 (36.253 sec)
+INFO:tensorflow:global_step/sec: 2.60509
+INFO:tensorflow:loss = 0.0005803204, step = 8201 (38.387 sec)
+INFO:tensorflow:global_step/sec: 2.77796
+INFO:tensorflow:loss = 0.0011013306, step = 8301 (35.997 sec)
+INFO:tensorflow:global_step/sec: 2.55803
+INFO:tensorflow:loss = 0.019024042, step = 8401 (39.093 sec)
+INFO:tensorflow:global_step/sec: 2.94197
+INFO:tensorflow:loss = 0.021172568, step = 8501 (33.993 sec)
+INFO:tensorflow:global_step/sec: 3.10105
+INFO:tensorflow:loss = 0.0076293517, step = 8601 (32.245 sec)
+INFO:tensorflow:global_step/sec: 2.38895
+INFO:tensorflow:loss = 0.0040009706, step = 8701 (41.859 sec)
+INFO:tensorflow:global_step/sec: 2.67222
+INFO:tensorflow:loss = 0.0016351944, step = 8801 (37.422 sec)
+INFO:tensorflow:global_step/sec: 2.65471
+INFO:tensorflow:loss = 0.00089544244, step = 8901 (37.669 sec)
+INFO:tensorflow:Saving checkpoints for 9000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.00046154927.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:35:48
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-9000
+2018-07-18 17:35:48.992811: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:35:48.992915: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:35:48.992963: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:35:49.006793: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:35:49.006936: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:35:49.006991: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:36:00
+INFO:tensorflow:Saving dict for global step 9000: accuracy = 0.992, global_step = 9000, loss = 0.02714956
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-9000
+2018-07-18 17:36:00.962881: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:36:00.963004: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:36:00.963058: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:36:00.975292: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:36:00.975341: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:36:00.975412: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 9001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 9.734399e-05, step = 9001
+INFO:tensorflow:global_step/sec: 2.37746
+INFO:tensorflow:loss = 0.030649915, step = 9101 (42.062 sec)
+INFO:tensorflow:global_step/sec: 2.30276
+INFO:tensorflow:loss = 0.0016987253, step = 9201 (43.426 sec)
+INFO:tensorflow:global_step/sec: 2.36506
+INFO:tensorflow:loss = 0.0011714711, step = 9301 (42.283 sec)
+INFO:tensorflow:global_step/sec: 2.37352
+INFO:tensorflow:loss = 0.00030176967, step = 9401 (42.131 sec)
+INFO:tensorflow:global_step/sec: 2.26947
+INFO:tensorflow:loss = 0.0021600728, step = 9501 (44.063 sec)
+INFO:tensorflow:global_step/sec: 2.73688
+INFO:tensorflow:loss = 0.001322156, step = 9601 (36.538 sec)
+INFO:tensorflow:global_step/sec: 2.44182
+INFO:tensorflow:loss = 0.0009111164, step = 9701 (40.953 sec)
+INFO:tensorflow:global_step/sec: 2.79818
+INFO:tensorflow:loss = 0.0028287137, step = 9801 (35.737 sec)
+INFO:tensorflow:global_step/sec: 2.86612
+INFO:tensorflow:loss = 0.004519511, step = 9901 (34.891 sec)
+INFO:tensorflow:Saving checkpoints for 10000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0447574.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:42:41
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-10000
+2018-07-18 17:42:42.277959: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:42:42.278065: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:42:42.278113: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:42:42.298259: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:42:42.298316: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:42:42.298356: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:42:52
+INFO:tensorflow:Saving dict for global step 10000: accuracy = 0.9917, global_step = 10000, loss = 0.02701261
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-10000
+2018-07-18 17:42:52.742781: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:42:52.742883: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:42:52.742932: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:42:52.755244: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:42:52.755294: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:42:52.755332: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 10001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.04629138, step = 10001
+INFO:tensorflow:global_step/sec: 2.62847
+INFO:tensorflow:loss = 0.0077706706, step = 10101 (38.045 sec)
+INFO:tensorflow:global_step/sec: 2.49608
+INFO:tensorflow:loss = 0.00039764761, step = 10201 (40.063 sec)
+INFO:tensorflow:global_step/sec: 2.72301
+INFO:tensorflow:loss = 0.00018912376, step = 10301 (36.724 sec)
+INFO:tensorflow:global_step/sec: 2.73887
+INFO:tensorflow:loss = 0.009707854, step = 10401 (36.512 sec)
+INFO:tensorflow:global_step/sec: 2.42831
+INFO:tensorflow:loss = 7.991526e-05, step = 10501 (41.180 sec)
+INFO:tensorflow:global_step/sec: 2.56114
+INFO:tensorflow:loss = 0.002011541, step = 10601 (39.045 sec)
+INFO:tensorflow:global_step/sec: 2.66058
+INFO:tensorflow:loss = 0.012012291, step = 10701 (37.586 sec)
+INFO:tensorflow:global_step/sec: 2.55293
+INFO:tensorflow:loss = 0.00016594451, step = 10801 (39.171 sec)
+INFO:tensorflow:global_step/sec: 2.9274
+INFO:tensorflow:loss = 0.0013434077, step = 10901 (34.160 sec)
+INFO:tensorflow:Saving checkpoints for 11000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0007178517.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:49:13
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-11000
+2018-07-18 17:49:14.027954: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:49:14.028050: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:49:14.028097: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:49:14.041663: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:49:14.041716: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:49:14.041757: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:49:23
+INFO:tensorflow:Saving dict for global step 11000: accuracy = 0.9928, global_step = 11000, loss = 0.0234727
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-11000
+2018-07-18 17:49:24.373908: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:49:24.374010: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:49:24.374056: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:49:24.389941: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:49:24.390004: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:49:24.390046: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 11001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.018495902, step = 11001
+INFO:tensorflow:global_step/sec: 2.45489
+INFO:tensorflow:loss = 0.0017464489, step = 11101 (40.735 sec)
+INFO:tensorflow:global_step/sec: 2.86556
+INFO:tensorflow:loss = 0.0007043622, step = 11201 (34.897 sec)
+INFO:tensorflow:global_step/sec: 2.51277
+INFO:tensorflow:loss = 0.004159357, step = 11301 (39.797 sec)
+INFO:tensorflow:global_step/sec: 3.0385
+INFO:tensorflow:loss = 0.00021352567, step = 11401 (32.911 sec)
+INFO:tensorflow:global_step/sec: 2.68172
+INFO:tensorflow:loss = 0.0010074523, step = 11501 (37.289 sec)
+INFO:tensorflow:global_step/sec: 2.64046
+INFO:tensorflow:loss = 3.4396217e-05, step = 11601 (37.872 sec)
+INFO:tensorflow:global_step/sec: 2.66379
+INFO:tensorflow:loss = 9.188298e-05, step = 11701 (37.541 sec)
+INFO:tensorflow:global_step/sec: 2.64622
+INFO:tensorflow:loss = 0.00044637985, step = 11801 (37.789 sec)
+INFO:tensorflow:global_step/sec: 2.4842
+INFO:tensorflow:loss = 0.0034293628, step = 11901 (40.255 sec)
+INFO:tensorflow:Saving checkpoints for 12000 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0022157305.
+INFO:tensorflow:Starting evaluation at 2018-07-18-21:55:43
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-12000
+2018-07-18 17:55:43.619332: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:55:43.619466: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:55:43.619514: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:55:43.632914: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:55:43.632964: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:55:43.633003: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-18-21:55:54
+INFO:tensorflow:Saving dict for global step 12000: accuracy = 0.9916, global_step = 12000, loss = 0.031919174
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt-12000
+2018-07-18 17:55:54.702433: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:55:54.702543: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:55:54.702592: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-18 17:55:54.715081: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-18 17:55:54.715141: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-18 17:55:54.715181: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 12001 into /home/gridsan/salford/tf/saved/lenet5_0.2/model.ckpt.
+INFO:tensorflow:loss = 0.022089174, step = 12001
+INFO:tensorflow:global_step/sec: 2.71571
+INFO:tensorflow:loss = 0.0004877762, step = 12101 (36.824 sec)
+INFO:tensorflow:global_step/sec: 2.97516
+INFO:tensorflow:loss = 0.011783177, step = 12201 (33.613 sec)
+INFO:tensorflow:global_step/sec: 2.81975
+INFO:tensorflow:loss = 0.013320918, step = 12301 (35.465 sec)
+INFO:tensorflow:global_step/sec: 2.43456
+INFO:tensorflow:loss = 0.0026880759, step = 12401 (41.075 sec)
+INFO:tensorflow:global_step/sec: 2.8283
+INFO:tensorflow:loss = 0.0006085712, step = 12501 (35.357 sec)
+slurmstepd: error: *** JOB 459811 ON node-041 CANCELLED AT 2018-07-18T17:59:21 ***

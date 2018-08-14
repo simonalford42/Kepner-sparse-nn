@@ -1,0 +1,989 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Using default config.
+INFO:tensorflow:Using config: {'_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_tf_random_seed': 1, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_save_checkpoints_steps': None, '_model_dir': '/home/gridsan/salford/tf/saved/lenet300_100_3/', '_save_summary_steps': 100}
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-07-26 14:46:42.835953: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-26 14:46:43.007205: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:46:43.007328: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:46:43.007382: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:46:43.025743: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:46:43.025862: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:46:43.025914: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 1 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 2.9537435, step = 1
+INFO:tensorflow:global_step/sec: 2.51426
+INFO:tensorflow:loss = 1.4781342, step = 101 (39.776 sec)
+INFO:tensorflow:global_step/sec: 2.4513
+INFO:tensorflow:loss = 0.95211935, step = 201 (40.793 sec)
+INFO:tensorflow:global_step/sec: 2.36305
+INFO:tensorflow:loss = 0.85413474, step = 301 (42.319 sec)
+INFO:tensorflow:global_step/sec: 2.22716
+INFO:tensorflow:loss = 0.67980576, step = 401 (44.900 sec)
+INFO:tensorflow:Saving checkpoints for 500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.6369002.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-18:50:22
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-500
+2018-07-26 14:50:23.199897: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:50:23.200007: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:50:23.200055: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:50:23.229886: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:50:23.229968: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:50:23.230014: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-18:50:30
+INFO:tensorflow:Saving dict for global step 500: accuracy = 0.9282, global_step = 500, loss = 0.66534907
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-500
+2018-07-26 14:50:32.759914: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:50:32.760067: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:50:32.760124: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:50:32.799903: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:50:32.800045: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:50:32.800101: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.5717895, step = 501
+INFO:tensorflow:global_step/sec: 2.23655
+INFO:tensorflow:loss = 0.5660853, step = 601 (44.712 sec)
+INFO:tensorflow:global_step/sec: 2.41975
+INFO:tensorflow:loss = 0.5505036, step = 701 (41.327 sec)
+INFO:tensorflow:global_step/sec: 2.57013
+INFO:tensorflow:loss = 0.61866164, step = 801 (38.908 sec)
+INFO:tensorflow:global_step/sec: 2.58748
+INFO:tensorflow:loss = 0.6046548, step = 901 (38.650 sec)
+INFO:tensorflow:Saving checkpoints for 1000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.5811647.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-18:53:57
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-1000
+2018-07-26 14:53:57.474872: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:53:57.474976: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:53:57.475024: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:53:57.511405: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:53:57.511503: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:53:57.511554: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-18:54:06
+INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.9452, global_step = 1000, loss = 0.48549715
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-1000
+2018-07-26 14:54:07.761710: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:54:07.761798: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:54:07.761844: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:54:07.778405: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:54:07.778456: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:54:07.778494: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 1001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.5896112, step = 1001
+INFO:tensorflow:global_step/sec: 2.22285
+INFO:tensorflow:loss = 0.4463832, step = 1101 (45.003 sec)
+INFO:tensorflow:global_step/sec: 2.42277
+INFO:tensorflow:loss = 0.54926217, step = 1201 (41.258 sec)
+INFO:tensorflow:global_step/sec: 2.01846
+INFO:tensorflow:loss = 0.47189504, step = 1301 (49.542 sec)
+INFO:tensorflow:global_step/sec: 2.29198
+INFO:tensorflow:loss = 0.4172037, step = 1401 (43.631 sec)
+INFO:tensorflow:Saving checkpoints for 1500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.34445027.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-18:57:53
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-1500
+2018-07-26 14:57:53.302272: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:57:53.302377: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:57:53.302427: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:57:53.317536: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:57:53.317593: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:57:53.317633: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-18:58:01
+INFO:tensorflow:Saving dict for global step 1500: accuracy = 0.9563, global_step = 1500, loss = 0.37897065
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-1500
+2018-07-26 14:58:03.132051: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:58:03.132156: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:58:03.132205: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 14:58:03.172282: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 14:58:03.172353: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 14:58:03.172395: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 1501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.35945538, step = 1501
+INFO:tensorflow:global_step/sec: 2.70667
+INFO:tensorflow:loss = 0.4306568, step = 1601 (36.946 sec)
+INFO:tensorflow:global_step/sec: 2.43239
+INFO:tensorflow:loss = 0.37992352, step = 1701 (41.112 sec)
+INFO:tensorflow:global_step/sec: 3.01817
+INFO:tensorflow:loss = 0.47593147, step = 1801 (33.133 sec)
+INFO:tensorflow:global_step/sec: 2.73569
+INFO:tensorflow:loss = 0.29041046, step = 1901 (36.554 sec)
+INFO:tensorflow:Saving checkpoints for 2000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.3234658.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:01:13
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-2000
+2018-07-26 15:01:13.945266: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:01:13.945375: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:01:13.945425: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:01:13.970089: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:01:13.970210: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:01:13.970262: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:01:21
+INFO:tensorflow:Saving dict for global step 2000: accuracy = 0.9575, global_step = 2000, loss = 0.3520778
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-2000
+2018-07-26 15:01:23.002700: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:01:23.002822: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:01:23.002875: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:01:23.034225: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:01:23.034347: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:01:23.034399: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 2001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.32651204, step = 2001
+INFO:tensorflow:global_step/sec: 2.73594
+INFO:tensorflow:loss = 0.3303023, step = 2101 (36.551 sec)
+INFO:tensorflow:global_step/sec: 2.40593
+INFO:tensorflow:loss = 0.37739283, step = 2201 (41.564 sec)
+INFO:tensorflow:global_step/sec: 2.44608
+INFO:tensorflow:loss = 0.30335027, step = 2301 (40.882 sec)
+INFO:tensorflow:global_step/sec: 2.47151
+INFO:tensorflow:loss = 0.2836126, step = 2401 (40.460 sec)
+INFO:tensorflow:Saving checkpoints for 2500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.29680282.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:04:47
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-2500
+2018-07-26 15:04:47.895074: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:04:47.895179: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:04:47.895226: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:04:47.911325: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:04:47.911382: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:04:47.911420: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:04:54
+INFO:tensorflow:Saving dict for global step 2500: accuracy = 0.9652, global_step = 2500, loss = 0.31868774
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-2500
+2018-07-26 15:04:55.705681: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:04:55.705795: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:04:55.705845: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:04:55.731599: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:04:55.731677: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:04:55.731720: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 2501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.3842408, step = 2501
+INFO:tensorflow:global_step/sec: 2.62176
+INFO:tensorflow:loss = 0.3479702, step = 2601 (38.143 sec)
+INFO:tensorflow:global_step/sec: 2.76212
+INFO:tensorflow:loss = 0.23787431, step = 2701 (36.204 sec)
+INFO:tensorflow:global_step/sec: 2.43298
+INFO:tensorflow:loss = 0.3038882, step = 2801 (41.102 sec)
+INFO:tensorflow:global_step/sec: 2.27614
+INFO:tensorflow:loss = 0.4907059, step = 2901 (43.934 sec)
+INFO:tensorflow:Saving checkpoints for 3000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.36829957.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:08:12
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-3000
+2018-07-26 15:08:12.758877: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:08:12.759009: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:08:12.759061: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:08:12.775780: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:08:12.775897: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:08:12.775946: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:08:19
+INFO:tensorflow:Saving dict for global step 3000: accuracy = 0.9574, global_step = 3000, loss = 0.33610454
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-3000
+2018-07-26 15:08:21.270274: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:08:21.270422: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:08:21.270476: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:08:21.307705: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:08:21.307848: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:08:21.307901: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 3001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.2478225, step = 3001
+INFO:tensorflow:global_step/sec: 3.25981
+INFO:tensorflow:loss = 0.33407128, step = 3101 (30.669 sec)
+INFO:tensorflow:global_step/sec: 3.16043
+INFO:tensorflow:loss = 0.2994967, step = 3201 (31.641 sec)
+INFO:tensorflow:global_step/sec: 3.24775
+INFO:tensorflow:loss = 0.4113743, step = 3301 (30.791 sec)
+INFO:tensorflow:global_step/sec: 2.87637
+INFO:tensorflow:loss = 0.36905003, step = 3401 (34.766 sec)
+INFO:tensorflow:Saving checkpoints for 3500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.253957.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:11:02
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-3500
+2018-07-26 15:11:02.590817: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:11:02.590940: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:11:02.590987: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:11:02.606349: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:11:02.606400: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:11:02.606439: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:11:09
+INFO:tensorflow:Saving dict for global step 3500: accuracy = 0.964, global_step = 3500, loss = 0.3122043
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-3500
+2018-07-26 15:11:10.795363: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:11:10.795475: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:11:10.795524: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:11:10.811390: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:11:10.811447: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:11:10.811487: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 3501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.3522847, step = 3501
+INFO:tensorflow:global_step/sec: 2.61365
+INFO:tensorflow:loss = 0.28249887, step = 3601 (38.252 sec)
+INFO:tensorflow:global_step/sec: 3.10115
+INFO:tensorflow:loss = 0.33270717, step = 3701 (32.247 sec)
+INFO:tensorflow:global_step/sec: 2.98769
+INFO:tensorflow:loss = 0.32646644, step = 3801 (33.470 sec)
+INFO:tensorflow:global_step/sec: 3.3198
+INFO:tensorflow:loss = 0.34146726, step = 3901 (30.122 sec)
+INFO:tensorflow:Saving checkpoints for 4000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.47619247.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:14:03
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-4000
+2018-07-26 15:14:03.710144: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:14:03.710278: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:14:03.710330: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:14:03.736278: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:14:03.736394: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:14:03.736442: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:14:09
+INFO:tensorflow:Saving dict for global step 4000: accuracy = 0.9567, global_step = 4000, loss = 0.34105688
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-4000
+2018-07-26 15:14:11.294506: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:14:11.294621: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:14:11.294672: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:14:11.320379: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:14:11.320443: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:14:11.320484: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 4001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.26535743, step = 4001
+INFO:tensorflow:global_step/sec: 2.42589
+INFO:tensorflow:loss = 0.35999024, step = 4101 (41.222 sec)
+INFO:tensorflow:global_step/sec: 2.70906
+INFO:tensorflow:loss = 0.22866116, step = 4201 (36.913 sec)
+INFO:tensorflow:global_step/sec: 2.64855
+INFO:tensorflow:loss = 0.29707178, step = 4301 (37.756 sec)
+INFO:tensorflow:global_step/sec: 2.50101
+INFO:tensorflow:loss = 0.33836472, step = 4401 (39.984 sec)
+INFO:tensorflow:Saving checkpoints for 4500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.25185335.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:17:24
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-4500
+2018-07-26 15:17:24.467499: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:17:24.467604: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:17:24.467653: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:17:24.482971: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:17:24.483023: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:17:24.483062: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:17:30
+INFO:tensorflow:Saving dict for global step 4500: accuracy = 0.969, global_step = 4500, loss = 0.2983722
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-4500
+2018-07-26 15:17:32.369893: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:17:32.370004: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:17:32.370053: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:17:32.393442: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:17:32.393505: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:17:32.393547: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 4501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.29995397, step = 4501
+INFO:tensorflow:global_step/sec: 2.79649
+INFO:tensorflow:loss = 0.30372536, step = 4601 (35.757 sec)
+INFO:tensorflow:global_step/sec: 2.95318
+INFO:tensorflow:loss = 0.323763, step = 4701 (33.862 sec)
+INFO:tensorflow:global_step/sec: 2.82715
+INFO:tensorflow:loss = 0.29772782, step = 4801 (35.372 sec)
+INFO:tensorflow:global_step/sec: 2.73256
+INFO:tensorflow:loss = 0.3007034, step = 4901 (36.596 sec)
+INFO:tensorflow:Saving checkpoints for 5000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.26182932.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:20:31
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-5000
+2018-07-26 15:20:32.140583: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:20:32.140683: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:20:32.140730: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:20:32.165918: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:20:32.165973: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:20:32.166013: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:20:37
+INFO:tensorflow:Saving dict for global step 5000: accuracy = 0.9687, global_step = 5000, loss = 0.30253693
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-5000
+2018-07-26 15:20:38.602436: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:20:38.602549: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:20:38.602599: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:20:38.644388: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:20:38.644455: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:20:38.644496: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 5001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.29068032, step = 5001
+INFO:tensorflow:global_step/sec: 2.87342
+INFO:tensorflow:loss = 0.29387558, step = 5101 (34.797 sec)
+INFO:tensorflow:global_step/sec: 3.08765
+INFO:tensorflow:loss = 0.31904328, step = 5201 (32.414 sec)
+INFO:tensorflow:global_step/sec: 2.81559
+INFO:tensorflow:loss = 0.30809167, step = 5301 (35.490 sec)
+INFO:tensorflow:global_step/sec: 3.03873
+INFO:tensorflow:loss = 0.33263272, step = 5401 (32.908 sec)
+INFO:tensorflow:Saving checkpoints for 5500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.38667756.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:23:29
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-5500
+2018-07-26 15:23:29.746199: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:23:29.746305: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:23:29.746357: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:23:29.770454: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:23:29.770560: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:23:29.770606: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:23:35
+INFO:tensorflow:Saving dict for global step 5500: accuracy = 0.9675, global_step = 5500, loss = 0.30591327
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-5500
+2018-07-26 15:23:37.214733: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:23:37.214832: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:23:37.214879: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:23:37.239164: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:23:37.239243: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:23:37.239287: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 5501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.3224157, step = 5501
+INFO:tensorflow:global_step/sec: 3.02186
+INFO:tensorflow:loss = 0.35427803, step = 5601 (33.093 sec)
+INFO:tensorflow:global_step/sec: 2.81463
+INFO:tensorflow:loss = 0.2984614, step = 5701 (35.529 sec)
+INFO:tensorflow:global_step/sec: 2.89561
+INFO:tensorflow:loss = 0.3085015, step = 5801 (34.535 sec)
+INFO:tensorflow:global_step/sec: 3.32517
+INFO:tensorflow:loss = 0.33312917, step = 5901 (30.074 sec)
+INFO:tensorflow:Saving checkpoints for 6000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.3575967.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:26:27
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-6000
+2018-07-26 15:26:27.756195: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:26:27.756331: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:26:27.756380: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:26:27.774219: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:26:27.774277: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:26:27.774318: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:26:33
+INFO:tensorflow:Saving dict for global step 6000: accuracy = 0.965, global_step = 6000, loss = 0.31722668
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-6000
+2018-07-26 15:26:34.561381: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:26:34.561497: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:26:34.561550: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:26:34.590480: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:26:34.590597: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:26:34.590648: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 6001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.32200775, step = 6001
+INFO:tensorflow:global_step/sec: 2.97869
+INFO:tensorflow:loss = 0.30774733, step = 6101 (33.569 sec)
+INFO:tensorflow:global_step/sec: 3.12226
+INFO:tensorflow:loss = 0.3038786, step = 6201 (32.051 sec)
+INFO:tensorflow:global_step/sec: 2.81544
+INFO:tensorflow:loss = 0.26448333, step = 6301 (35.495 sec)
+INFO:tensorflow:global_step/sec: 3.3059
+INFO:tensorflow:loss = 0.3285581, step = 6401 (30.256 sec)
+INFO:tensorflow:Saving checkpoints for 6500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.28732532.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:29:21
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-6500
+2018-07-26 15:29:21.306609: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:29:21.306732: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:29:21.306781: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:29:21.321816: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:29:21.321872: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:29:21.321912: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:29:27
+INFO:tensorflow:Saving dict for global step 6500: accuracy = 0.9675, global_step = 6500, loss = 0.30243155
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-6500
+2018-07-26 15:29:29.304057: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:29:29.304170: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:29:29.304220: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:29:29.319558: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:29:29.319610: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:29:29.319648: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 6501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.22865601, step = 6501
+INFO:tensorflow:global_step/sec: 3.17395
+INFO:tensorflow:loss = 0.35662845, step = 6601 (31.492 sec)
+INFO:tensorflow:global_step/sec: 2.79042
+INFO:tensorflow:loss = 0.26510867, step = 6701 (35.837 sec)
+INFO:tensorflow:global_step/sec: 3.30795
+INFO:tensorflow:loss = 0.30906677, step = 6801 (30.230 sec)
+INFO:tensorflow:global_step/sec: 3.2723
+INFO:tensorflow:loss = 0.3839896, step = 6901 (30.562 sec)
+INFO:tensorflow:Saving checkpoints for 7000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.34049803.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:32:11
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-7000
+2018-07-26 15:32:12.119898: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:32:12.120010: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:32:12.120058: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:32:12.149881: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:32:12.149935: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:32:12.149976: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:32:19
+INFO:tensorflow:Saving dict for global step 7000: accuracy = 0.966, global_step = 7000, loss = 0.30904385
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-7000
+2018-07-26 15:32:21.259895: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:32:21.260007: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:32:21.260060: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:32:21.279924: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:32:21.280021: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:32:21.280065: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 7001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.32226425, step = 7001
+INFO:tensorflow:global_step/sec: 3.10795
+INFO:tensorflow:loss = 0.4412598, step = 7101 (32.176 sec)
+INFO:tensorflow:global_step/sec: 2.75094
+INFO:tensorflow:loss = 0.27220428, step = 7201 (36.351 sec)
+INFO:tensorflow:global_step/sec: 3.09033
+INFO:tensorflow:loss = 0.28642353, step = 7301 (32.360 sec)
+INFO:tensorflow:global_step/sec: 3.18778
+INFO:tensorflow:loss = 0.32286775, step = 7401 (31.369 sec)
+INFO:tensorflow:Saving checkpoints for 7500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.39222386.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:35:07
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-7500
+2018-07-26 15:35:07.419898: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:35:07.420010: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:35:07.420060: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:35:07.437152: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:35:07.437204: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:35:07.437243: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:35:14
+INFO:tensorflow:Saving dict for global step 7500: accuracy = 0.9583, global_step = 7500, loss = 0.33269745
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-7500
+2018-07-26 15:35:16.049935: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:35:16.050050: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:35:16.050100: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:35:16.071703: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:35:16.071766: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:35:16.071807: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 7501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.32588872, step = 7501
+INFO:tensorflow:global_step/sec: 3.02192
+INFO:tensorflow:loss = 0.24425891, step = 7601 (33.091 sec)
+INFO:tensorflow:global_step/sec: 3.19929
+INFO:tensorflow:loss = 0.37280333, step = 7701 (31.257 sec)
+INFO:tensorflow:global_step/sec: 3.11529
+INFO:tensorflow:loss = 0.27070108, step = 7801 (32.100 sec)
+INFO:tensorflow:global_step/sec: 2.86275
+INFO:tensorflow:loss = 0.24573803, step = 7901 (34.932 sec)
+INFO:tensorflow:Saving checkpoints for 8000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.34010315.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:38:02
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-8000
+2018-07-26 15:38:02.787835: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:38:02.787937: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:38:02.787985: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:38:02.814693: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:38:02.814841: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:38:02.814896: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:38:10
+INFO:tensorflow:Saving dict for global step 8000: accuracy = 0.9685, global_step = 8000, loss = 0.30323353
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-8000
+2018-07-26 15:38:11.459537: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:38:11.459651: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:38:11.459702: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:38:11.476440: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:38:11.476508: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:38:11.476549: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 8001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.27459908, step = 8001
+INFO:tensorflow:global_step/sec: 2.66816
+INFO:tensorflow:loss = 0.2518851, step = 8101 (37.471 sec)
+INFO:tensorflow:global_step/sec: 2.87431
+INFO:tensorflow:loss = 0.27051622, step = 8201 (34.790 sec)
+INFO:tensorflow:global_step/sec: 2.9964
+INFO:tensorflow:loss = 0.24665037, step = 8301 (33.373 sec)
+INFO:tensorflow:global_step/sec: 2.69352
+INFO:tensorflow:loss = 0.39916778, step = 8401 (37.126 sec)
+INFO:tensorflow:Saving checkpoints for 8500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.31372473.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:41:13
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-8500
+2018-07-26 15:41:13.730119: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:41:13.730271: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:41:13.730327: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:41:13.769742: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:41:13.769868: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:41:13.769917: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:41:19
+INFO:tensorflow:Saving dict for global step 8500: accuracy = 0.9615, global_step = 8500, loss = 0.31830254
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-8500
+2018-07-26 15:41:20.885687: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:41:20.885824: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:41:20.885877: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:41:20.978321: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:41:20.978432: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:41:20.978480: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 8501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.2991581, step = 8501
+INFO:tensorflow:global_step/sec: 2.52667
+INFO:tensorflow:loss = 0.23310214, step = 8601 (39.578 sec)
+INFO:tensorflow:global_step/sec: 2.76623
+INFO:tensorflow:loss = 0.25308412, step = 8701 (36.150 sec)
+INFO:tensorflow:global_step/sec: 2.69617
+INFO:tensorflow:loss = 0.2945453, step = 8801 (37.090 sec)
+INFO:tensorflow:global_step/sec: 3.2513
+INFO:tensorflow:loss = 0.26443514, step = 8901 (30.757 sec)
+INFO:tensorflow:Saving checkpoints for 9000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.29669645.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:44:17
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-9000
+2018-07-26 15:44:17.722909: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:44:17.723025: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:44:17.723074: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:44:17.738390: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:44:17.738442: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:44:17.738481: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:44:23
+INFO:tensorflow:Saving dict for global step 9000: accuracy = 0.9682, global_step = 9000, loss = 0.3086983
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-9000
+2018-07-26 15:44:24.982302: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:44:24.982412: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:44:24.982461: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:44:25.000072: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:44:25.000134: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:44:25.000173: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 9001 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.33656573, step = 9001
+INFO:tensorflow:global_step/sec: 2.98058
+INFO:tensorflow:loss = 0.34356418, step = 9101 (33.545 sec)
+INFO:tensorflow:global_step/sec: 2.65913
+INFO:tensorflow:loss = 0.43752387, step = 9201 (37.607 sec)
+INFO:tensorflow:global_step/sec: 2.78822
+INFO:tensorflow:loss = 0.29750144, step = 9301 (35.865 sec)
+INFO:tensorflow:global_step/sec: 3.28172
+INFO:tensorflow:loss = 0.27596706, step = 9401 (30.472 sec)
+INFO:tensorflow:Saving checkpoints for 9500 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.28548408.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:47:24
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-9500
+2018-07-26 15:47:24.453577: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:47:24.453719: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:47:24.453774: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:47:24.552404: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:47:24.552553: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:47:24.552609: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:47:32
+INFO:tensorflow:Saving dict for global step 9500: accuracy = 0.9658, global_step = 9500, loss = 0.31549436
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-9500
+2018-07-26 15:47:33.349678: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:47:33.349779: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:47:33.349829: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:47:33.391290: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:47:33.391377: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:47:33.391424: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 9501 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:loss = 0.2793873, step = 9501
+INFO:tensorflow:global_step/sec: 2.5324
+INFO:tensorflow:loss = 0.308705, step = 9601 (39.475 sec)
+INFO:tensorflow:global_step/sec: 2.76046
+INFO:tensorflow:loss = 0.25503886, step = 9701 (36.225 sec)
+INFO:tensorflow:global_step/sec: 2.79419
+INFO:tensorflow:loss = 0.29125375, step = 9801 (35.789 sec)
+INFO:tensorflow:global_step/sec: 2.57143
+INFO:tensorflow:loss = 0.23586398, step = 9901 (38.889 sec)
+INFO:tensorflow:Saving checkpoints for 10000 into /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.3267948.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Starting evaluation at 2018-07-26-19:50:40
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/tf/saved/lenet300_100_3/model.ckpt-10000
+2018-07-26 15:50:40.620102: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:50:40.620211: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:50:40.620259: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-26 15:50:40.639884: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-26 15:50:40.639944: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-26 15:50:40.639985: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Finished evaluation at 2018-07-26-19:50:48
+INFO:tensorflow:Saving dict for global step 10000: accuracy = 0.9684, global_step = 10000, loss = 0.30141938
+Namespace(pruning_hparams='name=lenet300_100,begin_pruning_step=20000,end_pruning_step=30000,initial_sparsity=0.0,target_sparsity=0.0,sparsity_function_begin_step=20000,sparsity_function_end_step=30000')
+Extracting /home/gridsan/salford/mnist/data/train-images-idx3-ubyte.gz
+Extracting /home/gridsan/salford/mnist/data/train-labels-idx1-ubyte.gz
+Extracting /home/gridsan/salford/mnist/data/t10k-images-idx3-ubyte.gz
+Extracting /home/gridsan/salford/mnist/data/t10k-labels-idx1-ubyte.gz
+{'loss': 0.66534907, 'global_step': 500, 'accuracy': 0.9282}
+{'loss': 0.48549715, 'global_step': 1000, 'accuracy': 0.9452}
+{'loss': 0.37897065, 'global_step': 1500, 'accuracy': 0.9563}
+{'loss': 0.3520778, 'global_step': 2000, 'accuracy': 0.9575}
+{'loss': 0.31868774, 'global_step': 2500, 'accuracy': 0.9652}
+{'loss': 0.33610454, 'global_step': 3000, 'accuracy': 0.9574}
+{'loss': 0.3122043, 'global_step': 3500, 'accuracy': 0.964}
+{'loss': 0.34105688, 'global_step': 4000, 'accuracy': 0.9567}
+{'loss': 0.2983722, 'global_step': 4500, 'accuracy': 0.969}
+{'loss': 0.30253693, 'global_step': 5000, 'accuracy': 0.9687}
+{'loss': 0.30591327, 'global_step': 5500, 'accuracy': 0.9675}
+{'loss': 0.31722668, 'global_step': 6000, 'accuracy': 0.965}
+{'loss': 0.30243155, 'global_step': 6500, 'accuracy': 0.9675}
+{'loss': 0.30904385, 'global_step': 7000, 'accuracy': 0.966}
+{'loss': 0.33269745, 'global_step': 7500, 'accuracy': 0.9583}
+{'loss': 0.30323353, 'global_step': 8000, 'accuracy': 0.9685}
+{'loss': 0.31830254, 'global_step': 8500, 'accuracy': 0.9615}
+{'loss': 0.3086983, 'global_step': 9000, 'accuracy': 0.9682}
+{'loss': 0.31549436, 'global_step': 9500, 'accuracy': 0.9658}
+{'loss': 0.30141938, 'global_step': 10000, 'accuracy': 0.9684}

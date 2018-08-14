@@ -1,0 +1,16 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-07-11 11:17:36.954900: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-11 11:17:37.276720: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-11 11:17:37.276850: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-11 11:17:37.276901: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-11 11:17:37.314962: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-07-11 11:17:37.315027: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-07-11 11:17:37.315067: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-07-13 11:31:34.741837: E tensorflow/core/util/events_writer.cc:162] The events file /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local has disappeared.
+2018-07-13 11:31:34.767922: E tensorflow/core/util/events_writer.cc:131] Failed to flush 2 events to /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local
+2018-07-13 11:38:53.183024: E tensorflow/core/util/events_writer.cc:162] The events file /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local has disappeared.
+2018-07-13 11:38:53.184243: E tensorflow/core/util/events_writer.cc:131] Failed to flush 3 events to /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local
+2018-07-13 11:47:46.185044: E tensorflow/core/util/events_writer.cc:162] The events file /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local has disappeared.
+2018-07-13 11:47:46.185191: E tensorflow/core/util/events_writer.cc:131] Failed to flush 6 events to /home/gridsan/salford/tf/saved/cifar10_train/events.out.tfevents.1531322256.node-039.local
+slurmstepd: error: *** JOB 455121 ON node-039 CANCELLED AT 2018-07-13T11:51:33 ***
