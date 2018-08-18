@@ -1,10 +1,49 @@
 import tensorflow as tf
 import numpy as np
 import sys
-sys.path.append("/home/gridsan/salford/tf/model_pruning/")
-from python import pruning as pruning
+import os
+sys.path.append(os.path.abspath('..'))
+from python import pruning
 
-def lenet300_100_inference(features):
+def lenet3000_100(features):
+    input_layer = features
+
+    with tf.variable_scope('dense1') as scope:
+        weights = _variable_with_weight_decay(
+                'weights', shape=[784, 3000], stddev=0.04, wd=0.004)
+        biases = _variable_on_cpu('biases',[3000], tf.constant_initializer(0.1))
+        pruned_weights = pruning.apply_mask(weights, scope)
+        _mask_summary(pruned_weights)
+        dense1 = tf.nn.relu(
+                    tf.matmul(input_layer, pruned_weights) + biases,
+                    name=scope.name)
+        _activation_summary(dense1)
+
+    with tf.variable_scope('dense2') as scope:
+        weights = _variable_with_weight_decay(
+                'weights', shape=[3000, 100], stddev=0.04, wd=0.004)
+        biases = _variable_on_cpu('biases',[100], tf.constant_initializer(0.1))
+        pruned_weights = pruning.apply_mask(weights, scope)
+        _mask_summary(pruned_weights)
+        dense2 = tf.nn.relu(
+                    tf.matmul(dense1, pruned_weights) + biases,
+                    name=scope.name)
+        _activation_summary(dense2)
+
+    with tf.variable_scope('logits') as scope:
+        weights = _variable_with_weight_decay(
+                'weights', shape=[100, 10], stddev=0.04, wd=0.004)
+        biases = _variable_on_cpu('biases',[10], tf.constant_initializer(0.1))
+        pruned_weights = pruning.apply_mask(weights, scope)
+        _mask_summary(pruned_weights)
+        logits = tf.nn.relu(
+                    tf.matmul(dense2, pruned_weights) + biases,
+                    name=scope.name)
+        _activation_summary(logits)
+
+        return logits
+
+def lenet300_100(features):
     input_layer = features
 
     with tf.variable_scope('dense1') as scope:
@@ -42,7 +81,7 @@ def lenet300_100_inference(features):
 
         return logits
 
-def lenet5_inference(features):
+def lenet5(features):
     l1_filters = 20
     l2_filters = 50
     # Input Layer
@@ -135,7 +174,7 @@ def lenet5_inference(features):
     return logits
 
 
-def toy_numpy_inference(features):
+def toy_numpy(features):
     input_layer = features
     with tf.variable_scope('logits') as scope:
         W = _variable_with_weight_decay('W', [784, 10], stddev=1/192.0, wd=0.0)
@@ -148,7 +187,7 @@ def toy_numpy_inference(features):
 def _mask_summary(x):
     tensor_name = x.op.name
     tf.summary.scalar(tensor_name + '/sparsity', tf.nn.zero_fraction(x))
-    tf.summary.histogram(tensor_name + '/mask', x)
+    tf.summary.histogram(tensor_name, x)
 
 def _activation_summary(x):
     tensor_name = x.op.name
@@ -164,7 +203,7 @@ def _variable_on_cpu(name, shape, initializer):
 
 def _variable_with_weight_decay_init(name, shape, wd, init_tensor):
     """Helper to create an initialized Variable with weight decay. Adds
-    Capability to initialize with some other variable. 
+    Capability to initialize with some other variable.
 
     A weight decay is added only if one is specified.
 

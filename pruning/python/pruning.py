@@ -480,7 +480,7 @@ class Pruning(object):
         with ops.control_dependencies(self._assign_ops):
           logging.info('Updating masks.')
           return control_flow_ops.no_op('mask_update')
-                
+
 
   def conditional_mask_update_op(self):
 

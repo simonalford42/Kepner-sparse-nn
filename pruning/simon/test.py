@@ -5,20 +5,20 @@ import os
 import sys
 import time
 import tensorflow as tf
-sys.path.append('/home/gridsan/salford/tf/model_pruning/')
-import retrain
+sys.path.append(os.path.abspath('..'))
+import train
 from mnist_input import MnistData
 tf.logging.set_verbosity(tf.logging.INFO)
 
-MODEL_DIR = retrain.MODEL_DIR
-MODEL_FN = retrain.MODEL_FN
+MODEL_DIR = train.MODEL_DIR
+MODEL_FN = train.MODEL_FN
 
-TRAIN_STEPS = retrain.TRAIN_STEPS
-TEST_SET_SIZE = retrain.TEST_SET_SIZE
-TEST_FREQ = retrain.TEST_FREQ
+TRAIN_STEPS = train.TRAIN_STEPS
+TEST_SET_SIZE = train.TEST_SET_SIZE
+TEST_FREQ = train.TEST_FREQ
 
 def monitor_test_mnist():
-    with tf.Graph().as_default():
+    with tf.get_default_graph().as_default():
         # I do this right away so the other script can't pull a fast one on it
         latest_ckpt = tf.train.latest_checkpoint(MODEL_DIR)
         if latest_ckpt is None:
@@ -34,8 +34,7 @@ def monitor_test_mnist():
 
         global_step = tf.contrib.framework.get_or_create_global_step()
 
-        accuracy = test_graph(test_features, test_labels)
-        merged = tf.summary.merge_all()
+        accuracy, acc_summary = test_graph(test_features, test_labels)
         summary_writer = tf.summary.FileWriter(MODEL_DIR + '/eval/')
 
         saver = tf.train.Saver()
@@ -50,8 +49,16 @@ def monitor_test_mnist():
             before = after
 
             if ckpt_files:
-                a = ckpt_files[0]
-                ckpt_number = int(a[11:11+a[11:].index('.')])
+                i = 0
+                while i < len(ckpt_files):
+                    a = ckpt_files[0]
+                    try:
+                        ckpt_number = int(a[11:11+a[11:].index('.')])
+                        break
+                    except ValueError:
+                        print('invalid file found, not ckpt: ' + str(ckpt_files[0]))
+                        i+=1
+
                 if ckpt_number < 10:
                     tested_ckpt_numbers.add(ckpt_number)
                     continue
@@ -67,7 +74,8 @@ def monitor_test_mnist():
                     saver.restore(sess, checkpoint)
                     acc = accuracy.eval()
                     gs = global_step.eval()
-                    summary_writer.add_summary(merged.eval(), global_step=gs)
+                    summary_writer.add_summary(acc_summary.eval(),
+                         global_step=gs)
 
                     coord.request_stop()
                     coord.join(threads)
@@ -87,9 +95,9 @@ def test_graph(features, labels):
     accuracy = tf.reduce_mean(tf.cast(
             tf.equal(predictions, labels), tf.float32))
     # because it gets put in the eval folder, this doesn't interfere with train
-    tf.summary.scalar('accuracy', accuracy)
+    acc_summary = tf.summary.scalar('accuracy', accuracy)
 
-    return accuracy
+    return accuracy, acc_summary
 
 
 if __name__ == '__main__':

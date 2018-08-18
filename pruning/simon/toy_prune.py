@@ -4,7 +4,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 import sys
 import os
 import argparse
-sys.path.append("/home/gridsan/salford/tf/model_pruning/")
+sys.path.append(os.path.abspath('..'))
 import tf as tf2
 tf.logging.set_verbosity(tf.logging.INFO)
 

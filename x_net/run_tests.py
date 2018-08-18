@@ -7,7 +7,7 @@ Ws = []
 datas = []
 with open("test/emr/emr"+argv[1]+".txt", "r") as f:
 	for line in f:
-		W, data = extended_mixed_radix_network(eval(line[:-1]))
+		W, data = emr_net(eval(line[:-1]))
 		Ws.append(W)
 		datas.append(data)
 
@@ -23,7 +23,7 @@ datas = []
 with open("test/kemr/kemr"+argv[1]+".txt", "r") as f:
 	for line in f:
 		toople = eval(line[:-1])
-		W, data = kronecker_emr_network(toople[0], toople[1])
+		W, data = kemr_net(toople[0], toople[1])
 		Ws.append(W)
 		datas.append(data)
 

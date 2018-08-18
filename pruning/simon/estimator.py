@@ -4,7 +4,8 @@ from __future__ import print_function
 import tensorflow as tf
 import numpy as np
 import sys
-sys.path.append("/home/gridsan/salford/tf/model_pruning/")
+import os
+sys.path.append(os.path.abspath('..'))
 from python import pruning as pruning
 BATCH_SIZE = 100
 

@@ -1,29 +1,33 @@
 let SessionLoad = 1
 if &cp | set nocp | endif
-noremap  ^
-noremap  $
-noremap  
 noremap 	 i	l
 noremap  :nohl
 noremap  m`o``
-map  v v$
-map  r @@
-map  b "_dd k
-noremap  d V:s/\s\+$//
+nnoremap  :w
+noremap  n :noh
+noremap  v v$
+noremap  r @@
+noremap  b "_^D
+noremap  d V:s/\s\+$//:noh
 noremap  J k J
 noremap   m`O``
 noremap : ;
 noremap ; :
 vnoremap < <gv
 vnoremap > >gv
+noremap S $
 noremap Y y$
 let s:cpo_save=&cpo
 set cpo&vim
 nmap gx <Plug>NetrwBrowseX
+noremap gf tfi<BS>
+noremap gp oprint('pa: ' + str(pa))
 noremap gsv :so $MYVIMRC
+noremap s ^
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
 noremap <BS> i<BS>l
-cnoremap bpd bd
+inoremap  :w
+cnoremap bs bd
 cnoremap bd bp|bd #
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -50,19 +54,17 @@ set wildignore=*.pyc
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd 
+cd ~/Kepner-sparse-nn/pruning/simon
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +85 train.py
-badd +142 inference.py
-badd +56 test.py
-badd +37 toy_test.py
-badd +99 ../../python/pruning.py
-badd +1 ../../python/pruning_utils.py
-args train.py
-edit train.py
+badd +0 test.py
+badd +0 train.py
+badd +0 ../../x_net/x_net.py
+badd +0 tensor_init.py
+args test.py train.py ../../x_net/x_net.py tensor_init.py
+edit test.py
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -149,7 +151,8 @@ setlocal nopreserveindent
 setlocal nopreviewwindow
 setlocal quoteescape=\\
 setlocal noreadonly
-setlocal norelativenumber
+set relativenumber
+setlocal relativenumber
 setlocal norightleft
 setlocal rightleftcmd=search
 setlocal noscrollbind
@@ -178,15 +181,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 79 - ((23 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-79
-normal! 030|
+1
+normal! 0
 wincmd w
 argglobal
-edit ../../python/pruning_utils.py
+edit test.py
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -261,7 +264,8 @@ setlocal nopreserveindent
 setlocal nopreviewwindow
 setlocal quoteescape=\\
 setlocal noreadonly
-setlocal norelativenumber
+set relativenumber
+setlocal relativenumber
 setlocal norightleft
 setlocal rightleftcmd=search
 setlocal noscrollbind
@@ -290,14 +294,13 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 39 - ((14 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-39
-normal! 05|
+1
+normal! 0
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 89 + 89) / 179)
 exe 'vert 2resize ' . ((&columns * 89 + 89) / 179)
 tabnext 1

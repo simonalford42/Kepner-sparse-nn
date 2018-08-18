@@ -10,25 +10,28 @@ import sys
 import argparse
 import time
 import datetime
-sys.path.append("/home/gridsan/salford/tf/model_pruning/")
+sys.path.append(os.path.abspath('..'))
 from python import pruning as pruning
 from python.layers import core_layers as core
 import inference
 from mnist_input import MnistData
+import tensor_init
 tf.logging.set_verbosity(tf.logging.INFO)
 
 BATCH_SIZE = 100
 
-HOME_DIR = '/home/gridsan/salford/tf/saved/'
+HOME_DIR = os.path.abspath('../../saved') + '/'
 # MODEL_NAME = 'lenet5_rt'
-# MODEL_NAME = 'lenet300_100_rt'
-MODEL_NAME = 'toy_numpy'
+# MODEL_NAME = 'lenet300_100_'
+MODEL_NAME = 'emr_big_31_1'
 MODEL_DIR = HOME_DIR + MODEL_NAME
-# MODEL_FN = inference.lenet5_inference
-# MODEL_FN = inference.lenet300_100_inference
-MODEL_FN = inference.toy_numpy_inference
+# MODEL_FN = inference.lenet5
+MODEL_FN = inference.lenet3000_100
 
-TRAIN_STEPS = 500
+# init dict for tensor init with numpy arrays
+INIT_DICT = tensor_init.rand_big_31()
+
+TRAIN_STEPS = 5000
 assert TRAIN_STEPS % 100 == 0
 LEARNING_RATE = 0.1
 FLAGS = None
@@ -36,9 +39,6 @@ FLAGS = None
 TEST_SET_SIZE = 10000
 TEST_FREQ = 200
 assert TEST_FREQ % 100 == 0
-
-RESTORE_MODEL = 'lenet300_100_prune2'
-RESTORE_DIR = HOME_DIR + RESTORE_MODEL
 
 # pruning params
 PRUNING_ON = False
@@ -51,31 +51,31 @@ SPARSITY_FUNCTION_END_STEP = END_PRUNING_STEP
 PRUNING_FREQUENCY = 200
 assert PRUNING_FREQUENCY % 100 == 0
 
-# restore dict for numpy arrays
-# structure: scope: dict with structure var_name: value
+
+def get_assign_ops():
+    lw = tf.convert_to_tensor(np.ones((784, 10), dtype=np.float32))
+    assign_ops = []
+    for scope in INIT_DICT:
+        var_dict = INIT_DICT[scope]
+        with tf.variable_scope(scope, reuse=True):
+            for var in INIT_DICT[scope]:
+                assign_op = tf.assign(tf.get_variable(var), var_dict[var])
+                assign_ops.append(assign_op)
+
+    return assign_ops
+
 
 def train_mnist(num_steps=TRAIN_STEPS):
-    with tf.Graph().as_default():
-        INIT_DICT = {'logits': {'mask:0': tf.convert_to_tensor(np.ones((784, 10)))}}
+    with tf.get_default_graph().as_default():
         input_pipe = MnistData(BATCH_SIZE)
+
         train_features, train_labels = input_pipe.build_train_data_tensor()
 
         train_op, mask_update_op, loss = train_graph(train_features, train_labels)
 
-        checkpoint = tf.train.get_checkpoint_state(MODEL_DIR)
-        new_masks = tf.get_collection(core.MASK_COLLECTION)
-        print('is inited: ' + str(tf.is_variable_initialized(new_masks[0])))
-        print('new_masks: ' + str(new_masks))
-        assign_ops = []
-        for scope in INIT_DICT:
-            print('scope= ' + scope)
-            var_dict = INIT_DICT[scope]
-            with tf.variable_scope(scope, reuse=True):
-                for var in INIT_DICT[scope]:
-                    print('var = ' + var)
-                    assign_op = tf.assign(tf.get_variable(var), var_dict[var])
-                    assign_ops.append(assign_op)
+        assign_ops = get_assign_ops()
 
+        checkpoint = tf.train.get_checkpoint_state(MODEL_DIR)
         if checkpoint is None:
             print('No checkpoint found; training from scratch')
             global_step = 0
@@ -86,7 +86,6 @@ def train_mnist(num_steps=TRAIN_STEPS):
             # extract global_step from it.
             global_step = float(checkpoint.model_checkpoint_path
                                 .split('/')[-1].split('-')[-1])
-
         checkpoint_saver = tf.train.Saver()
         checkpoint_hook = basic_session_run_hooks.CheckpointSaverHook(
             MODEL_DIR, save_steps = TEST_FREQ)
@@ -107,7 +106,7 @@ def train_mnist(num_steps=TRAIN_STEPS):
             def after_run(self, run_context, run_values):
                 duration = time.time() - self._start_time
                 loss_value = run_values.results
-                if self._step % 100 == 0:
+                if self._step > 0 and self._step % 100 == 0:
                     num_examples_per_step = BATCH_SIZE
                     examples_per_sec = num_examples_per_step / duration
                     sec_per_batch = float(duration)
@@ -117,56 +116,45 @@ def train_mnist(num_steps=TRAIN_STEPS):
                                     self._step, loss_value, examples_per_sec,
                                     sec_per_batch))
 
-
         with tf.train.MonitoredTrainingSession(
                 checkpoint_dir=MODEL_DIR,
                 hooks=[_LoggerHook(), checkpoint_hook],
                 save_checkpoint_secs=None,
                 config=tf.ConfigProto(log_device_placement=False)) as sess:
-            print('made it 1')
-            sess.run(tf.global_variables_initializer())
-            print('made it 2')
-            print('is inited: ' + str(sess.run(tf.is_variable_initialized(new_masks[0]))))
-
             if checkpoint is not None:
                 saver.restore(sess, checkpoint.model_checkpoint_path)
+
             if INIT_DICT is not None:
                 sess.run(assign_ops)
-                for scope in INIT_DICT.keys():
-                    with tf.variable_scope(scope, reuse=True):
-                        for var in INIT_DICT[scope].keys():
-                            print('assigned ' + scope + '/' + var + ': ' 
-                                  + str(sess.run(tf.get_variable(var))))
+                dict_str = ';  '.join(map(lambda scope: scope + '/'
+                    + ', '.join(INIT_DICT[scope].keys()) + '',
+                    INIT_DICT.keys()))
+                tf.logging.info('Instantiated tensors with assign ops: '
+                    + dict_str)
 
             for i in range(TRAIN_STEPS):
                 sess.run(train_op)
                 sess.run(mask_update_op)
 
 
+
+
 def train_graph(features, labels):
     global_step = tf.contrib.framework.get_or_create_global_step()
-
     labels = tf.cast(labels, tf.int64)
-
     logits = MODEL_FN(features)
-
     loss = calc_loss(logits, labels)
-
     predictions = tf.argmax(input=logits, axis=1)
-
     accuracy = tf.reduce_mean(tf.cast(
-            tf.equal(predictions, labels), tf.float32))
+        tf.equal(predictions, labels), tf.float32))
     tf.summary.scalar('accuracy', accuracy)
-
     train_op = train(loss, global_step)
-
     pruning_hparams = pruning.get_pruning_hparams().parse(
         FLAGS.pruning_hparams)
     pruning_obj = pruning.Pruning(
         pruning_hparams, global_step=global_step)
     mask_update_op = pruning_obj.conditional_mask_update_op()
     pruning_obj.add_pruning_summaries()
-
     return train_op, mask_update_op, loss
 
 
@@ -243,76 +231,21 @@ def _add_loss_summaries(total_loss):
     return loss_averages_op
 
 
-def train_mnist_restore(num_steps=TRAIN_STEPS):
-    with tf.Graph().as_default():
-        input_pipe = MnistData(BATCH_SIZE)
-        train_features, train_labels = input_pipe.build_train_data_tensor()
-
-        train_op, mask_update_op, loss = train_graph(train_features, train_labels)
-
-        checkpoint = tf.train.get_checkpoint_state(MODEL_DIR)
-
-        if checkpoint is None:
-            print('No checkpoint found; training from scratch')
-            global_step = 0
-        else:
-            saver = tf.train.Saver()
-            # Assuming model_checkpoint_path looks something like:
-            #       /my-favorite-path/cifar10_train/model.ckpt-0,
-            # extract global_step from it.
-            global_step = float(checkpoint.model_checkpoint_path
-                                .split('/')[-1].split('-')[-1])
-
-        new_masks = tf.get_collection(core.MASK_COLLECTION)
-        print(str(new_masks))
-#        saver2 = tf.train.Saver(var_list=new_masks)
-
-        class _LoggerHook(tf.train.SessionRunHook):
-            """Logs loss and runtime."""
-
-            def begin(self):
-                self._step = -0.5 + global_step
-
-            def before_run(self, run_context):
-                # this is a hack so that it correctly counts
-                # (trainop, mask_update_op) as one step
-                self._step += 0.5
-                self._start_time = time.time()
-                return tf.train.SessionRunArgs(loss)    # Asks for loss value.
-
-            def after_run(self, run_context, run_values):
-                duration = time.time() - self._start_time
-                loss_value = run_values.results
-                if self._step % 100 == 0:
-                    num_examples_per_step = BATCH_SIZE
-                    examples_per_sec = num_examples_per_step / duration
-                    sec_per_batch = float(duration)
-                    format_str = ('%s: step %d, loss = %.2f (%.1f examples/sec'
-                                  +'; %.3f sec/batch)')
-                    tf.logging.info(format_str % (datetime.datetime.now(),
-                                    self._step, loss_value, examples_per_sec,
-                                    sec_per_batch))
-
-
-        with tf.train.MonitoredTrainingSession(
-                checkpoint_dir=MODEL_DIR,
-                hooks=[_LoggerHook()],
-                save_checkpoint_secs=60,
-                config=tf.ConfigProto(log_device_placement=False)) as sess:
-            if checkpoint is not None:
-                saver.restore(sess, checkpoint.model_checkpoint_path)
-
-            #saver2.restore(sess, tf.train.latest_checkpoint(RESTORE_DIR))
-            print('initializing with variables from ' + RESTORE_DIR + ': ' +
-                    str(new_masks))
-
-            for i in range(TRAIN_STEPS):
-                sess.run(train_op)
-                sess.run(mask_update_op)
+def lr_test():
+    global_step = tf.train.get_or_create_global_step()
+    lr = tf.models.research.object_detection.utils.manual_stepping(global_step,
+        boundaries = [5, 20], rates = [0.1, 0.01, 0.001])
+    increment_op = tf.assign(global_step, global_step+1)
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        for i in range(30):
+            sess.run(increment_op)
+            print('global_step: ' + sess.run(global_step))
+            print('lr: ' + sess.run(lr))
 
 
 def main(arvg=None):
-    train_mnist()
+    lr_test()
 
 
 if __name__ == '__main__':

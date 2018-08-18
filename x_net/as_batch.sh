@@ -1,3 +1,4 @@
+#!/bin/sh
 #To be run on the TX-E1
 rm -f log* error.txt
 

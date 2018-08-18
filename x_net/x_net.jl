@@ -5,7 +5,7 @@ function conv(x::Int, j::Int, pv::Int, NN::Int)
 	return pre
 end
 
-function extended_mixed_radix_network(Ns::Array{Array{Int, 1}, 1})
+function emr_net(Ns::Array{Array{Int, 1}, 1})
 	NN = prod(Ns[1])
 
 	W = Array{SparseMatrixCSC{Int32, Int32}, 1}()
@@ -31,7 +31,7 @@ function extended_mixed_radix_network(Ns::Array{Array{Int, 1}, 1})
 	return W
 end
 
-function kronecker_emr_network(Ns::Array{Array{Int, 1}, 1}, B::Array{Int, 1}, D::Union{Array{Int, 1}, Void}=nothing)
+function kemr_net(Ns::Array{Array{Int, 1}, 1}, B::Array{Int, 1}, D::Union{Array{Int, 1}, Void}=nothing)
 	M = sum(length.(Ns))
 	gs = map(x -> gcd(B[x], B[x+1]), 1:M)
 	if D == nothing
@@ -44,7 +44,7 @@ function kronecker_emr_network(Ns::Array{Array{Int, 1}, 1}, B::Array{Int, 1}, D:
 		end
 	end
 
-	preW = extended_mixed_radix_network(Ns)
+	preW = emr_net(Ns)
 
         W = Array{SparseMatrixCSC{Int32, Int32}, 1}()
         for j in 1:length(preW)

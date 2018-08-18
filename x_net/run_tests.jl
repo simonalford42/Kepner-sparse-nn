@@ -2,7 +2,7 @@ include("x_net.jl")
 f = open("test/emr/emr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
-	W = map(x -> Array(x), extended_mixed_radix_network(eval(parse(line))))
+	W = map(x -> Array(x), emr_net(eval(parse(line))))
 	push!(Ws, W)
 end
 
@@ -48,7 +48,7 @@ f = open("test/kemr/kemr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
 for line in readlines(f)
 	toople = eval(parse(line))
-	W = map(x -> Array(x), kronecker_emr_network(toople[1], toople[2]))
+	W = map(x -> Array(x), kemr_net(toople[1], toople[2]))
 	push!(Ws, W)
 end
 
@@ -64,7 +64,7 @@ for preW in preWs
 	push!(pyWs, W)
 end
 
-if length(Ws) != length(pyWs)
+if 1 or length(Ws) != length(pyWs)
 	error("length(Ws) != length(pyWs)")
 end
 
