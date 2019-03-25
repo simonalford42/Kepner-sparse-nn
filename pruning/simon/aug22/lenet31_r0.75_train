@@ -1,0 +1,41 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-08-21 09:48:22.845347: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-21 09:48:23.300716: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 09:48:23.300868: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 09:48:23.300917: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-08-21 09:48:23.328280: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 09:48:23.328329: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 09:48:23.328367: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_prune_prune_ckpts/0.75/model.ckpt-16201
+INFO:tensorflow:Saving checkpoints for 0 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.75/model.ckpt.
+INFO:tensorflow:global_step/sec: 3.11515
+INFO:tensorflow:2018-08-21 09:49:32.446041: step 100, loss = 1.28 (808.8 examples/sec; 0.124 sec/batch)
+INFO:tensorflow:global_step/sec: 3.01574
+INFO:tensorflow:Saving checkpoints for 200 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.75/model.ckpt.
+INFO:tensorflow:2018-08-21 09:50:07.159963: step 200, loss = 1.28 (8494.1 examples/sec; 0.012 sec/batch)
+INFO:tensorflow:global_step/sec: 2.88866
+INFO:tensorflow:2018-08-21 09:50:40.114288: step 300, loss = 0.99 (6406.9 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 3.01785
+INFO:tensorflow:Saving checkpoints for 400 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.75/model.ckpt.
+INFO:tensorflow:2018-08-21 09:51:14.803732: step 400, loss = 0.85 (9281.5 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 2.92993
+INFO:tensorflow:2018-08-21 09:51:47.461229: step 500, loss = 0.79 (1042.9 examples/sec; 0.096 sec/batch)
+INFO:tensorflow:global_step/sec: 2.82831
+INFO:tensorflow:Saving checkpoints for 600 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.75/model.ckpt.
+INFO:tensorflow:2018-08-21 09:52:25.091027: step 600, loss = 0.62 (7771.3 examples/sec; 0.013 sec/batch)
+slurmstepd: error: *** JOB 470671 ON node-043 CANCELLED AT 2018-08-21T09:52:44 ***

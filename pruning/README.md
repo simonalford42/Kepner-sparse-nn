@@ -1,4 +1,4 @@
-# Model pruning: Training tensorflow models to have masked connections
+ Model pruning: Training tensorflow models to have masked connections
 
 This document describes the API that facilitates magnitude-based pruning of
 neural network's weight tensors. The API helps inject necessary tensorflow op

@@ -213,7 +213,7 @@ def inference(images):
   # conv2
   with tf.variable_scope('conv2') as scope:
     kernel = _variable_with_weight_decay(
-        'weights', shape=[5, 5, 64, l2_kernels], stddev=5e-2, wd=0.0)
+        'weights', shape=[5, 5, l1_kernels, l2_kernels], stddev=5e-2, wd=0.0)
     conv = tf.nn.conv2d(
         norm1, pruning.apply_mask(kernel, scope), [1, 1, 1, 1], padding='SAME')
     biases = _variable_on_cpu('biases', [l2_kernels], tf.constant_initializer(0.1))

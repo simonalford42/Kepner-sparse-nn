@@ -1,0 +1,13 @@
+testing
+done
+testing 2
+done 2
+python 3 done
+ERROR: LoadError: UndefVarError: prinln not defined
+Stacktrace:
+ [1] include_from_node1(::String) at ./loading.jl:569
+ [2] include(::String) at ./sysimg.jl:14
+ [3] process_options(::Base.JLOptions) at ./client.jl:305
+ [4] _start() at ./client.jl:371
+while loading /home/gridsan/salford/Kepner-sparse-nn/x_net/run_tests.jl, in expression starting on line 2
+julia 3 done

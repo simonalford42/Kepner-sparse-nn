@@ -1,0 +1,42 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Continuing training from step: 10401.0
+INFO:tensorflow:Summary name conv1/conv1_2/activation sparsity is illegal; using conv1/conv1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name conv2/conv2_2/activation sparsity is illegal; using conv2/conv2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name conv1/weight_loss (raw) is illegal; using conv1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name conv2/weight_loss (raw) is illegal; using conv2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name conv1/mask:0/sparsity is illegal; using conv1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name conv2/mask:0/sparsity is illegal; using conv2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-08-21 20:59:48.157719: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/lenet5_bang//lenet5_b0.99/model.ckpt-10401
+2018-08-21 20:59:48.842340: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 20:59:48.842462: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 20:59:48.842517: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-08-21 20:59:48.863615: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 20:59:48.863733: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 20:59:48.863787: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/lenet5_bang//lenet5_b0.99/model.ckpt-10401
+INFO:tensorflow:Saving checkpoints for 10401 into /home/gridsan/salford/Kepner-sparse-nn/saved/lenet5_bang/lenet5_b0.99/model.ckpt.
+INFO:tensorflow:2018-08-21 21:02:49.015092: step 10500, loss = 2.33 (49.9 examples/sec; 2.003 sec/batch)
+INFO:tensorflow:global_step/sec: 0.68445
+INFO:tensorflow:2018-08-21 21:05:12.653955: step 10600, loss = 2.35 (495.5 examples/sec; 0.202 sec/batch)
+INFO:tensorflow:global_step/sec: 0.695951
+INFO:tensorflow:Saving checkpoints for 10601 into /home/gridsan/salford/Kepner-sparse-nn/saved/lenet5_bang/lenet5_b0.99/model.ckpt.
+INFO:tensorflow:2018-08-21 21:07:36.849976: step 10700, loss = 2.31 (278.7 examples/sec; 0.359 sec/batch)
+INFO:tensorflow:global_step/sec: 0.695119
+INFO:tensorflow:Saving checkpoints for 10701 into /home/gridsan/salford/Kepner-sparse-nn/saved/lenet5_bang/lenet5_b0.99/model.ckpt.
+Extracting ../../data/mnist/train-images-idx3-ubyte.gz
+Extracting ../../data/mnist/train-labels-idx1-ubyte.gz
+Extracting ../../data/mnist/t10k-images-idx3-ubyte.gz
+Extracting ../../data/mnist/t10k-labels-idx1-ubyte.gz

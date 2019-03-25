@@ -13,48 +13,78 @@ import datetime
 sys.path.append(os.path.abspath('..'))
 from python import pruning as pruning
 from python.layers import core_layers as core
+from examples.cifar10 import cifar10_input
 import inference
 from mnist_input import MnistData
 import tensor_init
+import utils
 tf.logging.set_verbosity(tf.logging.INFO)
 
 BATCH_SIZE = 100
-
-HOME_DIR = os.path.abspath('../../saved') + '/'
-# MODEL_NAME = 'lenet5_rt'
-# MODEL_NAME = 'lenet300_100_'
-MODEL_NAME = 'emr_big_31_1'
-MODEL_DIR = HOME_DIR + MODEL_NAME
-# MODEL_FN = inference.lenet5
-MODEL_FN = inference.lenet3000_100
+# to use MNIST data, use DATA = 'MNIST'
+# to use CIFAR data, use DATA = 'CIFAR'
+DATA = 'MNIST'
+# where model is saved
+HOME_DIR = os.path.abspath('../../saved/') + '/'
+# inference function. must be compatible with DATA type.
+MODEL_FN = inference.lenet5
+MODEL_NAME = None # gets assigned when program starts
+MODEL_DIR = None # gets assigned when program starts
 
 # init dict for tensor init with numpy arrays
-INIT_DICT = tensor_init.rand_big_31()
+# if no initialization desired, set = None
+# example: INIT_DICT = tensor_init.emr_big_31()
+# must be compatible with MODEL_FN, DATA
+INIT_DICT = None
 
-TRAIN_STEPS = 5000
+TRAIN_STEPS = 10000
 assert TRAIN_STEPS % 100 == 0
-LEARNING_RATE = 0.1
-FLAGS = None
 
+# for CIFAR and MNIST, is 10000
 TEST_SET_SIZE = 10000
+# test this often while training. We don't use validation sets and just test on the test set.
 TEST_FREQ = 200
 assert TEST_FREQ % 100 == 0
 
+"""
+For restoring. the vars names come from the old model, as do the shapes. 
+"""
+RESTORE = False
+RESTORE_VARS = ['conv1/mask', 'conv2/mask', 'dense1/mask', 'logits/mask']
+RESTORE_SHAPES = [(5, 5, 1, 20), (5, 5, 20, 50), (1800, 384), (384, 10)]
+RESTORE_DIR = HOME_DIR + '../aug22/cifar_ppc_rt/0.5/'
+
 # pruning params
 PRUNING_ON = False
-BEGIN_PRUNING_STEP = 2000
-END_PRUNING_STEP = 5000
+BEGIN_PRUNING_STEP = 3000
+END_PRUNING_STEP = 10000
 INITIAL_SPARSITY = 0.0
-TARGET_SPARSITY = 0.9
+TARGET_SPARSITY = 0.96
 SPARSITY_FUNCTION_BEGIN_STEP = BEGIN_PRUNING_STEP
 SPARSITY_FUNCTION_END_STEP = END_PRUNING_STEP
 PRUNING_FREQUENCY = 200
 assert PRUNING_FREQUENCY % 100 == 0
 
+# if set to None, prune checkpointing will not be done
+# otherwise, will save a version of the model at that pruning level.
+# should be a list of sparsity levels i.e. [0.5, 0.75]
+# PRUNING_CKPTS = [0.5, 0.75, 0.9, 0.95]
+PRUNING_CKPTS = None
+
+PRUNING_HPARAMS = 'pruning_on='+str(PRUNING_ON) + ',' \
+    + 'begin_pruning_step=' + str(BEGIN_PRUNING_STEP) + ',' \
+    + 'end_pruning_step=' + str(END_PRUNING_STEP) + ',' \
+    + 'initial_sparsity=' + str(INITIAL_SPARSITY) + ',' \
+    + 'target_sparsity=' + str(TARGET_SPARSITY) + ',' \
+    + 'sparsity_function_begin_step=' + str(SPARSITY_FUNCTION_BEGIN_STEP) + ',' \
+    + 'sparsity_function_end_step=' + str(SPARSITY_FUNCTION_END_STEP) + ',' \
+    + 'pruning_frequency=' + str(PRUNING_FREQUENCY) \
 
 def get_assign_ops():
-    lw = tf.convert_to_tensor(np.ones((784, 10), dtype=np.float32))
     assign_ops = []
+    if not INIT_DICT:
+        return assign_ops
+
     for scope in INIT_DICT:
         var_dict = INIT_DICT[scope]
         with tf.variable_scope(scope, reuse=True):
@@ -65,33 +95,63 @@ def get_assign_ops():
     return assign_ops
 
 
-def train_mnist(num_steps=TRAIN_STEPS):
+def train_mnist():
+    """
+    The main function which trains. Does basically everything in one function.
+    """
     with tf.get_default_graph().as_default():
-        input_pipe = MnistData(BATCH_SIZE)
-
-        train_features, train_labels = input_pipe.build_train_data_tensor()
-
-        train_op, mask_update_op, loss = train_graph(train_features, train_labels)
-
-        assign_ops = get_assign_ops()
+        if DATA is 'MNIST':
+            input_pipe = MnistData(BATCH_SIZE)
+            train_features, train_labels = input_pipe.build_train_data_tensor()
+        elif DATA is 'CIFAR10':
+            train_features, train_labels = cifar10_input.distorted_inputs(BATCH_SIZE)
+        else:
+            raise ValueError('DATA value not supported: ' + DATA)
 
         checkpoint = tf.train.get_checkpoint_state(MODEL_DIR)
         if checkpoint is None:
-            print('No checkpoint found; training from scratch')
+            tf.logging.info('No checkpoint found; training from scratch')
             global_step = 0
         else:
-            saver = tf.train.Saver()
             # Assuming model_checkpoint_path looks something like:
             #       /my-favorite-path/cifar10_train/model.ckpt-0,
             # extract global_step from it.
+            # needs to be before graph setup
             global_step = float(checkpoint.model_checkpoint_path
                                 .split('/')[-1].split('-')[-1])
-        checkpoint_saver = tf.train.Saver()
+            tf.logging.info('Continuing training from step: ' + str(global_step))
+
+
+        train_op, mask_update_op, pruning_obj, loss = train_graph(
+            train_features, train_labels)
+
+        assign_ops = get_assign_ops()
+
         checkpoint_hook = basic_session_run_hooks.CheckpointSaverHook(
             MODEL_DIR, save_steps = TEST_FREQ)
 
+        # needs to be after graph setup
+        if checkpoint is None:
+            if RESTORE:
+                var_list = []
+                for var_str, shape in zip(RESTORE_VARS, RESTORE_SHAPES):
+                    i = var_str.index('/')
+                    scope = var_str[:i]
+                    with tf.variable_scope(scope, reuse=True):
+                        var = tf.get_variable(var_str[i+1:], shape=shape)
+                        var_list.append(var)
+
+                saver = tf.train.Saver(var_list)
+        else:
+#            cifar_vars = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES)
+#            cifar_vars = cifar_vars[:-1]
+#            for var in cifar_vars:
+#                tf.logging.info(str(var))
+#            saver2 = tf.train.Saver(cifar_vars)
+            saver2 = tf.train.Saver()
+
         class _LoggerHook(tf.train.SessionRunHook):
-            """Logs loss and runtime."""
+            """logs loss and runtime."""
 
             def begin(self):
                 self._step = -0.5 + global_step
@@ -101,7 +161,7 @@ def train_mnist(num_steps=TRAIN_STEPS):
                 # (trainop, mask_update_op) as one step
                 self._step += 0.5
                 self._start_time = time.time()
-                return tf.train.SessionRunArgs(loss)    # Asks for loss value.
+                return tf.train.SessionRunArgs(loss)    # asks for loss value.
 
             def after_run(self, run_context, run_values):
                 duration = time.time() - self._start_time
@@ -122,7 +182,13 @@ def train_mnist(num_steps=TRAIN_STEPS):
                 save_checkpoint_secs=None,
                 config=tf.ConfigProto(log_device_placement=False)) as sess:
             if checkpoint is not None:
-                saver.restore(sess, checkpoint.model_checkpoint_path)
+                saver2.restore(sess, checkpoint.model_checkpoint_path)
+            elif RESTORE:
+                ckpt_path = tf.train.latest_checkpoint(RESTORE_DIR)
+                if not ckpt_path:
+                    raise ValueError('Restore dir cant find checkpoint fles: '
+                        + RESTORE_DIR)
+                saver.restore(sess, ckpt_path)
 
             if INIT_DICT is not None:
                 sess.run(assign_ops)
@@ -132,30 +198,44 @@ def train_mnist(num_steps=TRAIN_STEPS):
                 tf.logging.info('Instantiated tensors with assign ops: '
                     + dict_str)
 
+            if PRUNING_CKPTS:
+                pruning_dir = MODEL_DIR + '/../' + MODEL_NAME + '_prune_ckpts/'
+                if not os.path.isdir(pruning_dir):
+                    os.mkdir(pruning_dir)
+
+                j = 0
+                max_j = len(PRUNING_CKPTS) 
+
             for i in range(TRAIN_STEPS):
                 sess.run(train_op)
                 sess.run(mask_update_op)
 
-
+                if (PRUNING_CKPTS and j < max_j
+                        and sess.run(pruning_obj._sparsity) > PRUNING_CKPTS[j]):
+                    tf.logging.info(
+                        'Saving pruning ckpt: ' + str(PRUNING_CKPTS[j]))
+                    new_dir = pruning_dir + str(PRUNING_CKPTS[j]) + '/'
+                    utils.duplicate_saved(MODEL_DIR, new_dir)
+                    j += 1
 
 
 def train_graph(features, labels):
-    global_step = tf.contrib.framework.get_or_create_global_step()
+    global_step = tf.train.get_or_create_global_step()
     labels = tf.cast(labels, tf.int64)
     logits = MODEL_FN(features)
     loss = calc_loss(logits, labels)
     predictions = tf.argmax(input=logits, axis=1)
     accuracy = tf.reduce_mean(tf.cast(
         tf.equal(predictions, labels), tf.float32))
-    tf.summary.scalar('accuracy', accuracy)
+    tf.summary.scalar('training accuracy', accuracy)
     train_op = train(loss, global_step)
     pruning_hparams = pruning.get_pruning_hparams().parse(
-        FLAGS.pruning_hparams)
+        PRUNING_HPARAMS)
     pruning_obj = pruning.Pruning(
         pruning_hparams, global_step=global_step)
     mask_update_op = pruning_obj.conditional_mask_update_op()
     pruning_obj.add_pruning_summaries()
-    return train_op, mask_update_op, loss
+    return train_op, mask_update_op, pruning_obj, loss
 
 
 def calc_loss(logits, labels):
@@ -170,7 +250,10 @@ def calc_loss(logits, labels):
 
 
 def train(total_loss, global_step):
-    lr = LEARNING_RATE
+#    lr = 0.02
+    lr = utils.manual_stepping(global_step, boundaries=[10000, 20000],
+        rates = [0.2, 0.1, 0.05])
+
     tf.summary.scalar('learning_rate', lr)
 
     # Generate moving averages of all losses and associated summaries.
@@ -231,39 +314,8 @@ def _add_loss_summaries(total_loss):
     return loss_averages_op
 
 
-def lr_test():
-    global_step = tf.train.get_or_create_global_step()
-    lr = tf.models.research.object_detection.utils.manual_stepping(global_step,
-        boundaries = [5, 20], rates = [0.1, 0.01, 0.001])
-    increment_op = tf.assign(global_step, global_step+1)
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
-        for i in range(30):
-            sess.run(increment_op)
-            print('global_step: ' + sess.run(global_step))
-            print('lr: ' + sess.run(lr))
-
-
-def main(arvg=None):
-    lr_test()
-
-
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        '--pruning_hparams',
-        type=str,
-        default='name=' + MODEL_NAME + ','
-        + 'begin_pruning_step=' + str(BEGIN_PRUNING_STEP) + ','
-        + 'end_pruning_step=' + str(END_PRUNING_STEP)+ ','
-        + 'initial_sparsity=' + str(INITIAL_SPARSITY)+ ','
-        + 'target_sparsity=' + str(TARGET_SPARSITY) + ','
-        + 'sparsity_function_begin_step=' + str(SPARSITY_FUNCTION_BEGIN_STEP)+ ','
-        + 'sparsity_function_end_step=' + str(SPARSITY_FUNCTION_END_STEP)+ ','
-        + 'pruning_frequency=' + str(PRUNING_FREQUENCY) + ','
-        + 'pruning_on=' + str(PRUNING_ON),
-        help="""Comma separated list of pruning-related hyperparameters"""  )
-
-    FLAGS, unparsed = parser.parse_known_args()
-    print('FLAGS: ' + str(FLAGS))
-    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+    MODEL_NAME = sys.argv[1]
+    MODEL_DIR = HOME_DIR + MODEL_NAME
+    tf.logging.info(MODEL_DIR)
+    train_mnist()

@@ -1,0 +1,307 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name conv1/conv1_2/activation sparsity is illegal; using conv1/conv1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name conv2/conv2_2/activation sparsity is illegal; using conv2/conv2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+2018-08-21 15:19:04.089738: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-200
+INFO:tensorflow:Model at step 200: acc = 0.3385
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-400
+INFO:tensorflow:Model at step 400: acc = 0.4325
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-600
+INFO:tensorflow:Model at step 600: acc = 0.4184
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-800
+INFO:tensorflow:Model at step 800: acc = 0.4814
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-1000
+INFO:tensorflow:Model at step 1000: acc = 0.5364
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-1200
+INFO:tensorflow:Model at step 1200: acc = 0.5283
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-1400
+INFO:tensorflow:Model at step 1400: acc = 0.5447
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-1600
+INFO:tensorflow:Model at step 1600: acc = 0.5366
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-1800
+INFO:tensorflow:Model at step 1800: acc = 0.5489
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-2000
+INFO:tensorflow:Model at step 2000: acc = 0.5551
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-2200
+INFO:tensorflow:Model at step 2200: acc = 0.5366
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-2400
+INFO:tensorflow:Model at step 2400: acc = 0.5962
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-2600
+INFO:tensorflow:Model at step 2600: acc = 0.6207
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-2800
+INFO:tensorflow:Model at step 2800: acc = 0.6163
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-3000
+INFO:tensorflow:Model at step 3000: acc = 0.642
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-3200
+INFO:tensorflow:Model at step 3200: acc = 0.5918
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-3400
+INFO:tensorflow:Model at step 3400: acc = 0.6162
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-3600
+INFO:tensorflow:Model at step 3600: acc = 0.6515
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-3800
+INFO:tensorflow:Model at step 3800: acc = 0.6396
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-4000
+INFO:tensorflow:Model at step 4000: acc = 0.6629
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-4200
+INFO:tensorflow:Model at step 4200: acc = 0.6424
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-4400
+INFO:tensorflow:Model at step 4400: acc = 0.6626
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-4600
+INFO:tensorflow:Model at step 4600: acc = 0.6632
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-4800
+INFO:tensorflow:Model at step 4800: acc = 0.6461
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-5000
+INFO:tensorflow:Model at step 5000: acc = 0.6619
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-5200
+INFO:tensorflow:Model at step 5200: acc = 0.6658
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-5400
+INFO:tensorflow:Model at step 5400: acc = 0.6728
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-5600
+INFO:tensorflow:Model at step 5600: acc = 0.6558
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-5800
+INFO:tensorflow:Model at step 5800: acc = 0.6645
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-6000
+INFO:tensorflow:Model at step 6000: acc = 0.6685
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-6200
+INFO:tensorflow:Model at step 6200: acc = 0.679
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-6400
+INFO:tensorflow:Model at step 6400: acc = 0.6611
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-6600
+INFO:tensorflow:Model at step 6600: acc = 0.6664
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-6800
+INFO:tensorflow:Model at step 6800: acc = 0.6391
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-7000
+INFO:tensorflow:Model at step 7000: acc = 0.6716
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-7200
+INFO:tensorflow:Model at step 7200: acc = 0.6574
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-7400
+INFO:tensorflow:Model at step 7400: acc = 0.6776
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-7600
+INFO:tensorflow:Model at step 7600: acc = 0.6675
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-7800
+INFO:tensorflow:Model at step 7800: acc = 0.6482
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-8000
+INFO:tensorflow:Model at step 8000: acc = 0.6805
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-8200
+INFO:tensorflow:Model at step 8200: acc = 0.666
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-8400
+INFO:tensorflow:Model at step 8400: acc = 0.6522
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-8600
+INFO:tensorflow:Model at step 8600: acc = 0.6495
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-8800
+INFO:tensorflow:Model at step 8800: acc = 0.6686
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-9000
+INFO:tensorflow:Model at step 9000: acc = 0.6696
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-9200
+INFO:tensorflow:Model at step 9200: acc = 0.6748
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-9400
+INFO:tensorflow:Model at step 9400: acc = 0.6819
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-9600
+INFO:tensorflow:Model at step 9600: acc = 0.6877
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-9800
+INFO:tensorflow:Model at step 9800: acc = 0.6723
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-10000
+INFO:tensorflow:Model at step 10000: acc = 0.6431
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-10200
+INFO:tensorflow:Model at step 10200: acc = 0.7053
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-10400
+INFO:tensorflow:Model at step 10400: acc = 0.7124
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-10600
+INFO:tensorflow:Model at step 10600: acc = 0.7165
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-10800
+INFO:tensorflow:Model at step 10800: acc = 0.7144
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-11000
+INFO:tensorflow:Model at step 11000: acc = 0.7095
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-11200
+INFO:tensorflow:Model at step 11200: acc = 0.7198
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-11400
+INFO:tensorflow:Model at step 11400: acc = 0.7189
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-11600
+INFO:tensorflow:Model at step 11600: acc = 0.7096
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-11800
+INFO:tensorflow:Model at step 11800: acc = 0.7051
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-12000
+INFO:tensorflow:Model at step 12000: acc = 0.7085
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-12200
+INFO:tensorflow:Model at step 12200: acc = 0.707
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-12400
+INFO:tensorflow:Model at step 12400: acc = 0.7145
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-12600
+INFO:tensorflow:Model at step 12600: acc = 0.6978
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-12800
+INFO:tensorflow:Model at step 12800: acc = 0.7046
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13000
+INFO:tensorflow:Model at step 13000: acc = 0.6724
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13200
+INFO:tensorflow:Model at step 13200: acc = 0.6962
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13400
+INFO:tensorflow:Model at step 13400: acc = 0.6957
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13600
+INFO:tensorflow:Model at step 13600: acc = 0.709
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13800
+INFO:tensorflow:Model at step 13800: acc = 0.7238
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-13800
+INFO:tensorflow:Model at step 14000: acc = 0.7237
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-14200
+INFO:tensorflow:Model at step 14200: acc = 0.7089
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-14400
+INFO:tensorflow:Model at step 14400: acc = 0.7178
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-14600
+INFO:tensorflow:Model at step 14600: acc = 0.6684
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-14800
+INFO:tensorflow:Model at step 14800: acc = 0.7156
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-15000
+INFO:tensorflow:Model at step 15000: acc = 0.7259
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-15200
+INFO:tensorflow:Model at step 15200: acc = 0.7111
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-15400
+INFO:tensorflow:Model at step 15400: acc = 0.7038
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-15600
+INFO:tensorflow:Model at step 15600: acc = 0.7209
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-15800
+INFO:tensorflow:Model at step 15800: acc = 0.7145
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-16000
+INFO:tensorflow:Model at step 16000: acc = 0.7164
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-16200
+INFO:tensorflow:Model at step 16200: acc = 0.711
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-16400
+INFO:tensorflow:Model at step 16400: acc = 0.7166
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-16600
+INFO:tensorflow:Model at step 16600: acc = 0.7246
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-16800
+INFO:tensorflow:Model at step 16800: acc = 0.7103
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-17000
+INFO:tensorflow:Model at step 17000: acc = 0.7073
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-17200
+INFO:tensorflow:Model at step 17200: acc = 0.7218
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-17400
+INFO:tensorflow:Model at step 17400: acc = 0.709
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-17600
+INFO:tensorflow:Model at step 17600: acc = 0.7226
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-17800
+INFO:tensorflow:Model at step 17800: acc = 0.7119
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-18000
+INFO:tensorflow:Model at step 18000: acc = 0.7077
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-18200
+INFO:tensorflow:Model at step 18200: acc = 0.7071
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-18400
+INFO:tensorflow:Model at step 18400: acc = 0.7119
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-18600
+INFO:tensorflow:Model at step 18600: acc = 0.7241
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-18800
+INFO:tensorflow:Model at step 18800: acc = 0.7241
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-19000
+INFO:tensorflow:Model at step 19000: acc = 0.7274
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-19200
+INFO:tensorflow:Model at step 19200: acc = 0.7137
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-19400
+INFO:tensorflow:Model at step 19400: acc = 0.7073
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-19600
+INFO:tensorflow:Model at step 19600: acc = 0.717
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-19800
+INFO:tensorflow:Model at step 19800: acc = 0.7066
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-20000
+INFO:tensorflow:Model at step 20000: acc = 0.7116
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-20200
+INFO:tensorflow:Model at step 20200: acc = 0.7262
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-20400
+INFO:tensorflow:Model at step 20400: acc = 0.7419
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-20600
+INFO:tensorflow:Model at step 20600: acc = 0.7443
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-20800
+INFO:tensorflow:Model at step 20800: acc = 0.7257
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-21000
+INFO:tensorflow:Model at step 21000: acc = 0.7239
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-21200
+INFO:tensorflow:Model at step 21200: acc = 0.7434
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-21400
+INFO:tensorflow:Model at step 21400: acc = 0.7419
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-21600
+INFO:tensorflow:Model at step 21600: acc = 0.7286
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-21800
+INFO:tensorflow:Model at step 21800: acc = 0.7385
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-22000
+INFO:tensorflow:Model at step 22000: acc = 0.7429
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-22200
+INFO:tensorflow:Model at step 22200: acc = 0.7409
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-22400
+INFO:tensorflow:Model at step 22400: acc = 0.7394
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-22600
+INFO:tensorflow:Model at step 22600: acc = 0.7355
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-22800
+INFO:tensorflow:Model at step 22800: acc = 0.7444
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-23000
+INFO:tensorflow:Model at step 23000: acc = 0.7423
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-23200
+INFO:tensorflow:Model at step 23200: acc = 0.7232
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-23400
+INFO:tensorflow:Model at step 23400: acc = 0.7381
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-23600
+INFO:tensorflow:Model at step 23600: acc = 0.7334
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-23800
+INFO:tensorflow:Model at step 23800: acc = 0.7399
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-24000
+INFO:tensorflow:Model at step 24000: acc = 0.7426
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-24200
+INFO:tensorflow:Model at step 24200: acc = 0.7308
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-24400
+INFO:tensorflow:Model at step 24400: acc = 0.7424
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-24600
+INFO:tensorflow:Model at step 24600: acc = 0.7435
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-24800
+INFO:tensorflow:Model at step 24800: acc = 0.7319
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-25000
+INFO:tensorflow:Model at step 25000: acc = 0.7389
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-25200
+INFO:tensorflow:Model at step 25200: acc = 0.7257
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-25400
+INFO:tensorflow:Model at step 25400: acc = 0.7477
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-25600
+INFO:tensorflow:Model at step 25600: acc = 0.7456
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-25800
+INFO:tensorflow:Model at step 25800: acc = 0.7385
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-26000
+INFO:tensorflow:Model at step 26000: acc = 0.7453
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-26200
+INFO:tensorflow:Model at step 26200: acc = 0.7426
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-26400
+INFO:tensorflow:Model at step 26400: acc = 0.7375
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-26600
+INFO:tensorflow:Model at step 26600: acc = 0.745
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-26800
+INFO:tensorflow:Model at step 26800: acc = 0.7363
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-27000
+INFO:tensorflow:Model at step 27000: acc = 0.7434
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-27200
+INFO:tensorflow:Model at step 27200: acc = 0.7292
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-27400
+INFO:tensorflow:Model at step 27400: acc = 0.7363
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-27600
+INFO:tensorflow:Model at step 27600: acc = 0.7434
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-27800
+INFO:tensorflow:Model at step 27800: acc = 0.7426
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-28000
+INFO:tensorflow:Model at step 28000: acc = 0.7383
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-28200
+INFO:tensorflow:Model at step 28200: acc = 0.7358
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-28400
+INFO:tensorflow:Model at step 28400: acc = 0.7331
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-28600
+INFO:tensorflow:Model at step 28600: acc = 0.7477
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-28800
+INFO:tensorflow:Model at step 28800: acc = 0.75
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-29000
+INFO:tensorflow:Model at step 29000: acc = 0.7394
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-29200
+INFO:tensorflow:Model at step 29200: acc = 0.7502
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-29400
+INFO:tensorflow:Model at step 29400: acc = 0.7477
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-29600
+INFO:tensorflow:Model at step 29600: acc = 0.7445
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-29800
+INFO:tensorflow:Model at step 29800: acc = 0.7368
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand_c_0.1/model.ckpt-30000
+INFO:tensorflow:Model at step 30000: acc = 0.7464

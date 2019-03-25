@@ -1,0 +1,52 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name conv1/conv1_2/activation sparsity is illegal; using conv1/conv1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name conv2/conv2_2/activation sparsity is illegal; using conv2/conv2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name fc1/fc1_2/activation sparsity is illegal; using fc1/fc1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name conv1/weight_loss (raw) is illegal; using conv1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name conv2/weight_loss (raw) is illegal; using conv2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name fc1/weight_loss (raw) is illegal; using fc1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name conv1/mask:0/sparsity is illegal; using conv1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name conv2/mask:0/sparsity is illegal; using conv2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name fc1/mask:0/sparsity is illegal; using fc1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:<tf.Variable 'global_step:0' shape=() dtype=int64_ref>
+INFO:tensorflow:<tf.Variable 'conv1/weights:0' shape=(5, 5, 3, 20) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/mask:0' shape=(5, 5, 3, 20) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/threshold:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/biases:0' shape=(20,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/weights:0' shape=(5, 5, 20, 50) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/mask:0' shape=(5, 5, 20, 50) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/threshold:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/biases:0' shape=(50,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/weights:0' shape=(1800, 384) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/biases:0' shape=(384,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/mask:0' shape=(1800, 384) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/threshold:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/weights:0' shape=(384, 10) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/biases:0' shape=(10,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/mask:0' shape=(384, 10) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/threshold:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/weight_loss/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/weight_loss/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/weight_loss/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/weight_loss/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'cross_entropy/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'total_loss/avg:0' shape=() dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/weights/ExponentialMovingAverage:0' shape=(5, 5, 3, 20) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv1/biases/ExponentialMovingAverage:0' shape=(20,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/weights/ExponentialMovingAverage:0' shape=(5, 5, 20, 50) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'conv2/biases/ExponentialMovingAverage:0' shape=(50,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/weights/ExponentialMovingAverage:0' shape=(1800, 384) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'fc1/biases/ExponentialMovingAverage:0' shape=(384,) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/weights/ExponentialMovingAverage:0' shape=(384, 10) dtype=float32_ref>
+INFO:tensorflow:<tf.Variable 'logits/biases/ExponentialMovingAverage:0' shape=(10,) dtype=float32_ref>
+2018-08-21 20:18:56.036408: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune3//cifar_b0.5/model.ckpt-30000
+slurmstepd: error: *** JOB 471009 ON node-047 CANCELLED AT 2018-08-21T21:08:45 ***

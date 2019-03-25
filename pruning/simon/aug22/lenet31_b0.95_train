@@ -1,0 +1,40 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Continuing training from step: 15000.0
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-08-21 17:03:49.216870: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_b0.95/model.ckpt-15000
+2018-08-21 17:03:49.677984: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 17:03:49.678065: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 17:03:49.678110: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-08-21 17:03:49.693849: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 17:03:49.693895: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 17:03:49.693931: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_b0.95/model.ckpt-15000
+INFO:tensorflow:2018-08-21 17:04:17.170646: step 15000, loss = 0.29 (3.6 examples/sec; 27.474 sec/batch)
+INFO:tensorflow:Saving checkpoints for 15000 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_b0.95/model.ckpt.
+INFO:tensorflow:global_step/sec: 5.52784
+INFO:tensorflow:2018-08-21 17:04:35.372730: step 15100, loss = 1.74 (891.2 examples/sec; 0.112 sec/batch)
+INFO:tensorflow:global_step/sec: 4.47241
+INFO:tensorflow:Saving checkpoints for 15200 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_b0.95/model.ckpt.
+INFO:tensorflow:2018-08-21 17:04:59.211882: step 15200, loss = 1.70 (9065.4 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 3.74721
+INFO:tensorflow:2018-08-21 17:05:24.372326: step 15300, loss = 1.74 (1519.4 examples/sec; 0.066 sec/batch)
+INFO:tensorflow:Saving checkpoints for 15300 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_b0.95/model.ckpt.
+Extracting ../../data/mnist/train-images-idx3-ubyte.gz
+Extracting ../../data/mnist/train-labels-idx1-ubyte.gz
+Extracting ../../data/mnist/t10k-images-idx3-ubyte.gz
+Extracting ../../data/mnist/t10k-labels-idx1-ubyte.gz

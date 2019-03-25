@@ -1,0 +1,160 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+2018-08-21 17:15:56.483718: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-200
+INFO:tensorflow:Model at step 200: acc = 0.2108
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-400
+INFO:tensorflow:Model at step 400: acc = 0.634
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-600
+INFO:tensorflow:Model at step 600: acc = 0.7973
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-800
+INFO:tensorflow:Model at step 800: acc = 0.8144
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-1000
+INFO:tensorflow:Model at step 1000: acc = 0.8241
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-1200
+INFO:tensorflow:Model at step 1200: acc = 0.8136
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-1400
+INFO:tensorflow:Model at step 1400: acc = 0.8813
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-1600
+INFO:tensorflow:Model at step 1600: acc = 0.9263
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-1800
+INFO:tensorflow:Model at step 1800: acc = 0.9344
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-2000
+INFO:tensorflow:Model at step 2000: acc = 0.9333
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-2000
+INFO:tensorflow:Model at step 2200: acc = 0.9333
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-2400
+INFO:tensorflow:Model at step 2400: acc = 0.933
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-2600
+INFO:tensorflow:Model at step 2600: acc = 0.9375
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-2800
+INFO:tensorflow:Model at step 2800: acc = 0.9419
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3000
+INFO:tensorflow:Model at step 3000: acc = 0.936
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3200
+INFO:tensorflow:Model at step 3200: acc = 0.9474
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3400
+INFO:tensorflow:Model at step 3400: acc = 0.9448
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3600
+INFO:tensorflow:Model at step 3600: acc = 0.9461
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3800
+INFO:tensorflow:Model at step 3800: acc = 0.9472
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-3800
+INFO:tensorflow:Model at step 4000: acc = 0.9472
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-4000
+INFO:tensorflow:Model at step 4200: acc = 0.9503
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-4400
+INFO:tensorflow:Model at step 4400: acc = 0.9401
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-4400
+INFO:tensorflow:Model at step 4600: acc = 0.9401
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-4800
+INFO:tensorflow:Model at step 4800: acc = 0.9463
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-5000
+INFO:tensorflow:Model at step 5000: acc = 0.9478
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-5000
+INFO:tensorflow:Model at step 5200: acc = 0.9478
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-5400
+INFO:tensorflow:Model at step 5400: acc = 0.9559
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-5600
+INFO:tensorflow:Model at step 5600: acc = 0.9541
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-5800
+INFO:tensorflow:Model at step 5800: acc = 0.9517
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6000
+INFO:tensorflow:Model at step 6000: acc = 0.9529
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6200
+INFO:tensorflow:Model at step 6200: acc = 0.9543
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6200
+INFO:tensorflow:Model at step 6400: acc = 0.9543
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6600
+INFO:tensorflow:Model at step 6600: acc = 0.951
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6800
+INFO:tensorflow:Model at step 6800: acc = 0.951
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-6800
+INFO:tensorflow:Model at step 7000: acc = 0.951
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-7000
+INFO:tensorflow:Model at step 7200: acc = 0.9536
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-7400
+INFO:tensorflow:Model at step 7400: acc = 0.9536
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-7400
+INFO:tensorflow:Model at step 7600: acc = 0.9536
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-7800
+INFO:tensorflow:Model at step 7800: acc = 0.9553
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-8000
+INFO:tensorflow:Model at step 8000: acc = 0.9527
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-8200
+INFO:tensorflow:Model at step 8200: acc = 0.9542
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-8200
+INFO:tensorflow:Model at step 8400: acc = 0.9542
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-8600
+INFO:tensorflow:Model at step 8600: acc = 0.9539
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-8800
+INFO:tensorflow:Model at step 8800: acc = 0.9515
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-9000
+INFO:tensorflow:Model at step 9000: acc = 0.952
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-9200
+INFO:tensorflow:Model at step 9200: acc = 0.9541
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-9400
+INFO:tensorflow:Model at step 9400: acc = 0.9542
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-9600
+INFO:tensorflow:Model at step 9600: acc = 0.9539
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-9800
+INFO:tensorflow:Model at step 9800: acc = 0.9566
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10000
+INFO:tensorflow:Model at step 10000: acc = 0.9559
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10200
+INFO:tensorflow:Model at step 10200: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10200
+INFO:tensorflow:Model at step 10400: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10600
+INFO:tensorflow:Model at step 10600: acc = 0.9566
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10800
+INFO:tensorflow:Model at step 10800: acc = 0.9562
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-10800
+INFO:tensorflow:Model at step 11000: acc = 0.9562
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-11200
+INFO:tensorflow:Model at step 11200: acc = 0.9544
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-11400
+INFO:tensorflow:Model at step 11400: acc = 0.9562
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-11400
+INFO:tensorflow:Model at step 11600: acc = 0.9562
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-11800
+INFO:tensorflow:Model at step 11800: acc = 0.9569
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-11800
+INFO:tensorflow:Model at step 12000: acc = 0.9569
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-12000
+INFO:tensorflow:Model at step 12200: acc = 0.9562
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-12400
+INFO:tensorflow:Model at step 12400: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-12400
+INFO:tensorflow:Model at step 12600: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-12800
+INFO:tensorflow:Model at step 12800: acc = 0.9561
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-12800
+INFO:tensorflow:Model at step 13000: acc = 0.9561
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-13200
+INFO:tensorflow:Model at step 13200: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-13400
+INFO:tensorflow:Model at step 13400: acc = 0.9545
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-13400
+INFO:tensorflow:Model at step 13600: acc = 0.9545
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-13800
+INFO:tensorflow:Model at step 13800: acc = 0.9563
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-14000
+INFO:tensorflow:Model at step 14000: acc = 0.9572
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-14000
+INFO:tensorflow:Model at step 14200: acc = 0.9572
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-14400
+INFO:tensorflow:Model at step 14400: acc = 0.957
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-14600
+INFO:tensorflow:Model at step 14600: acc = 0.9546
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-14800
+INFO:tensorflow:Model at step 14800: acc = 0.9558
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune2/lenet31_br0.95/model.ckpt-15000
+INFO:tensorflow:Model at step 15000: acc = 0.9565
+Extracting ../../data/mnist/train-images-idx3-ubyte.gz
+Extracting ../../data/mnist/train-labels-idx1-ubyte.gz
+Extracting ../../data/mnist/t10k-images-idx3-ubyte.gz
+Extracting ../../data/mnist/t10k-labels-idx1-ubyte.gz

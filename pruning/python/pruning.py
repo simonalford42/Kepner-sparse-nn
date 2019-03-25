@@ -198,11 +198,11 @@ def get_pruning_hparams():
 
   """
   return hparam.HParams(
-      name='lenet5_test',
+      name='lenet5_test', # for legacy compatibility, keep like this
       begin_pruning_step=1000,
       end_pruning_step=-5000,
       do_not_prune=[''],
-      threshold_decay=0.9,
+      threshold_decay=0,
       pruning_frequency=200,
       nbins=2560,
       block_height=1,
@@ -214,9 +214,9 @@ def get_pruning_hparams():
       sparsity_function_end_step=5000,
       sparsity_function_exponent=3,
       use_tpu=False,
-      pruning_on = True)
+      pruning_on = False)
 
-  
+
 class Pruning(object):
 
   def __init__(self, spec=None, global_step=None, sparsity=None):

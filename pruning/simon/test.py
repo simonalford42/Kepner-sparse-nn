@@ -10,7 +10,7 @@ import train
 from mnist_input import MnistData
 tf.logging.set_verbosity(tf.logging.INFO)
 
-MODEL_DIR = train.MODEL_DIR
+MODEL_DIR = None # gets assigned in main method
 MODEL_FN = train.MODEL_FN
 
 TRAIN_STEPS = train.TRAIN_STEPS
@@ -101,5 +101,7 @@ def test_graph(features, labels):
 
 
 if __name__ == '__main__':
+    MODEL_NAME = sys.argv[1]
+    MODEL_DIR = train.HOME_DIR + MODEL_NAME
     monitor_test_mnist()
 

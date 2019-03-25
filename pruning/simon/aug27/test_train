@@ -1,0 +1,155 @@
+/state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:/home/gridsan/salford/Kepner-sparse-nn/saved/test
+WARNING:tensorflow:From /home/gridsan/salford/Kepner-sparse-nn/pruning/simon/mnist_input.py:35: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+INFO:tensorflow:Continuing training from step: 5601.0
+INFO:tensorflow:Summary name conv1/conv1_2/activation sparsity is illegal; using conv1/conv1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name conv2/conv2_2/activation sparsity is illegal; using conv2/conv2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name conv1/weight_loss (raw) is illegal; using conv1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name conv2/weight_loss (raw) is illegal; using conv2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+/state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:/home/gridsan/salford/Kepner-sparse-nn/saved/test
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name conv1/mask:0/sparsity is illegal; using conv1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name conv2/mask:0/sparsity is illegal; using conv2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Continuing training from step: 5601.0
+INFO:tensorflow:Summary name conv1/conv1_2/activation sparsity is illegal; using conv1/conv1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name conv2/conv2_2/activation sparsity is illegal; using conv2/conv2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name conv1/weight_loss (raw) is illegal; using conv1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name conv2/weight_loss (raw) is illegal; using conv2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name conv1/mask:0/sparsity is illegal; using conv1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name conv2/mask:0/sparsity is illegal; using conv2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+2018-10-21 21:58:44.852633: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-10-21 21:58:45.053823: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt-5601
+2018-10-21 21:58:45.656172: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-10-21 21:58:45.658370: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-10-21 21:58:45.658427: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-10-21 21:58:45.676505: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-10-21 21:58:45.676564: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-10-21 21:58:45.676596: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt-5601
+2018-10-21 21:58:45.861806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:08:00.0
+totalMemory: 15.78GiB freeMemory: 15.37GiB
+2018-10-21 21:58:46.457099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.78GiB freeMemory: 15.37GiB
+2018-10-21 21:58:46.457212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2018-10-21 21:58:46.994670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-21 21:58:46.996215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2018-10-21 21:58:46.996240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N Y 
+2018-10-21 21:58:46.996252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   Y N 
+2018-10-21 21:58:46.996874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14883 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 7.0)
+2018-10-21 21:58:47.166034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14883 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt-5601
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt-5601
+INFO:tensorflow:Saving checkpoints for 5601 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 5601 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 21:59:49.964540: step 5700, loss = 0.06 (4715.7 examples/sec; 0.021 sec/batch)
+INFO:tensorflow:global_step/sec: 11.4445
+INFO:tensorflow:2018-10-21 21:59:52.481589: step 5800, loss = 0.07 (10112.4 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 39.7079
+INFO:tensorflow:Saving checkpoints for 5801 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 21:59:57.435796: step 5900, loss = 0.05 (9691.5 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 20.1865
+INFO:tensorflow:2018-10-21 22:00:00.030918: step 6000, loss = 0.14 (8593.3 examples/sec; 0.012 sec/batch)
+INFO:tensorflow:global_step/sec: 38.5318
+INFO:tensorflow:Saving checkpoints for 6001 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:05.420446: step 6100, loss = 0.15 (9820.2 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 18.5569
+INFO:tensorflow:2018-10-21 22:00:07.879715: step 6200, loss = 0.06 (9834.5 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 40.658
+INFO:tensorflow:Saving checkpoints for 6201 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:13.247643: step 6300, loss = 0.15 (8991.6 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 18.6096
+INFO:tensorflow:2018-10-21 22:00:15.741124: step 6400, loss = 0.20 (9168.5 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 40.1747
+INFO:tensorflow:Saving checkpoints for 6401 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:20.795679: step 6500, loss = 0.10 (9489.4 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 19.7922
+INFO:tensorflow:2018-10-21 22:00:23.288774: step 6600, loss = 0.09 (9254.5 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 39.9775
+INFO:tensorflow:Saving checkpoints for 6601 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:28.122347: step 6700, loss = 0.06 (9779.2 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 20.7235
+INFO:tensorflow:2018-10-21 22:00:30.611049: step 6800, loss = 0.07 (10073.0 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 40.1936
+INFO:tensorflow:Saving checkpoints for 6801 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:36.448853: step 6900, loss = 0.09 (9648.1 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 17.1053
+INFO:tensorflow:2018-10-21 22:00:39.017939: step 7000, loss = 0.05 (10601.9 examples/sec; 0.009 sec/batch)
+INFO:tensorflow:global_step/sec: 39.0288
+INFO:tensorflow:Saving checkpoints for 7001 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:44.529160: step 7100, loss = 0.08 (10483.4 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 18.1494
+INFO:tensorflow:2018-10-21 22:00:47.009878: step 7200, loss = 0.11 (10429.7 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 40.2892
+INFO:tensorflow:Saving checkpoints for 7201 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:52.053640: step 7300, loss = 0.08 (10774.5 examples/sec; 0.009 sec/batch)
+INFO:tensorflow:global_step/sec: 19.8326
+INFO:tensorflow:2018-10-21 22:00:54.490499: step 7400, loss = 0.10 (10122.1 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 40.9641
+INFO:tensorflow:Saving checkpoints for 7401 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:00:57.951904: step 5700, loss = 0.05 (81.7 examples/sec; 1.224 sec/batch)
+INFO:tensorflow:global_step/sec: 1.25452
+INFO:tensorflow:2018-10-21 22:01:00.887475: step 7500, loss = 0.16 (11211.1 examples/sec; 0.009 sec/batch)
+INFO:tensorflow:global_step/sec: 15.6376
+INFO:tensorflow:2018-10-21 22:01:03.385061: step 7600, loss = 0.08 (11063.6 examples/sec; 0.009 sec/batch)
+INFO:tensorflow:global_step/sec: 40.0591
+INFO:tensorflow:Saving checkpoints for 7601 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:01:08.368803: step 7700, loss = 0.07 (10036.4 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 20.0605
+INFO:tensorflow:2018-10-21 22:01:10.841847: step 7800, loss = 0.05 (9621.1 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 40.4577
+INFO:tensorflow:Saving checkpoints for 7801 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:01:16.545278: step 7900, loss = 0.05 (7088.6 examples/sec; 0.014 sec/batch)
+INFO:tensorflow:global_step/sec: 17.5289
+INFO:tensorflow:2018-10-21 22:01:19.160455: step 8000, loss = 0.09 (9328.1 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 38.2052
+INFO:tensorflow:Saving checkpoints for 8001 into /home/gridsan/salford/Kepner-sparse-nn/saved/test/model.ckpt.
+INFO:tensorflow:2018-10-21 22:01:23.723567: step 8100, loss = 0.06 (9636.8 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 21.9149
+slurmstepd: error: *** JOB 27424 ON r8-pc-c22-32 CANCELLED AT 2018-10-21T22:01:25 ***
+slurmstepd: error: *** JOB 27425 ON node-046 CANCELLED AT 2018-10-21T22:01:25 ***

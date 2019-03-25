@@ -1,0 +1,306 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+2018-08-20 03:29:12.683159: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-1800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-2000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-1000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-1200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-1400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-2200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-1600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-1800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-2400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-2600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-2800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-3200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-3400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-2800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-3600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-3800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-4000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-3000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-4200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-4400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-4600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-3200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-4800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-5000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-5200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-5400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-3400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-5600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-5800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-6000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-3600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-6200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-6400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-6600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-3600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-6800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-7000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-7200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-4000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-7400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-7600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-7800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-4200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-4400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-4400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-8800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-9200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-4600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-9400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-9600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-9800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-10000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-10200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-10400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-10600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-10800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-11000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-11200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-11400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-11600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-11800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-5800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-6200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-6400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-12800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-6400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-13200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-13400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-6600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-13600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-7000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-13800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-14000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-7200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-14200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-14400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-7200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-14600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-7400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-14600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug21/rand31_100/model.ckpt-15000
+Extracting ../../data/mnist/train-images-idx3-ubyte.gz
+Extracting ../../data/mnist/train-labels-idx1-ubyte.gz
+Extracting ../../data/mnist/t10k-images-idx3-ubyte.gz
+Extracting ../../data/mnist/t10k-labels-idx1-ubyte.gz
+Model at step 200: acc = 0.4016
+Model at step 400: acc = 0.5288
+Model at step 600: acc = 0.5448
+Model at step 800: acc = 0.536
+Model at step 1000: acc = 0.5538
+Model at step 1200: acc = 0.5519
+Model at step 1400: acc = 0.557
+Model at step 1600: acc = 0.5592
+Model at step 1800: acc = 0.5609
+Model at step 2000: acc = 0.5586
+Model at step 2200: acc = 0.5612
+Model at step 2400: acc = 0.5547
+Model at step 2600: acc = 0.5602
+Model at step 2800: acc = 0.5688
+Model at step 3000: acc = 0.5689
+Model at step 3200: acc = 0.569
+Model at step 3400: acc = 0.5617
+Model at step 3600: acc = 0.5677
+Model at step 3800: acc = 0.5694
+Model at step 4000: acc = 0.571
+Model at step 4200: acc = 0.5698
+Model at step 4400: acc = 0.5678
+Model at step 4600: acc = 0.5594
+Model at step 4800: acc = 0.5676
+Model at step 5000: acc = 0.5734
+Model at step 5200: acc = 0.5721
+Model at step 5400: acc = 0.5734
+Model at step 5600: acc = 0.5727
+Model at step 5800: acc = 0.5707
+Model at step 6000: acc = 0.5735
+Model at step 6200: acc = 0.5726
+Model at step 6400: acc = 0.5735
+Model at step 6600: acc = 0.5727
+Model at step 6800: acc = 0.5697
+Model at step 7000: acc = 0.5729
+Model at step 7200: acc = 0.5748
+Model at step 7400: acc = 0.5708
+Model at step 7600: acc = 0.5727
+Model at step 7800: acc = 0.5736
+Model at step 8000: acc = 0.5717
+Model at step 8200: acc = 0.574
+Model at step 8400: acc = 0.5731
+Model at step 8600: acc = 0.5741
+Model at step 8800: acc = 0.5735
+Model at step 9000: acc = 0.5735
+Model at step 9200: acc = 0.5725
+Model at step 9400: acc = 0.5747
+Model at step 9600: acc = 0.5722
+Model at step 9800: acc = 0.5732
+Model at step 10000: acc = 0.5739
+Model at step 10200: acc = 0.574
+Model at step 10400: acc = 0.5749
+Model at step 10600: acc = 0.5746
+Model at step 10800: acc = 0.5742
+Model at step 11000: acc = 0.5747
+Model at step 11200: acc = 0.5742
+Model at step 11400: acc = 0.5741
+Model at step 11600: acc = 0.5748
+Model at step 11800: acc = 0.5743
+Model at step 12000: acc = 0.5745
+Model at step 12200: acc = 0.5744
+Model at step 12400: acc = 0.5741
+Model at step 12600: acc = 0.5749
+Model at step 12800: acc = 0.5747
+Model at step 13000: acc = 0.5747
+Model at step 13200: acc = 0.5747
+Model at step 13400: acc = 0.5744
+Model at step 13600: acc = 0.5743
+Model at step 13800: acc = 0.575
+Model at step 14000: acc = 0.5746
+Model at step 14200: acc = 0.5744
+Model at step 14400: acc = 0.5743
+Model at step 14600: acc = 0.5743
+Model at step 14800: acc = 0.5743
+Model at step 15000: acc = 0.5748
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-7600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-8800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-9200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-9400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-9400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-9600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-10000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-10200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-10400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-10600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-10600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-11000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-11000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-11200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-11600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-11600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-12000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-12200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-12400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-12600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-12600
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13000
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-13800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-14200
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-14400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-14400
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-14800
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/aug20/rand31_100/model.ckpt-14800
+Extracting ../../data/mnist/train-images-idx3-ubyte.gz
+Extracting ../../data/mnist/train-labels-idx1-ubyte.gz
+Extracting ../../data/mnist/t10k-images-idx3-ubyte.gz
+Extracting ../../data/mnist/t10k-labels-idx1-ubyte.gz
+Model at step 200: acc = 0.1028
+Model at step 400: acc = 0.1894
+Model at step 600: acc = 0.1856
+Model at step 800: acc = 0.2515
+Model at step 1000: acc = 0.3307
+Model at step 1200: acc = 0.4114
+Model at step 1400: acc = 0.4413
+Model at step 1600: acc = 0.4414
+Model at step 1800: acc = 0.4989
+Model at step 2000: acc = 0.5141
+Model at step 2200: acc = 0.5139
+Model at step 2400: acc = 0.521
+Model at step 2600: acc = 0.5257
+Model at step 2800: acc = 0.5298
+Model at step 3000: acc = 0.529
+Model at step 3200: acc = 0.5314
+Model at step 3400: acc = 0.5294
+Model at step 3600: acc = 0.5341
+Model at step 3800: acc = 0.5342
+Model at step 4000: acc = 0.5313
+Model at step 4200: acc = 0.5379
+Model at step 4400: acc = 0.5306
+Model at step 4600: acc = 0.5306
+Model at step 4800: acc = 0.5371
+Model at step 5000: acc = 0.5423
+Model at step 5200: acc = 0.5423
+Model at step 5400: acc = 0.5428
+Model at step 5600: acc = 0.5391
+Model at step 5800: acc = 0.5404
+Model at step 6000: acc = 0.543
+Model at step 6200: acc = 0.5392
+Model at step 6400: acc = 0.5444
+Model at step 6600: acc = 0.5444
+Model at step 6800: acc = 0.5419
+Model at step 7000: acc = 0.5439
+Model at step 7200: acc = 0.5463
+Model at step 7400: acc = 0.5463
+Model at step 7600: acc = 0.545
+Model at step 7800: acc = 0.5428
+Model at step 8000: acc = 0.5457
+Model at step 8200: acc = 0.5451
+Model at step 8400: acc = 0.5425
+Model at step 8600: acc = 0.547
+Model at step 8800: acc = 0.543
+Model at step 9000: acc = 0.543
+Model at step 9200: acc = 0.5442
+Model at step 9400: acc = 0.5479
+Model at step 9600: acc = 0.5479
+Model at step 9800: acc = 0.5452
+Model at step 10000: acc = 0.5431
+Model at step 10200: acc = 0.5462
+Model at step 10400: acc = 0.5456
+Model at step 10600: acc = 0.5454
+Model at step 10800: acc = 0.5454
+Model at step 11000: acc = 0.5464
+Model at step 11200: acc = 0.5464
+Model at step 11400: acc = 0.5467
+Model at step 11600: acc = 0.5469
+Model at step 11800: acc = 0.5469
+Model at step 12000: acc = 0.5456
+Model at step 12200: acc = 0.5461
+Model at step 12400: acc = 0.5467
+Model at step 12600: acc = 0.5455
+Model at step 12800: acc = 0.5455
+Model at step 13000: acc = 0.5465
+Model at step 13200: acc = 0.5462
+Model at step 13400: acc = 0.5462
+Model at step 13600: acc = 0.5457
+Model at step 13800: acc = 0.547
+Model at step 14000: acc = 0.5469
+Model at step 14200: acc = 0.5456
+Model at step 14400: acc = 0.5463
+Model at step 14600: acc = 0.5463
+Model at step 14800: acc = 0.5453
+Model at step 15000: acc = 0.5452

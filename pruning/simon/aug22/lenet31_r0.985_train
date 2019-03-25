@@ -1,0 +1,53 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Updating masks.
+INFO:tensorflow:Summary name dense1/mask:0/sparsity is illegal; using dense1/mask_0/sparsity instead.
+INFO:tensorflow:Summary name dense2/mask:0/sparsity is illegal; using dense2/mask_0/sparsity instead.
+INFO:tensorflow:Summary name logits/mask:0/sparsity is illegal; using logits/mask_0/sparsity instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-08-21 09:49:21.024934: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-21 09:49:21.500462: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 09:49:21.500572: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 09:49:21.500611: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-08-21 09:49:21.515265: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-21 09:49:21.515313: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-21 09:49:21.515346: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Restoring parameters from /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_prune_prune_ckpts/0.985/model.ckpt-29801
+INFO:tensorflow:Saving checkpoints for 0 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:global_step/sec: 6.83099
+INFO:tensorflow:2018-08-21 09:50:05.454432: step 100, loss = 2.84 (8531.6 examples/sec; 0.012 sec/batch)
+INFO:tensorflow:global_step/sec: 7.40841
+INFO:tensorflow:Saving checkpoints for 200 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:2018-08-21 09:50:19.647034: step 200, loss = 2.11 (15634.6 examples/sec; 0.006 sec/batch)
+INFO:tensorflow:global_step/sec: 7.46113
+INFO:tensorflow:2018-08-21 09:50:32.357253: step 300, loss = 1.46 (7406.8 examples/sec; 0.014 sec/batch)
+INFO:tensorflow:global_step/sec: 7.97928
+INFO:tensorflow:Saving checkpoints for 400 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:2018-08-21 09:50:46.459519: step 400, loss = 1.28 (7660.4 examples/sec; 0.013 sec/batch)
+INFO:tensorflow:global_step/sec: 6.67602
+INFO:tensorflow:2018-08-21 09:50:59.896377: step 500, loss = 1.07 (2415.5 examples/sec; 0.041 sec/batch)
+INFO:tensorflow:global_step/sec: 8.31984
+INFO:tensorflow:Saving checkpoints for 600 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:2018-08-21 09:51:12.939130: step 600, loss = 0.79 (11322.5 examples/sec; 0.009 sec/batch)
+INFO:tensorflow:global_step/sec: 7.13022
+INFO:tensorflow:2018-08-21 09:51:25.915765: step 700, loss = 0.91 (6162.2 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 7.68143
+INFO:tensorflow:Saving checkpoints for 800 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:2018-08-21 09:51:39.782685: step 800, loss = 0.78 (16194.2 examples/sec; 0.006 sec/batch)
+INFO:tensorflow:global_step/sec: 7.32439
+INFO:tensorflow:2018-08-21 09:51:52.585963: step 900, loss = 1.06 (6618.1 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 8.49385
+INFO:tensorflow:Saving checkpoints for 1000 into /home/gridsan/salford/Kepner-sparse-nn/saved/prune/lenet31_r0.985/model.ckpt.
+INFO:tensorflow:2018-08-21 09:52:05.487072: step 1000, loss = 0.78 (3471.5 examples/sec; 0.029 sec/batch)
+INFO:tensorflow:global_step/sec: 7.01458
+INFO:tensorflow:2018-08-21 09:52:18.615798: step 1100, loss = 0.79 (6373.5 examples/sec; 0.016 sec/batch)
+slurmstepd: error: *** JOB 470677 ON node-056 CANCELLED AT 2018-08-21T09:52:31 ***

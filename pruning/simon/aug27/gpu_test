@@ -1,0 +1,2471 @@
+/state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /home/gridsan/salford/Kepner-sparse-nn/vision_networks/models/dense_net.py:356: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+
+2018-10-21 23:10:27.300381: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-10-21 23:10:30.861587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:08:00.0
+totalMemory: 15.78GiB freeMemory: 15.37GiB
+2018-10-21 23:10:32.426231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.78GiB freeMemory: 15.37GiB
+2018-10-21 23:10:32.426357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2018-10-21 23:10:32.940835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-21 23:10:32.940936: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2018-10-21 23:10:32.940951: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N Y 
+2018-10-21 23:10:32.940961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   Y N 
+2018-10-21 23:10:32.941545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14883 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 7.0)
+2018-10-21 23:10:32.942345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14883 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+Params:
+	train: True
+	test: True
+	model_type: DenseNet
+	growth_rate: 12
+	depth: 40
+	dataset: C10
+	total_blocks: 3
+	keep_prob: 0.8
+	weight_decay: 0.0001
+	nesterov_momentum: 0.9
+	reduction: 1.0
+	should_save_logs: True
+	should_save_model: True
+	renew_logs: True
+	num_inter_threads: 1
+	num_intra_threads: 128
+	bc_mode: False
+Train params:
+	save_path: /home/gridsan/salford/Kepner-sparse-nn/data/cifar10_2/
+	batch_size: 64
+	n_epochs: 300
+	initial_learning_rate: 0.1
+	reduce_lr_epoch_1: 150
+	reduce_lr_epoch_2: 225
+	validation_set: True
+	validation_split: None
+	shuffle: every_epoch
+	normalization: by_chanels
+Prepare training data...
+downloading
+/home/gridsan/salford/Kepner-sparse-nn/data/cifar10_2/
+done downloading
+Initialize the model..
+Build DenseNet model with 3 blocks, 12 composite layers each.
+Reduction at transition layers: 1.0
+Total training params: 1.1M
+Data provider train images:  50000
+
+ ------------------------------ Train epoch: 1 ------------------------------ 
+
+Training...
+mean cross_entropy: 1.335277, mean accuracy: 0.515785
+Validation...
+mean cross_entropy: 20.901480, mean accuracy: 0.154948
+Time per epoch: 0:01:10.582914, Est. complete in: 5:51:44
+
+ ------------------------------ Train epoch: 2 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.887753, mean accuracy: 0.684439
+Validation...
+mean cross_entropy: 2.727314, mean accuracy: 0.453325
+Time per epoch: 0:01:00.546518, Est. complete in: 5:00:42
+
+ ------------------------------ Train epoch: 3 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.721494, mean accuracy: 0.746599
+Validation...
+mean cross_entropy: 1.437531, mean accuracy: 0.608474
+Time per epoch: 0:01:00.598358, Est. complete in: 4:59:57
+
+ ------------------------------ Train epoch: 4 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.622869, mean accuracy: 0.782590
+Validation...
+mean cross_entropy: 0.900812, mean accuracy: 0.678185
+Time per epoch: 0:01:00.335232, Est. complete in: 4:57:39
+
+ ------------------------------ Train epoch: 5 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.555256, mean accuracy: 0.805578
+Validation...
+mean cross_entropy: 1.659635, mean accuracy: 0.508113
+Time per epoch: 0:01:00.208903, Est. complete in: 4:56:01
+
+ ------------------------------ Train epoch: 6 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.507833, mean accuracy: 0.824844
+Validation...
+mean cross_entropy: 1.209069, mean accuracy: 0.571014
+Time per epoch: 0:01:00.350610, Est. complete in: 4:55:43
+
+ ------------------------------ Train epoch: 7 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.470056, mean accuracy: 0.836368
+Validation...
+mean cross_entropy: 1.201930, mean accuracy: 0.585938
+Time per epoch: 0:01:00.505562, Est. complete in: 4:55:28
+
+ ------------------------------ Train epoch: 8 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.439238, mean accuracy: 0.847711
+Validation...
+mean cross_entropy: 0.968763, mean accuracy: 0.683694
+Time per epoch: 0:01:00.579916, Est. complete in: 4:54:49
+
+ ------------------------------ Train epoch: 9 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.419656, mean accuracy: 0.855074
+Validation...
+mean cross_entropy: 0.657561, mean accuracy: 0.783353
+Time per epoch: 0:01:00.574052, Est. complete in: 4:53:47
+
+ ------------------------------ Train epoch: 10 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.396883, mean accuracy: 0.863116
+Validation...
+mean cross_entropy: 1.291385, mean accuracy: 0.611078
+Time per epoch: 0:01:00.529082, Est. complete in: 4:52:33
+
+ ------------------------------ Train epoch: 11 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.381443, mean accuracy: 0.866037
+Validation...
+mean cross_entropy: 1.950351, mean accuracy: 0.507312
+Time per epoch: 0:01:00.483037, Est. complete in: 4:51:19
+
+ ------------------------------ Train epoch: 12 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.363995, mean accuracy: 0.874700
+Validation...
+mean cross_entropy: 0.993151, mean accuracy: 0.661859
+Time per epoch: 0:01:00.448061, Est. complete in: 4:50:09
+
+ ------------------------------ Train epoch: 13 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.353753, mean accuracy: 0.877361
+Validation...
+mean cross_entropy: 0.965897, mean accuracy: 0.658353
+Time per epoch: 0:01:00.352180, Est. complete in: 4:48:41
+
+ ------------------------------ Train epoch: 14 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.342327, mean accuracy: 0.881062
+Validation...
+mean cross_entropy: 0.696318, mean accuracy: 0.768329
+Time per epoch: 0:01:00.433999, Est. complete in: 4:48:04
+
+ ------------------------------ Train epoch: 15 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.330809, mean accuracy: 0.885643
+Validation...
+mean cross_entropy: 0.626722, mean accuracy: 0.786258
+Time per epoch: 0:01:00.451451, Est. complete in: 4:47:08
+
+ ------------------------------ Train epoch: 16 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.317496, mean accuracy: 0.889225
+Validation...
+mean cross_entropy: 0.997124, mean accuracy: 0.690505
+Time per epoch: 0:01:00.443588, Est. complete in: 4:46:05
+
+ ------------------------------ Train epoch: 17 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.316951, mean accuracy: 0.888804
+Validation...
+mean cross_entropy: 0.886415, mean accuracy: 0.706030
+Time per epoch: 0:01:00.334491, Est. complete in: 4:44:34
+
+ ------------------------------ Train epoch: 18 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.304659, mean accuracy: 0.893946
+Validation...
+mean cross_entropy: 0.984562, mean accuracy: 0.709034
+Time per epoch: 0:01:00.393243, Est. complete in: 4:43:50
+
+ ------------------------------ Train epoch: 19 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.304687, mean accuracy: 0.894546
+Validation...
+mean cross_entropy: 0.610716, mean accuracy: 0.791867
+Time per epoch: 0:01:00.398949, Est. complete in: 4:42:52
+
+ ------------------------------ Train epoch: 20 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.299457, mean accuracy: 0.894766
+Validation...
+mean cross_entropy: 0.732842, mean accuracy: 0.774239
+Time per epoch: 0:01:00.174032, Est. complete in: 4:40:48
+
+ ------------------------------ Train epoch: 21 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.294803, mean accuracy: 0.897667
+Validation...
+mean cross_entropy: 0.624983, mean accuracy: 0.799279
+Time per epoch: 0:01:00.250355, Est. complete in: 4:40:09
+
+ ------------------------------ Train epoch: 22 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.289261, mean accuracy: 0.899528
+Validation...
+mean cross_entropy: 0.818658, mean accuracy: 0.768530
+Time per epoch: 0:01:00.091904, Est. complete in: 4:38:25
+
+ ------------------------------ Train epoch: 23 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.285028, mean accuracy: 0.898347
+Validation...
+mean cross_entropy: 0.818339, mean accuracy: 0.757512
+Time per epoch: 0:01:00.346939, Est. complete in: 4:38:36
+
+ ------------------------------ Train epoch: 24 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.279900, mean accuracy: 0.902289
+Validation...
+mean cross_entropy: 0.701980, mean accuracy: 0.783253
+Time per epoch: 0:01:00.346323, Est. complete in: 4:37:35
+
+ ------------------------------ Train epoch: 25 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.273607, mean accuracy: 0.904429
+Validation...
+mean cross_entropy: 1.012113, mean accuracy: 0.712841
+Time per epoch: 0:01:00.302517, Est. complete in: 4:36:23
+
+ ------------------------------ Train epoch: 26 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.274160, mean accuracy: 0.903249
+Validation...
+mean cross_entropy: 0.577821, mean accuracy: 0.816907
+Time per epoch: 0:01:00.316376, Est. complete in: 4:35:26
+
+ ------------------------------ Train epoch: 27 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.268710, mean accuracy: 0.906230
+Validation...
+mean cross_entropy: 0.919473, mean accuracy: 0.733073
+Time per epoch: 0:01:00.295258, Est. complete in: 4:34:20
+
+ ------------------------------ Train epoch: 28 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.269488, mean accuracy: 0.906510
+Validation...
+mean cross_entropy: 1.173457, mean accuracy: 0.715745
+Time per epoch: 0:01:00.287392, Est. complete in: 4:33:18
+
+ ------------------------------ Train epoch: 29 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.262916, mean accuracy: 0.908811
+Validation...
+mean cross_entropy: 0.722467, mean accuracy: 0.804087
+Time per epoch: 0:01:00.579340, Est. complete in: 4:33:37
+
+ ------------------------------ Train epoch: 30 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.255912, mean accuracy: 0.910531
+Validation...
+mean cross_entropy: 1.050485, mean accuracy: 0.702925
+Time per epoch: 0:01:00.558177, Est. complete in: 4:32:30
+
+ ------------------------------ Train epoch: 31 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.262392, mean accuracy: 0.906450
+Validation...
+mean cross_entropy: 0.577004, mean accuracy: 0.808293
+Time per epoch: 0:01:00.463546, Est. complete in: 4:31:04
+
+ ------------------------------ Train epoch: 32 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.251441, mean accuracy: 0.911492
+Validation...
+mean cross_entropy: 0.524641, mean accuracy: 0.828526
+Time per epoch: 0:01:00.457074, Est. complete in: 4:30:02
+
+ ------------------------------ Train epoch: 33 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.256456, mean accuracy: 0.909591
+Validation...
+mean cross_entropy: 0.739433, mean accuracy: 0.777344
+Time per epoch: 0:01:00.303643, Est. complete in: 4:28:21
+
+ ------------------------------ Train epoch: 34 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.248219, mean accuracy: 0.913292
+Validation...
+mean cross_entropy: 0.740127, mean accuracy: 0.763421
+Time per epoch: 0:01:00.253891, Est. complete in: 4:27:07
+
+ ------------------------------ Train epoch: 35 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.248069, mean accuracy: 0.913572
+Validation...
+mean cross_entropy: 0.849400, mean accuracy: 0.733974
+Time per epoch: 0:01:00.274127, Est. complete in: 4:26:12
+
+ ------------------------------ Train epoch: 36 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.248337, mean accuracy: 0.913052
+Validation...
+mean cross_entropy: 0.859181, mean accuracy: 0.760917
+Time per epoch: 0:01:00.341643, Est. complete in: 4:25:30
+
+ ------------------------------ Train epoch: 37 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.243982, mean accuracy: 0.914973
+Validation...
+mean cross_entropy: 1.719615, mean accuracy: 0.661959
+Time per epoch: 0:01:00.334410, Est. complete in: 4:24:27
+
+ ------------------------------ Train epoch: 38 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.246684, mean accuracy: 0.913052
+Validation...
+mean cross_entropy: 0.725414, mean accuracy: 0.799379
+Time per epoch: 0:01:00.273910, Est. complete in: 4:23:11
+
+ ------------------------------ Train epoch: 39 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.245932, mean accuracy: 0.913552
+Validation...
+mean cross_entropy: 1.219957, mean accuracy: 0.684395
+Time per epoch: 0:01:00.316560, Est. complete in: 4:22:22
+
+ ------------------------------ Train epoch: 40 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.243146, mean accuracy: 0.913932
+Validation...
+mean cross_entropy: 0.748593, mean accuracy: 0.796675
+Time per epoch: 0:01:00.262004, Est. complete in: 4:21:08
+
+ ------------------------------ Train epoch: 41 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.241643, mean accuracy: 0.915233
+Validation...
+mean cross_entropy: 1.333668, mean accuracy: 0.699319
+Time per epoch: 0:01:00.339657, Est. complete in: 4:20:27
+
+ ------------------------------ Train epoch: 42 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.238596, mean accuracy: 0.915973
+Validation...
+mean cross_entropy: 0.664182, mean accuracy: 0.802083
+Time per epoch: 0:01:00.360560, Est. complete in: 4:19:33
+
+ ------------------------------ Train epoch: 43 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.234669, mean accuracy: 0.917794
+Validation...
+mean cross_entropy: 1.067656, mean accuracy: 0.742087
+Time per epoch: 0:01:00.596292, Est. complete in: 4:19:33
+
+ ------------------------------ Train epoch: 44 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.230853, mean accuracy: 0.919014
+Validation...
+mean cross_entropy: 0.892971, mean accuracy: 0.751803
+Time per epoch: 0:01:00.528182, Est. complete in: 4:18:15
+
+ ------------------------------ Train epoch: 45 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.232441, mean accuracy: 0.918014
+Validation...
+mean cross_entropy: 0.627413, mean accuracy: 0.827925
+Time per epoch: 0:01:00.498996, Est. complete in: 4:17:07
+
+ ------------------------------ Train epoch: 46 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.228064, mean accuracy: 0.920154
+Validation...
+mean cross_entropy: 1.056234, mean accuracy: 0.728466
+Time per epoch: 0:01:00.497771, Est. complete in: 4:16:06
+
+ ------------------------------ Train epoch: 47 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.232353, mean accuracy: 0.919094
+Validation...
+mean cross_entropy: 0.781185, mean accuracy: 0.756811
+Time per epoch: 0:01:00.370678, Est. complete in: 4:14:33
+
+ ------------------------------ Train epoch: 48 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224584, mean accuracy: 0.921715
+Validation...
+mean cross_entropy: 0.580393, mean accuracy: 0.822216
+Time per epoch: 0:01:00.290470, Est. complete in: 4:13:13
+
+ ------------------------------ Train epoch: 49 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.226982, mean accuracy: 0.920335
+Validation...
+mean cross_entropy: 0.678009, mean accuracy: 0.800781
+Time per epoch: 0:01:00.245197, Est. complete in: 4:12:01
+
+ ------------------------------ Train epoch: 50 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224440, mean accuracy: 0.922215
+Validation...
+mean cross_entropy: 0.808293, mean accuracy: 0.768329
+Time per epoch: 0:01:00.462572, Est. complete in: 4:11:55
+
+ ------------------------------ Train epoch: 51 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224584, mean accuracy: 0.920495
+Validation...
+mean cross_entropy: 1.153401, mean accuracy: 0.697115
+Time per epoch: 0:01:00.726930, Est. complete in: 4:12:01
+
+ ------------------------------ Train epoch: 52 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224129, mean accuracy: 0.921015
+Validation...
+mean cross_entropy: 0.702675, mean accuracy: 0.791266
+Time per epoch: 0:01:00.700291, Est. complete in: 4:10:53
+
+ ------------------------------ Train epoch: 53 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224694, mean accuracy: 0.921595
+Validation...
+mean cross_entropy: 1.233203, mean accuracy: 0.717047
+Time per epoch: 0:01:00.286663, Est. complete in: 4:08:10
+
+ ------------------------------ Train epoch: 54 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.224182, mean accuracy: 0.921215
+Validation...
+mean cross_entropy: 0.698538, mean accuracy: 0.784355
+Time per epoch: 0:01:00.183676, Est. complete in: 4:06:45
+
+ ------------------------------ Train epoch: 55 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.218189, mean accuracy: 0.924456
+Validation...
+mean cross_entropy: 0.804785, mean accuracy: 0.768329
+Time per epoch: 0:01:00.083210, Est. complete in: 4:05:20
+
+ ------------------------------ Train epoch: 56 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.220632, mean accuracy: 0.922235
+Validation...
+mean cross_entropy: 0.866118, mean accuracy: 0.766126
+Time per epoch: 0:01:00.207672, Est. complete in: 4:04:50
+
+ ------------------------------ Train epoch: 57 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.222464, mean accuracy: 0.922115
+Validation...
+mean cross_entropy: 0.849001, mean accuracy: 0.769732
+Time per epoch: 0:01:00.262369, Est. complete in: 4:04:03
+
+ ------------------------------ Train epoch: 58 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.215015, mean accuracy: 0.923996
+Validation...
+mean cross_entropy: 0.954035, mean accuracy: 0.741386
+Time per epoch: 0:01:00.294285, Est. complete in: 4:03:11
+
+ ------------------------------ Train epoch: 59 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.221795, mean accuracy: 0.921275
+Validation...
+mean cross_entropy: 1.117891, mean accuracy: 0.718149
+Time per epoch: 0:01:00.715145, Est. complete in: 4:03:52
+
+ ------------------------------ Train epoch: 60 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.217399, mean accuracy: 0.924476
+Validation...
+mean cross_entropy: 0.843013, mean accuracy: 0.737280
+Time per epoch: 0:01:00.558372, Est. complete in: 4:02:14
+
+ ------------------------------ Train epoch: 61 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.216166, mean accuracy: 0.924216
+Validation...
+mean cross_entropy: 0.871886, mean accuracy: 0.741687
+Time per epoch: 0:01:00.621053, Est. complete in: 4:01:28
+
+ ------------------------------ Train epoch: 62 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.215384, mean accuracy: 0.925136
+Validation...
+mean cross_entropy: 0.701053, mean accuracy: 0.792568
+Time per epoch: 0:01:00.620207, Est. complete in: 4:00:27
+
+ ------------------------------ Train epoch: 63 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.215263, mean accuracy: 0.923756
+Validation...
+mean cross_entropy: 1.005943, mean accuracy: 0.687800
+Time per epoch: 0:01:00.545267, Est. complete in: 3:59:09
+
+ ------------------------------ Train epoch: 64 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.215879, mean accuracy: 0.924056
+Validation...
+mean cross_entropy: 0.617674, mean accuracy: 0.813101
+Time per epoch: 0:01:00.475446, Est. complete in: 3:57:52
+
+ ------------------------------ Train epoch: 65 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.215447, mean accuracy: 0.924056
+Validation...
+mean cross_entropy: 0.878927, mean accuracy: 0.755108
+Time per epoch: 0:01:00.511221, Est. complete in: 3:57:00
+
+ ------------------------------ Train epoch: 66 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.212735, mean accuracy: 0.926036
+Validation...
+mean cross_entropy: 0.729000, mean accuracy: 0.791066
+Time per epoch: 0:01:00.256896, Est. complete in: 3:55:00
+
+ ------------------------------ Train epoch: 67 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.213411, mean accuracy: 0.924656
+Validation...
+mean cross_entropy: 0.821615, mean accuracy: 0.784155
+Time per epoch: 0:01:00.332576, Est. complete in: 3:54:17
+
+ ------------------------------ Train epoch: 68 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.209893, mean accuracy: 0.926016
+Validation...
+mean cross_entropy: 1.055071, mean accuracy: 0.723958
+Time per epoch: 0:01:00.106155, Est. complete in: 3:52:24
+
+ ------------------------------ Train epoch: 69 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.212877, mean accuracy: 0.924356
+Validation...
+mean cross_entropy: 0.662627, mean accuracy: 0.798077
+Time per epoch: 0:01:00.269158, Est. complete in: 3:52:02
+
+ ------------------------------ Train epoch: 70 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.207026, mean accuracy: 0.926997
+Validation...
+mean cross_entropy: 0.738373, mean accuracy: 0.814303
+Time per epoch: 0:01:00.620943, Est. complete in: 3:52:22
+
+ ------------------------------ Train epoch: 71 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.204497, mean accuracy: 0.928617
+Validation...
+mean cross_entropy: 1.181954, mean accuracy: 0.727464
+Time per epoch: 0:01:00.598873, Est. complete in: 3:51:17
+
+ ------------------------------ Train epoch: 72 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.210642, mean accuracy: 0.926256
+Validation...
+mean cross_entropy: 0.760266, mean accuracy: 0.791366
+Time per epoch: 0:01:00.404394, Est. complete in: 3:49:32
+
+ ------------------------------ Train epoch: 73 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.205494, mean accuracy: 0.928197
+Validation...
+mean cross_entropy: 1.932571, mean accuracy: 0.598257
+Time per epoch: 0:01:00.498574, Est. complete in: 3:48:53
+
+ ------------------------------ Train epoch: 74 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.203865, mean accuracy: 0.927117
+Validation...
+mean cross_entropy: 0.785673, mean accuracy: 0.762821
+Time per epoch: 0:01:00.584026, Est. complete in: 3:48:11
+
+ ------------------------------ Train epoch: 75 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.208656, mean accuracy: 0.927037
+Validation...
+mean cross_entropy: 0.762703, mean accuracy: 0.793169
+Time per epoch: 0:01:00.631446, Est. complete in: 3:47:22
+
+ ------------------------------ Train epoch: 76 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.208903, mean accuracy: 0.927537
+Validation...
+mean cross_entropy: 1.594433, mean accuracy: 0.672776
+Time per epoch: 0:01:00.502715, Est. complete in: 3:45:52
+
+ ------------------------------ Train epoch: 77 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.206605, mean accuracy: 0.927757
+Validation...
+mean cross_entropy: 0.793384, mean accuracy: 0.791967
+Time per epoch: 0:01:00.568036, Est. complete in: 3:45:06
+
+ ------------------------------ Train epoch: 78 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.206685, mean accuracy: 0.926116
+Validation...
+mean cross_entropy: 0.545848, mean accuracy: 0.827123
+Time per epoch: 0:01:00.495789, Est. complete in: 3:43:50
+
+ ------------------------------ Train epoch: 79 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.203748, mean accuracy: 0.928437
+Validation...
+mean cross_entropy: 0.794402, mean accuracy: 0.781651
+Time per epoch: 0:01:00.516985, Est. complete in: 3:42:54
+
+ ------------------------------ Train epoch: 80 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.205647, mean accuracy: 0.928177
+Validation...
+mean cross_entropy: 0.616281, mean accuracy: 0.803285
+Time per epoch: 0:01:00.579513, Est. complete in: 3:42:07
+
+ ------------------------------ Train epoch: 81 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.203473, mean accuracy: 0.928217
+Validation...
+mean cross_entropy: 0.554403, mean accuracy: 0.826923
+Time per epoch: 0:01:00.471062, Est. complete in: 3:40:43
+
+ ------------------------------ Train epoch: 82 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.200015, mean accuracy: 0.929698
+Validation...
+mean cross_entropy: 0.775711, mean accuracy: 0.770833
+Time per epoch: 0:01:00.450741, Est. complete in: 3:39:38
+
+ ------------------------------ Train epoch: 83 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.204980, mean accuracy: 0.928537
+Validation...
+mean cross_entropy: 0.970957, mean accuracy: 0.708434
+Time per epoch: 0:01:00.425413, Est. complete in: 3:38:32
+
+ ------------------------------ Train epoch: 84 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.203104, mean accuracy: 0.928777
+Validation...
+mean cross_entropy: 1.083191, mean accuracy: 0.709235
+Time per epoch: 0:01:00.277334, Est. complete in: 3:36:59
+
+ ------------------------------ Train epoch: 85 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.204702, mean accuracy: 0.926677
+Validation...
+mean cross_entropy: 0.776727, mean accuracy: 0.775341
+Time per epoch: 0:01:00.316890, Est. complete in: 3:36:08
+
+ ------------------------------ Train epoch: 86 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.201279, mean accuracy: 0.928837
+Validation...
+mean cross_entropy: 0.781431, mean accuracy: 0.776643
+Time per epoch: 0:01:00.331427, Est. complete in: 3:35:10
+
+ ------------------------------ Train epoch: 87 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.208275, mean accuracy: 0.926456
+Validation...
+mean cross_entropy: 1.252597, mean accuracy: 0.694611
+Time per epoch: 0:01:00.308752, Est. complete in: 3:34:05
+
+ ------------------------------ Train epoch: 88 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.204479, mean accuracy: 0.928177
+Validation...
+mean cross_entropy: 1.010093, mean accuracy: 0.735577
+Time per epoch: 0:01:00.313300, Est. complete in: 3:33:06
+
+ ------------------------------ Train epoch: 89 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198916, mean accuracy: 0.929818
+Validation...
+mean cross_entropy: 0.746160, mean accuracy: 0.790064
+Time per epoch: 0:01:00.320732, Est. complete in: 3:32:07
+
+ ------------------------------ Train epoch: 90 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.202500, mean accuracy: 0.929077
+Validation...
+mean cross_entropy: 0.930143, mean accuracy: 0.768329
+Time per epoch: 0:01:00.133733, Est. complete in: 3:30:28
+
+ ------------------------------ Train epoch: 91 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.202995, mean accuracy: 0.928357
+Validation...
+mean cross_entropy: 0.645708, mean accuracy: 0.800381
+Time per epoch: 0:01:00.301110, Est. complete in: 3:30:02
+
+ ------------------------------ Train epoch: 92 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.195138, mean accuracy: 0.930058
+Validation...
+mean cross_entropy: 0.700194, mean accuracy: 0.779547
+Time per epoch: 0:01:00.280361, Est. complete in: 3:28:58
+
+ ------------------------------ Train epoch: 93 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.202452, mean accuracy: 0.928777
+Validation...
+mean cross_entropy: 0.624016, mean accuracy: 0.808994
+Time per epoch: 0:01:00.651138, Est. complete in: 3:29:14
+
+ ------------------------------ Train epoch: 94 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198625, mean accuracy: 0.929157
+Validation...
+mean cross_entropy: 0.916475, mean accuracy: 0.749599
+Time per epoch: 0:01:00.533804, Est. complete in: 3:27:49
+
+ ------------------------------ Train epoch: 95 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198996, mean accuracy: 0.930998
+Validation...
+mean cross_entropy: 0.788452, mean accuracy: 0.780549
+Time per epoch: 0:01:00.448281, Est. complete in: 3:26:31
+
+ ------------------------------ Train epoch: 96 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.203453, mean accuracy: 0.928017
+Validation...
+mean cross_entropy: 0.663657, mean accuracy: 0.800881
+Time per epoch: 0:01:00.482693, Est. complete in: 3:25:38
+
+ ------------------------------ Train epoch: 97 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.200930, mean accuracy: 0.929477
+Validation...
+mean cross_entropy: 1.431555, mean accuracy: 0.682893
+Time per epoch: 0:01:00.394989, Est. complete in: 3:24:20
+
+ ------------------------------ Train epoch: 98 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.195868, mean accuracy: 0.930578
+Validation...
+mean cross_entropy: 0.636956, mean accuracy: 0.804688
+Time per epoch: 0:01:00.351650, Est. complete in: 3:23:11
+
+ ------------------------------ Train epoch: 99 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.201311, mean accuracy: 0.930098
+Validation...
+mean cross_entropy: 1.293482, mean accuracy: 0.653245
+Time per epoch: 0:01:00.312683, Est. complete in: 3:22:02
+
+ ------------------------------ Train epoch: 100 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198012, mean accuracy: 0.929477
+Validation...
+mean cross_entropy: 0.614733, mean accuracy: 0.816607
+Time per epoch: 0:01:00.395990, Est. complete in: 3:21:19
+
+ ------------------------------ Train epoch: 101 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.199571, mean accuracy: 0.930338
+Validation...
+mean cross_entropy: 0.723781, mean accuracy: 0.791066
+Time per epoch: 0:01:00.290520, Est. complete in: 3:19:57
+
+ ------------------------------ Train epoch: 102 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.195002, mean accuracy: 0.931038
+Validation...
+mean cross_entropy: 0.682316, mean accuracy: 0.813602
+Time per epoch: 0:01:00.310021, Est. complete in: 3:19:01
+
+ ------------------------------ Train epoch: 103 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.196126, mean accuracy: 0.930818
+Validation...
+mean cross_entropy: 0.520767, mean accuracy: 0.828125
+Time per epoch: 0:01:00.307411, Est. complete in: 3:18:00
+
+ ------------------------------ Train epoch: 104 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197405, mean accuracy: 0.930198
+Validation...
+mean cross_entropy: 1.211482, mean accuracy: 0.703225
+Time per epoch: 0:01:00.336725, Est. complete in: 3:17:05
+
+ ------------------------------ Train epoch: 105 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198372, mean accuracy: 0.930318
+Validation...
+mean cross_entropy: 0.905481, mean accuracy: 0.760817
+Time per epoch: 0:01:00.305799, Est. complete in: 3:15:59
+
+ ------------------------------ Train epoch: 106 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.194011, mean accuracy: 0.932818
+Validation...
+mean cross_entropy: 0.646284, mean accuracy: 0.808393
+Time per epoch: 0:01:00.161591, Est. complete in: 3:14:31
+
+ ------------------------------ Train epoch: 107 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197881, mean accuracy: 0.930658
+Validation...
+mean cross_entropy: 0.703360, mean accuracy: 0.804587
+Time per epoch: 0:01:00.578669, Est. complete in: 3:14:51
+
+ ------------------------------ Train epoch: 108 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.194112, mean accuracy: 0.932538
+Validation...
+mean cross_entropy: 1.271782, mean accuracy: 0.696715
+Time per epoch: 0:01:00.488720, Est. complete in: 3:13:33
+
+ ------------------------------ Train epoch: 109 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193744, mean accuracy: 0.932158
+Validation...
+mean cross_entropy: 1.436558, mean accuracy: 0.646434
+Time per epoch: 0:01:00.546829, Est. complete in: 3:12:44
+
+ ------------------------------ Train epoch: 110 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197191, mean accuracy: 0.931958
+Validation...
+mean cross_entropy: 0.754924, mean accuracy: 0.788862
+Time per epoch: 0:01:00.311399, Est. complete in: 3:10:59
+
+ ------------------------------ Train epoch: 111 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197454, mean accuracy: 0.930218
+Validation...
+mean cross_entropy: 1.570817, mean accuracy: 0.689904
+Time per epoch: 0:01:00.387424, Est. complete in: 3:10:13
+
+ ------------------------------ Train epoch: 112 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.195756, mean accuracy: 0.930718
+Validation...
+mean cross_entropy: 0.546894, mean accuracy: 0.823718
+Time per epoch: 0:01:00.487974, Est. complete in: 3:09:31
+
+ ------------------------------ Train epoch: 113 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193777, mean accuracy: 0.931838
+Validation...
+mean cross_entropy: 1.386076, mean accuracy: 0.696715
+Time per epoch: 0:01:00.557861, Est. complete in: 3:08:44
+
+ ------------------------------ Train epoch: 114 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.191704, mean accuracy: 0.932919
+Validation...
+mean cross_entropy: 0.925509, mean accuracy: 0.729167
+Time per epoch: 0:01:00.520660, Est. complete in: 3:07:36
+
+ ------------------------------ Train epoch: 115 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.198343, mean accuracy: 0.930238
+Validation...
+mean cross_entropy: 1.034182, mean accuracy: 0.713341
+Time per epoch: 0:01:00.471347, Est. complete in: 3:06:27
+
+ ------------------------------ Train epoch: 116 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.195897, mean accuracy: 0.930678
+Validation...
+mean cross_entropy: 0.944343, mean accuracy: 0.754507
+Time per epoch: 0:01:00.364958, Est. complete in: 3:05:07
+
+ ------------------------------ Train epoch: 117 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193604, mean accuracy: 0.931378
+Validation...
+mean cross_entropy: 1.054233, mean accuracy: 0.714844
+Time per epoch: 0:01:00.205832, Est. complete in: 3:03:37
+
+ ------------------------------ Train epoch: 118 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192766, mean accuracy: 0.931378
+Validation...
+mean cross_entropy: 1.118484, mean accuracy: 0.700821
+Time per epoch: 0:01:00.364851, Est. complete in: 3:03:06
+
+ ------------------------------ Train epoch: 119 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197618, mean accuracy: 0.930158
+Validation...
+mean cross_entropy: 1.416435, mean accuracy: 0.666466
+Time per epoch: 0:01:00.119115, Est. complete in: 3:01:21
+
+ ------------------------------ Train epoch: 120 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192514, mean accuracy: 0.931238
+Validation...
+mean cross_entropy: 0.830480, mean accuracy: 0.766126
+Time per epoch: 0:01:00.251235, Est. complete in: 3:00:45
+
+ ------------------------------ Train epoch: 121 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193800, mean accuracy: 0.930958
+Validation...
+mean cross_entropy: 1.494403, mean accuracy: 0.638922
+Time per epoch: 0:01:00.349217, Est. complete in: 3:00:02
+
+ ------------------------------ Train epoch: 122 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.189279, mean accuracy: 0.932999
+Validation...
+mean cross_entropy: 1.036299, mean accuracy: 0.743790
+Time per epoch: 0:01:00.370600, Est. complete in: 2:59:05
+
+ ------------------------------ Train epoch: 123 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.196517, mean accuracy: 0.930778
+Validation...
+mean cross_entropy: 0.827612, mean accuracy: 0.763922
+Time per epoch: 0:01:00.255873, Est. complete in: 2:57:45
+
+ ------------------------------ Train epoch: 124 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192902, mean accuracy: 0.931638
+Validation...
+mean cross_entropy: 0.637700, mean accuracy: 0.808393
+Time per epoch: 0:01:00.342770, Est. complete in: 2:57:00
+
+ ------------------------------ Train epoch: 125 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.191594, mean accuracy: 0.931758
+Validation...
+mean cross_entropy: 0.702059, mean accuracy: 0.820312
+Time per epoch: 0:01:00.284779, Est. complete in: 2:55:49
+
+ ------------------------------ Train epoch: 126 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193728, mean accuracy: 0.931598
+Validation...
+mean cross_entropy: 0.920652, mean accuracy: 0.749499
+Time per epoch: 0:01:00.369884, Est. complete in: 2:55:04
+
+ ------------------------------ Train epoch: 127 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.189901, mean accuracy: 0.933599
+Validation...
+mean cross_entropy: 0.912471, mean accuracy: 0.756210
+Time per epoch: 0:01:00.627616, Est. complete in: 2:54:48
+
+ ------------------------------ Train epoch: 128 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.188274, mean accuracy: 0.934419
+Validation...
+mean cross_entropy: 0.764791, mean accuracy: 0.788862
+Time per epoch: 0:01:00.280815, Est. complete in: 2:52:48
+
+ ------------------------------ Train epoch: 129 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.191355, mean accuracy: 0.931398
+Validation...
+mean cross_entropy: 0.628772, mean accuracy: 0.804287
+Time per epoch: 0:01:00.631591, Est. complete in: 2:52:48
+
+ ------------------------------ Train epoch: 130 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.191229, mean accuracy: 0.933219
+Validation...
+mean cross_entropy: 0.631843, mean accuracy: 0.809996
+Time per epoch: 0:01:00.353681, Est. complete in: 2:51:00
+
+ ------------------------------ Train epoch: 131 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.196596, mean accuracy: 0.931858
+Validation...
+mean cross_entropy: 1.120901, mean accuracy: 0.737380
+Time per epoch: 0:01:00.613969, Est. complete in: 2:50:43
+
+ ------------------------------ Train epoch: 132 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.193213, mean accuracy: 0.931778
+Validation...
+mean cross_entropy: 1.381875, mean accuracy: 0.716246
+Time per epoch: 0:01:00.521565, Est. complete in: 2:49:27
+
+ ------------------------------ Train epoch: 133 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.191173, mean accuracy: 0.933399
+Validation...
+mean cross_entropy: 0.537983, mean accuracy: 0.830729
+Time per epoch: 0:01:00.538653, Est. complete in: 2:48:29
+
+ ------------------------------ Train epoch: 134 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192339, mean accuracy: 0.933559
+Validation...
+mean cross_entropy: 0.699232, mean accuracy: 0.795673
+Time per epoch: 0:01:00.496551, Est. complete in: 2:47:22
+
+ ------------------------------ Train epoch: 135 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.186215, mean accuracy: 0.935219
+Validation...
+mean cross_entropy: 0.966875, mean accuracy: 0.757212
+Time per epoch: 0:01:00.485685, Est. complete in: 2:46:20
+
+ ------------------------------ Train epoch: 136 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.197181, mean accuracy: 0.931298
+Validation...
+mean cross_entropy: 0.516425, mean accuracy: 0.850361
+Time per epoch: 0:01:00.459567, Est. complete in: 2:45:15
+
+ ------------------------------ Train epoch: 137 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.189833, mean accuracy: 0.933819
+Validation...
+mean cross_entropy: 0.992111, mean accuracy: 0.709135
+Time per epoch: 0:01:00.378801, Est. complete in: 2:44:01
+
+ ------------------------------ Train epoch: 138 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.190333, mean accuracy: 0.931538
+Validation...
+mean cross_entropy: 0.892991, mean accuracy: 0.784756
+Time per epoch: 0:01:00.389045, Est. complete in: 2:43:03
+
+ ------------------------------ Train epoch: 139 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.189993, mean accuracy: 0.933239
+Validation...
+mean cross_entropy: 0.613965, mean accuracy: 0.808794
+Time per epoch: 0:01:00.126343, Est. complete in: 2:41:20
+
+ ------------------------------ Train epoch: 140 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.186360, mean accuracy: 0.934739
+Validation...
+mean cross_entropy: 0.654294, mean accuracy: 0.797877
+Time per epoch: 0:01:00.324447, Est. complete in: 2:40:51
+
+ ------------------------------ Train epoch: 141 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.194561, mean accuracy: 0.932658
+Validation...
+mean cross_entropy: 0.528537, mean accuracy: 0.836138
+Time per epoch: 0:01:00.211241, Est. complete in: 2:39:33
+
+ ------------------------------ Train epoch: 142 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.187711, mean accuracy: 0.934099
+Validation...
+mean cross_entropy: 1.069033, mean accuracy: 0.722456
+Time per epoch: 0:01:00.281579, Est. complete in: 2:38:44
+
+ ------------------------------ Train epoch: 143 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.188603, mean accuracy: 0.934599
+Validation...
+mean cross_entropy: 0.632585, mean accuracy: 0.824119
+Time per epoch: 0:01:00.230395, Est. complete in: 2:37:36
+
+ ------------------------------ Train epoch: 144 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192057, mean accuracy: 0.932358
+Validation...
+mean cross_entropy: 2.061079, mean accuracy: 0.610276
+Time per epoch: 0:01:00.297208, Est. complete in: 2:36:46
+
+ ------------------------------ Train epoch: 145 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.190839, mean accuracy: 0.932859
+Validation...
+mean cross_entropy: 0.754162, mean accuracy: 0.788462
+Time per epoch: 0:01:00.621770, Est. complete in: 2:36:36
+
+ ------------------------------ Train epoch: 146 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.188534, mean accuracy: 0.934239
+Validation...
+mean cross_entropy: 0.638379, mean accuracy: 0.801683
+Time per epoch: 0:01:00.539641, Est. complete in: 2:35:23
+
+ ------------------------------ Train epoch: 147 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.188161, mean accuracy: 0.933019
+Validation...
+mean cross_entropy: 1.037101, mean accuracy: 0.699419
+Time per epoch: 0:01:00.324191, Est. complete in: 2:33:49
+
+ ------------------------------ Train epoch: 148 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.187308, mean accuracy: 0.934699
+Validation...
+mean cross_entropy: 0.547642, mean accuracy: 0.836238
+Time per epoch: 0:01:00.562732, Est. complete in: 2:33:25
+
+ ------------------------------ Train epoch: 149 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.192300, mean accuracy: 0.931498
+Validation...
+mean cross_entropy: 0.532517, mean accuracy: 0.826022
+Time per epoch: 0:01:00.546328, Est. complete in: 2:32:22
+
+ ------------------------------ Train epoch: 150 ------------------------------ 
+
+Decrease learning rate, new lr = 0.010000
+Training...
+mean cross_entropy: 0.092687, mean accuracy: 0.969190
+Validation...
+mean cross_entropy: 0.244471, mean accuracy: 0.916566
+Time per epoch: 0:01:00.405532, Est. complete in: 2:31:00
+
+ ------------------------------ Train epoch: 151 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.060287, mean accuracy: 0.981454
+Validation...
+mean cross_entropy: 0.247905, mean accuracy: 0.919571
+Time per epoch: 0:01:00.438620, Est. complete in: 2:30:05
+
+ ------------------------------ Train epoch: 152 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.050998, mean accuracy: 0.984215
+Validation...
+mean cross_entropy: 0.266163, mean accuracy: 0.914062
+Time per epoch: 0:01:00.372795, Est. complete in: 2:28:55
+
+ ------------------------------ Train epoch: 153 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.044464, mean accuracy: 0.986776
+Validation...
+mean cross_entropy: 0.265940, mean accuracy: 0.917668
+Time per epoch: 0:01:00.434460, Est. complete in: 2:28:03
+
+ ------------------------------ Train epoch: 154 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.037160, mean accuracy: 0.989177
+Validation...
+mean cross_entropy: 0.245031, mean accuracy: 0.921474
+Time per epoch: 0:01:00.294919, Est. complete in: 2:26:43
+
+ ------------------------------ Train epoch: 155 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.034356, mean accuracy: 0.990297
+Validation...
+mean cross_entropy: 0.270160, mean accuracy: 0.916466
+Time per epoch: 0:01:00.122233, Est. complete in: 2:25:17
+
+ ------------------------------ Train epoch: 156 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.031534, mean accuracy: 0.990797
+Validation...
+mean cross_entropy: 0.235948, mean accuracy: 0.926282
+Time per epoch: 0:01:00.299211, Est. complete in: 2:24:43
+
+ ------------------------------ Train epoch: 157 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.030013, mean accuracy: 0.991217
+Validation...
+mean cross_entropy: 0.241901, mean accuracy: 0.929187
+Time per epoch: 0:01:00.313468, Est. complete in: 2:23:44
+
+ ------------------------------ Train epoch: 158 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.026803, mean accuracy: 0.992117
+Validation...
+mean cross_entropy: 0.244798, mean accuracy: 0.926783
+Time per epoch: 0:01:00.292193, Est. complete in: 2:22:41
+
+ ------------------------------ Train epoch: 159 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.026400, mean accuracy: 0.992077
+Validation...
+mean cross_entropy: 0.257588, mean accuracy: 0.925881
+Time per epoch: 0:01:00.259690, Est. complete in: 2:21:36
+
+ ------------------------------ Train epoch: 160 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.024908, mean accuracy: 0.993078
+Validation...
+mean cross_entropy: 0.263766, mean accuracy: 0.924980
+Time per epoch: 0:01:00.119156, Est. complete in: 2:20:16
+
+ ------------------------------ Train epoch: 161 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.024329, mean accuracy: 0.993098
+Validation...
+mean cross_entropy: 0.250528, mean accuracy: 0.925982
+Time per epoch: 0:01:00.635520, Est. complete in: 2:20:28
+
+ ------------------------------ Train epoch: 162 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.022190, mean accuracy: 0.993798
+Validation...
+mean cross_entropy: 0.266666, mean accuracy: 0.924179
+Time per epoch: 0:01:00.490135, Est. complete in: 2:19:07
+
+ ------------------------------ Train epoch: 163 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.021512, mean accuracy: 0.994278
+Validation...
+mean cross_entropy: 0.274272, mean accuracy: 0.923678
+Time per epoch: 0:01:00.620788, Est. complete in: 2:18:25
+
+ ------------------------------ Train epoch: 164 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.020101, mean accuracy: 0.994558
+Validation...
+mean cross_entropy: 0.254103, mean accuracy: 0.926783
+Time per epoch: 0:01:00.530917, Est. complete in: 2:17:12
+
+ ------------------------------ Train epoch: 165 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.020294, mean accuracy: 0.994478
+Validation...
+mean cross_entropy: 0.259699, mean accuracy: 0.925381
+Time per epoch: 0:01:00.516540, Est. complete in: 2:16:09
+
+ ------------------------------ Train epoch: 166 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.018089, mean accuracy: 0.995318
+Validation...
+mean cross_entropy: 0.258404, mean accuracy: 0.928986
+Time per epoch: 0:01:00.328490, Est. complete in: 2:14:44
+
+ ------------------------------ Train epoch: 167 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.018274, mean accuracy: 0.994978
+Validation...
+mean cross_entropy: 0.271459, mean accuracy: 0.924880
+Time per epoch: 0:01:00.240201, Est. complete in: 2:13:31
+
+ ------------------------------ Train epoch: 168 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.017690, mean accuracy: 0.995218
+Validation...
+mean cross_entropy: 0.261586, mean accuracy: 0.928085
+Time per epoch: 0:01:00.382902, Est. complete in: 2:12:50
+
+ ------------------------------ Train epoch: 169 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.017269, mean accuracy: 0.995359
+Validation...
+mean cross_entropy: 0.258782, mean accuracy: 0.930188
+Time per epoch: 0:01:00.303270, Est. complete in: 2:11:39
+
+ ------------------------------ Train epoch: 170 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.017061, mean accuracy: 0.995459
+Validation...
+mean cross_entropy: 0.252043, mean accuracy: 0.929087
+Time per epoch: 0:01:00.414305, Est. complete in: 2:10:53
+
+ ------------------------------ Train epoch: 171 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.015504, mean accuracy: 0.996079
+Validation...
+mean cross_entropy: 0.259962, mean accuracy: 0.930288
+Time per epoch: 0:01:00.254958, Est. complete in: 2:09:32
+
+ ------------------------------ Train epoch: 172 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013682, mean accuracy: 0.996619
+Validation...
+mean cross_entropy: 0.297787, mean accuracy: 0.920974
+Time per epoch: 0:01:00.306587, Est. complete in: 2:08:39
+
+ ------------------------------ Train epoch: 173 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.015391, mean accuracy: 0.995819
+Validation...
+mean cross_entropy: 0.277848, mean accuracy: 0.926683
+Time per epoch: 0:01:00.342379, Est. complete in: 2:07:43
+
+ ------------------------------ Train epoch: 174 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.015493, mean accuracy: 0.996079
+Validation...
+mean cross_entropy: 0.282336, mean accuracy: 0.925381
+Time per epoch: 0:01:00.333265, Est. complete in: 2:06:41
+
+ ------------------------------ Train epoch: 175 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.014108, mean accuracy: 0.996499
+Validation...
+mean cross_entropy: 0.260670, mean accuracy: 0.926683
+Time per epoch: 0:01:00.337123, Est. complete in: 2:05:42
+
+ ------------------------------ Train epoch: 176 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013723, mean accuracy: 0.996599
+Validation...
+mean cross_entropy: 0.302545, mean accuracy: 0.920873
+Time per epoch: 0:01:00.319674, Est. complete in: 2:04:39
+
+ ------------------------------ Train epoch: 177 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012889, mean accuracy: 0.996839
+Validation...
+mean cross_entropy: 0.287085, mean accuracy: 0.926382
+Time per epoch: 0:01:00.674920, Est. complete in: 2:04:23
+
+ ------------------------------ Train epoch: 178 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013492, mean accuracy: 0.996519
+Validation...
+mean cross_entropy: 0.275142, mean accuracy: 0.929187
+Time per epoch: 0:01:00.376487, Est. complete in: 2:02:45
+
+ ------------------------------ Train epoch: 179 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013395, mean accuracy: 0.996519
+Validation...
+mean cross_entropy: 0.302201, mean accuracy: 0.922576
+Time per epoch: 0:01:00.697517, Est. complete in: 2:02:24
+
+ ------------------------------ Train epoch: 180 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012352, mean accuracy: 0.996919
+Validation...
+mean cross_entropy: 0.273198, mean accuracy: 0.928085
+Time per epoch: 0:01:00.200018, Est. complete in: 2:00:24
+
+ ------------------------------ Train epoch: 181 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013529, mean accuracy: 0.996479
+Validation...
+mean cross_entropy: 0.291920, mean accuracy: 0.923277
+Time per epoch: 0:01:00.421196, Est. complete in: 1:59:50
+
+ ------------------------------ Train epoch: 182 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012786, mean accuracy: 0.996999
+Validation...
+mean cross_entropy: 0.288185, mean accuracy: 0.925080
+Time per epoch: 0:01:00.571911, Est. complete in: 1:59:07
+
+ ------------------------------ Train epoch: 183 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012776, mean accuracy: 0.996799
+Validation...
+mean cross_entropy: 0.281884, mean accuracy: 0.927083
+Time per epoch: 0:01:00.529137, Est. complete in: 1:58:01
+
+ ------------------------------ Train epoch: 184 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012349, mean accuracy: 0.996839
+Validation...
+mean cross_entropy: 0.272316, mean accuracy: 0.926883
+Time per epoch: 0:01:00.465291, Est. complete in: 1:56:53
+
+ ------------------------------ Train epoch: 185 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012161, mean accuracy: 0.997039
+Validation...
+mean cross_entropy: 0.282109, mean accuracy: 0.926482
+Time per epoch: 0:01:00.535029, Est. complete in: 1:56:01
+
+ ------------------------------ Train epoch: 186 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011617, mean accuracy: 0.997079
+Validation...
+mean cross_entropy: 0.286412, mean accuracy: 0.926082
+Time per epoch: 0:01:00.455712, Est. complete in: 1:54:51
+
+ ------------------------------ Train epoch: 187 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013750, mean accuracy: 0.996099
+Validation...
+mean cross_entropy: 0.267867, mean accuracy: 0.928385
+Time per epoch: 0:01:02.451796, Est. complete in: 1:57:37
+
+ ------------------------------ Train epoch: 188 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012031, mean accuracy: 0.997179
+Validation...
+mean cross_entropy: 0.286431, mean accuracy: 0.927584
+Time per epoch: 0:01:00.456013, Est. complete in: 1:52:51
+
+ ------------------------------ Train epoch: 189 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012158, mean accuracy: 0.996979
+Validation...
+mean cross_entropy: 0.279441, mean accuracy: 0.927284
+Time per epoch: 0:01:00.621216, Est. complete in: 1:52:08
+
+ ------------------------------ Train epoch: 190 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012023, mean accuracy: 0.997139
+Validation...
+mean cross_entropy: 0.302819, mean accuracy: 0.921174
+Time per epoch: 0:01:00.574174, Est. complete in: 1:51:03
+
+ ------------------------------ Train epoch: 191 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011319, mean accuracy: 0.997199
+Validation...
+mean cross_entropy: 0.274219, mean accuracy: 0.928786
+Time per epoch: 0:01:00.536006, Est. complete in: 1:49:58
+
+ ------------------------------ Train epoch: 192 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011008, mean accuracy: 0.997119
+Validation...
+mean cross_entropy: 0.270243, mean accuracy: 0.927184
+Time per epoch: 0:01:00.468968, Est. complete in: 1:48:50
+
+ ------------------------------ Train epoch: 193 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011862, mean accuracy: 0.997139
+Validation...
+mean cross_entropy: 0.269139, mean accuracy: 0.928385
+Time per epoch: 0:01:00.375177, Est. complete in: 1:47:40
+
+ ------------------------------ Train epoch: 194 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011443, mean accuracy: 0.997439
+Validation...
+mean cross_entropy: 0.266615, mean accuracy: 0.929387
+Time per epoch: 0:01:00.126107, Est. complete in: 1:46:13
+
+ ------------------------------ Train epoch: 195 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011658, mean accuracy: 0.997139
+Validation...
+mean cross_entropy: 0.315873, mean accuracy: 0.922276
+Time per epoch: 0:01:00.276655, Est. complete in: 1:45:29
+
+ ------------------------------ Train epoch: 196 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012397, mean accuracy: 0.996779
+Validation...
+mean cross_entropy: 0.302508, mean accuracy: 0.920172
+Time per epoch: 0:01:00.253189, Est. complete in: 1:44:26
+
+ ------------------------------ Train epoch: 197 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011811, mean accuracy: 0.997079
+Validation...
+mean cross_entropy: 0.285000, mean accuracy: 0.922476
+Time per epoch: 0:01:00.122825, Est. complete in: 1:43:12
+
+ ------------------------------ Train epoch: 198 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010362, mean accuracy: 0.997499
+Validation...
+mean cross_entropy: 0.324025, mean accuracy: 0.920673
+Time per epoch: 0:01:00.297716, Est. complete in: 1:42:30
+
+ ------------------------------ Train epoch: 199 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010921, mean accuracy: 0.997199
+Validation...
+mean cross_entropy: 0.326314, mean accuracy: 0.920473
+Time per epoch: 0:01:00.291783, Est. complete in: 1:41:29
+
+ ------------------------------ Train epoch: 200 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010645, mean accuracy: 0.997579
+Validation...
+mean cross_entropy: 0.349346, mean accuracy: 0.917969
+Time per epoch: 0:01:00.253029, Est. complete in: 1:40:25
+
+ ------------------------------ Train epoch: 201 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011002, mean accuracy: 0.997559
+Validation...
+mean cross_entropy: 0.300905, mean accuracy: 0.923277
+Time per epoch: 0:01:00.298220, Est. complete in: 1:39:29
+
+ ------------------------------ Train epoch: 202 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010173, mean accuracy: 0.997759
+Validation...
+mean cross_entropy: 0.306726, mean accuracy: 0.923277
+Time per epoch: 0:01:00.276273, Est. complete in: 1:38:27
+
+ ------------------------------ Train epoch: 203 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010891, mean accuracy: 0.997459
+Validation...
+mean cross_entropy: 0.299906, mean accuracy: 0.921274
+Time per epoch: 0:01:00.655521, Est. complete in: 1:38:03
+
+ ------------------------------ Train epoch: 204 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010716, mean accuracy: 0.997119
+Validation...
+mean cross_entropy: 0.280861, mean accuracy: 0.927484
+Time per epoch: 0:01:00.326649, Est. complete in: 1:36:31
+
+ ------------------------------ Train epoch: 205 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011337, mean accuracy: 0.997199
+Validation...
+mean cross_entropy: 0.288513, mean accuracy: 0.924880
+Time per epoch: 0:01:00.675590, Est. complete in: 1:36:04
+
+ ------------------------------ Train epoch: 206 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011217, mean accuracy: 0.997119
+Validation...
+mean cross_entropy: 0.293492, mean accuracy: 0.927484
+Time per epoch: 0:01:00.305852, Est. complete in: 1:34:28
+
+ ------------------------------ Train epoch: 207 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.010643, mean accuracy: 0.997579
+Validation...
+mean cross_entropy: 0.339005, mean accuracy: 0.921875
+Time per epoch: 0:01:00.360459, Est. complete in: 1:33:33
+
+ ------------------------------ Train epoch: 208 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011430, mean accuracy: 0.996879
+Validation...
+mean cross_entropy: 0.316271, mean accuracy: 0.917869
+Time per epoch: 0:01:00.501751, Est. complete in: 1:32:46
+
+ ------------------------------ Train epoch: 209 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011724, mean accuracy: 0.996879
+Validation...
+mean cross_entropy: 0.382219, mean accuracy: 0.907252
+Time per epoch: 0:01:00.532116, Est. complete in: 1:31:48
+
+ ------------------------------ Train epoch: 210 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012149, mean accuracy: 0.996999
+Validation...
+mean cross_entropy: 0.302739, mean accuracy: 0.921775
+Time per epoch: 0:01:00.600722, Est. complete in: 1:30:54
+
+ ------------------------------ Train epoch: 211 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011669, mean accuracy: 0.996959
+Validation...
+mean cross_entropy: 0.290868, mean accuracy: 0.925180
+Time per epoch: 0:01:00.237698, Est. complete in: 1:29:21
+
+ ------------------------------ Train epoch: 212 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012146, mean accuracy: 0.996939
+Validation...
+mean cross_entropy: 0.308141, mean accuracy: 0.921074
+Time per epoch: 0:01:00.357641, Est. complete in: 1:28:31
+
+ ------------------------------ Train epoch: 213 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011961, mean accuracy: 0.996939
+Validation...
+mean cross_entropy: 0.302151, mean accuracy: 0.923778
+Time per epoch: 0:01:00.336855, Est. complete in: 1:27:29
+
+ ------------------------------ Train epoch: 214 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011478, mean accuracy: 0.997259
+Validation...
+mean cross_entropy: 0.311328, mean accuracy: 0.921775
+Time per epoch: 0:01:00.132408, Est. complete in: 1:26:11
+
+ ------------------------------ Train epoch: 215 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011828, mean accuracy: 0.997119
+Validation...
+mean cross_entropy: 0.279951, mean accuracy: 0.923778
+Time per epoch: 0:01:00.257837, Est. complete in: 1:25:21
+
+ ------------------------------ Train epoch: 216 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012928, mean accuracy: 0.996459
+Validation...
+mean cross_entropy: 0.320594, mean accuracy: 0.916366
+Time per epoch: 0:01:00.337453, Est. complete in: 1:24:28
+
+ ------------------------------ Train epoch: 217 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012103, mean accuracy: 0.996879
+Validation...
+mean cross_entropy: 0.328402, mean accuracy: 0.917468
+Time per epoch: 0:01:00.382730, Est. complete in: 1:23:31
+
+ ------------------------------ Train epoch: 218 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011508, mean accuracy: 0.996839
+Validation...
+mean cross_entropy: 0.317793, mean accuracy: 0.919571
+Time per epoch: 0:01:00.525901, Est. complete in: 1:22:43
+
+ ------------------------------ Train epoch: 219 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012637, mean accuracy: 0.996519
+Validation...
+mean cross_entropy: 0.293784, mean accuracy: 0.921174
+Time per epoch: 0:01:00.423580, Est. complete in: 1:21:34
+
+ ------------------------------ Train epoch: 220 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.011830, mean accuracy: 0.997079
+Validation...
+mean cross_entropy: 0.391101, mean accuracy: 0.906250
+Time per epoch: 0:01:00.233389, Est. complete in: 1:20:18
+
+ ------------------------------ Train epoch: 221 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012735, mean accuracy: 0.996619
+Validation...
+mean cross_entropy: 0.372448, mean accuracy: 0.906751
+Time per epoch: 0:01:00.378706, Est. complete in: 1:19:29
+
+ ------------------------------ Train epoch: 222 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.013966, mean accuracy: 0.996139
+Validation...
+mean cross_entropy: 0.391256, mean accuracy: 0.905749
+Time per epoch: 0:01:00.419138, Est. complete in: 1:18:32
+
+ ------------------------------ Train epoch: 223 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012203, mean accuracy: 0.996779
+Validation...
+mean cross_entropy: 0.294367, mean accuracy: 0.922075
+Time per epoch: 0:01:00.305040, Est. complete in: 1:17:23
+
+ ------------------------------ Train epoch: 224 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.012508, mean accuracy: 0.996539
+Validation...
+mean cross_entropy: 0.328516, mean accuracy: 0.916967
+Time per epoch: 0:01:00.122140, Est. complete in: 1:16:09
+
+ ------------------------------ Train epoch: 225 ------------------------------ 
+
+Decrease learning rate, new lr = 0.001000
+Training...
+mean cross_entropy: 0.009252, mean accuracy: 0.997879
+Validation...
+mean cross_entropy: 0.261714, mean accuracy: 0.933093
+Time per epoch: 0:01:00.286973, Est. complete in: 1:15:21
+
+ ------------------------------ Train epoch: 226 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.007794, mean accuracy: 0.998239
+Validation...
+mean cross_entropy: 0.261302, mean accuracy: 0.931591
+Time per epoch: 0:01:00.311203, Est. complete in: 1:14:23
+
+ ------------------------------ Train epoch: 227 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.007153, mean accuracy: 0.998800
+Validation...
+mean cross_entropy: 0.256965, mean accuracy: 0.932792
+Time per epoch: 0:01:00.409147, Est. complete in: 1:13:29
+
+ ------------------------------ Train epoch: 228 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.006500, mean accuracy: 0.998820
+Validation...
+mean cross_entropy: 0.257572, mean accuracy: 0.932292
+Time per epoch: 0:01:00.324321, Est. complete in: 1:12:23
+
+ ------------------------------ Train epoch: 229 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.006250, mean accuracy: 0.998940
+Validation...
+mean cross_entropy: 0.257447, mean accuracy: 0.933894
+Time per epoch: 0:01:00.689055, Est. complete in: 1:11:48
+
+ ------------------------------ Train epoch: 230 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.006149, mean accuracy: 0.998840
+Validation...
+mean cross_entropy: 0.253691, mean accuracy: 0.934495
+Time per epoch: 0:01:00.331662, Est. complete in: 1:10:23
+
+ ------------------------------ Train epoch: 231 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.006181, mean accuracy: 0.998740
+Validation...
+mean cross_entropy: 0.253601, mean accuracy: 0.933994
+Time per epoch: 0:01:00.550723, Est. complete in: 1:09:37
+
+ ------------------------------ Train epoch: 232 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005762, mean accuracy: 0.999000
+Validation...
+mean cross_entropy: 0.255712, mean accuracy: 0.933794
+Time per epoch: 0:01:00.537585, Est. complete in: 1:08:36
+
+ ------------------------------ Train epoch: 233 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005683, mean accuracy: 0.999020
+Validation...
+mean cross_entropy: 0.260673, mean accuracy: 0.933694
+Time per epoch: 0:01:00.531280, Est. complete in: 1:07:35
+
+ ------------------------------ Train epoch: 234 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005477, mean accuracy: 0.999120
+Validation...
+mean cross_entropy: 0.254967, mean accuracy: 0.934395
+Time per epoch: 0:01:00.491471, Est. complete in: 1:06:32
+
+ ------------------------------ Train epoch: 235 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005323, mean accuracy: 0.999040
+Validation...
+mean cross_entropy: 0.257179, mean accuracy: 0.933994
+Time per epoch: 0:01:00.477796, Est. complete in: 1:05:31
+
+ ------------------------------ Train epoch: 236 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005332, mean accuracy: 0.999040
+Validation...
+mean cross_entropy: 0.256773, mean accuracy: 0.934595
+Time per epoch: 0:01:00.410223, Est. complete in: 1:04:26
+
+ ------------------------------ Train epoch: 237 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005321, mean accuracy: 0.999040
+Validation...
+mean cross_entropy: 0.255758, mean accuracy: 0.934796
+Time per epoch: 0:01:00.467233, Est. complete in: 1:03:29
+
+ ------------------------------ Train epoch: 238 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005073, mean accuracy: 0.999160
+Validation...
+mean cross_entropy: 0.265544, mean accuracy: 0.932993
+Time per epoch: 0:01:00.267876, Est. complete in: 1:02:16
+
+ ------------------------------ Train epoch: 239 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004886, mean accuracy: 0.999220
+Validation...
+mean cross_entropy: 0.252379, mean accuracy: 0.935096
+Time per epoch: 0:01:00.390528, Est. complete in: 1:01:23
+
+ ------------------------------ Train epoch: 240 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004730, mean accuracy: 0.999240
+Validation...
+mean cross_entropy: 0.259160, mean accuracy: 0.935597
+Time per epoch: 0:01:00.300089, Est. complete in: 1:00:18
+
+ ------------------------------ Train epoch: 241 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.005240, mean accuracy: 0.999100
+Validation...
+mean cross_entropy: 0.256624, mean accuracy: 0.936198
+Time per epoch: 0:01:00.197150, Est. complete in: 0:59:11
+
+ ------------------------------ Train epoch: 242 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004559, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.259931, mean accuracy: 0.934295
+Time per epoch: 0:01:00.259430, Est. complete in: 0:58:15
+
+ ------------------------------ Train epoch: 243 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004392, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.255779, mean accuracy: 0.935597
+Time per epoch: 0:01:00.353489, Est. complete in: 0:57:20
+
+ ------------------------------ Train epoch: 244 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004581, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.252808, mean accuracy: 0.935797
+Time per epoch: 0:01:00.354675, Est. complete in: 0:56:19
+
+ ------------------------------ Train epoch: 245 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004864, mean accuracy: 0.999160
+Validation...
+mean cross_entropy: 0.254124, mean accuracy: 0.934395
+Time per epoch: 0:01:00.356369, Est. complete in: 0:55:19
+
+ ------------------------------ Train epoch: 246 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004802, mean accuracy: 0.999120
+Validation...
+mean cross_entropy: 0.254250, mean accuracy: 0.935597
+Time per epoch: 0:01:00.348717, Est. complete in: 0:54:18
+
+ ------------------------------ Train epoch: 247 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004679, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.253202, mean accuracy: 0.935096
+Time per epoch: 0:01:00.661706, Est. complete in: 0:53:35
+
+ ------------------------------ Train epoch: 248 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004900, mean accuracy: 0.999040
+Validation...
+mean cross_entropy: 0.254525, mean accuracy: 0.935998
+Time per epoch: 0:01:00.208030, Est. complete in: 0:52:10
+
+ ------------------------------ Train epoch: 249 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004478, mean accuracy: 0.999480
+Validation...
+mean cross_entropy: 0.254801, mean accuracy: 0.934696
+Time per epoch: 0:01:00.723423, Est. complete in: 0:51:36
+
+ ------------------------------ Train epoch: 250 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004547, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.252675, mean accuracy: 0.936599
+Time per epoch: 0:01:00.319026, Est. complete in: 0:50:15
+
+ ------------------------------ Train epoch: 251 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004342, mean accuracy: 0.999300
+Validation...
+mean cross_entropy: 0.255704, mean accuracy: 0.934996
+Time per epoch: 0:01:00.580719, Est. complete in: 0:49:28
+
+ ------------------------------ Train epoch: 252 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004452, mean accuracy: 0.999320
+Validation...
+mean cross_entropy: 0.254895, mean accuracy: 0.934896
+Time per epoch: 0:01:00.605199, Est. complete in: 0:48:29
+
+ ------------------------------ Train epoch: 253 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004595, mean accuracy: 0.999180
+Validation...
+mean cross_entropy: 0.250607, mean accuracy: 0.937600
+Time per epoch: 0:01:00.569931, Est. complete in: 0:47:26
+
+ ------------------------------ Train epoch: 254 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004611, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.252344, mean accuracy: 0.937700
+Time per epoch: 0:01:00.515827, Est. complete in: 0:46:23
+
+ ------------------------------ Train epoch: 255 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004231, mean accuracy: 0.999400
+Validation...
+mean cross_entropy: 0.254522, mean accuracy: 0.935397
+Time per epoch: 0:01:00.357103, Est. complete in: 0:45:16
+
+ ------------------------------ Train epoch: 256 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004458, mean accuracy: 0.999320
+Validation...
+mean cross_entropy: 0.255431, mean accuracy: 0.935397
+Time per epoch: 0:01:00.236613, Est. complete in: 0:44:10
+
+ ------------------------------ Train epoch: 257 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004317, mean accuracy: 0.999340
+Validation...
+mean cross_entropy: 0.257042, mean accuracy: 0.935497
+Time per epoch: 0:01:00.356764, Est. complete in: 0:43:15
+
+ ------------------------------ Train epoch: 258 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004412, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.251461, mean accuracy: 0.936498
+Time per epoch: 0:01:00.344906, Est. complete in: 0:42:14
+
+ ------------------------------ Train epoch: 259 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003879, mean accuracy: 0.999520
+Validation...
+mean cross_entropy: 0.254221, mean accuracy: 0.934996
+Time per epoch: 0:01:00.380765, Est. complete in: 0:41:15
+
+ ------------------------------ Train epoch: 260 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004336, mean accuracy: 0.999280
+Validation...
+mean cross_entropy: 0.254388, mean accuracy: 0.936298
+Time per epoch: 0:01:00.327070, Est. complete in: 0:40:13
+
+ ------------------------------ Train epoch: 261 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004558, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.253575, mean accuracy: 0.936599
+Time per epoch: 0:01:00.411316, Est. complete in: 0:39:16
+
+ ------------------------------ Train epoch: 262 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004550, mean accuracy: 0.999300
+Validation...
+mean cross_entropy: 0.257073, mean accuracy: 0.935196
+Time per epoch: 0:01:00.339647, Est. complete in: 0:38:12
+
+ ------------------------------ Train epoch: 263 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004587, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.255599, mean accuracy: 0.935497
+Time per epoch: 0:01:00.301602, Est. complete in: 0:37:11
+
+ ------------------------------ Train epoch: 264 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004221, mean accuracy: 0.999280
+Validation...
+mean cross_entropy: 0.254529, mean accuracy: 0.935497
+Time per epoch: 0:01:00.387744, Est. complete in: 0:36:13
+
+ ------------------------------ Train epoch: 265 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004243, mean accuracy: 0.999320
+Validation...
+mean cross_entropy: 0.253224, mean accuracy: 0.936198
+Time per epoch: 0:01:00.369697, Est. complete in: 0:35:12
+
+ ------------------------------ Train epoch: 266 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004101, mean accuracy: 0.999460
+Validation...
+mean cross_entropy: 0.255346, mean accuracy: 0.936198
+Time per epoch: 0:01:00.596645, Est. complete in: 0:34:20
+
+ ------------------------------ Train epoch: 267 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003974, mean accuracy: 0.999620
+Validation...
+mean cross_entropy: 0.252867, mean accuracy: 0.935998
+Time per epoch: 0:01:01.574852, Est. complete in: 0:33:51
+
+ ------------------------------ Train epoch: 268 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004057, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.261552, mean accuracy: 0.935196
+Time per epoch: 0:01:00.510613, Est. complete in: 0:32:16
+
+ ------------------------------ Train epoch: 269 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004462, mean accuracy: 0.999220
+Validation...
+mean cross_entropy: 0.259497, mean accuracy: 0.934896
+Time per epoch: 0:01:00.498394, Est. complete in: 0:31:15
+
+ ------------------------------ Train epoch: 270 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003997, mean accuracy: 0.999420
+Validation...
+mean cross_entropy: 0.257212, mean accuracy: 0.936098
+Time per epoch: 0:01:00.521409, Est. complete in: 0:30:15
+
+ ------------------------------ Train epoch: 271 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004282, mean accuracy: 0.999340
+Validation...
+mean cross_entropy: 0.254015, mean accuracy: 0.935998
+Time per epoch: 0:01:00.366155, Est. complete in: 0:29:10
+
+ ------------------------------ Train epoch: 272 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003613, mean accuracy: 0.999520
+Validation...
+mean cross_entropy: 0.254064, mean accuracy: 0.936599
+Time per epoch: 0:01:00.326003, Est. complete in: 0:28:09
+
+ ------------------------------ Train epoch: 273 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004060, mean accuracy: 0.999400
+Validation...
+mean cross_entropy: 0.256192, mean accuracy: 0.936198
+Time per epoch: 0:01:00.277412, Est. complete in: 0:27:07
+
+ ------------------------------ Train epoch: 274 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004470, mean accuracy: 0.999420
+Validation...
+mean cross_entropy: 0.255251, mean accuracy: 0.936498
+Time per epoch: 0:01:00.137949, Est. complete in: 0:26:03
+
+ ------------------------------ Train epoch: 275 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004267, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.252215, mean accuracy: 0.935998
+Time per epoch: 0:01:00.372269, Est. complete in: 0:25:09
+
+ ------------------------------ Train epoch: 276 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004255, mean accuracy: 0.999300
+Validation...
+mean cross_entropy: 0.256926, mean accuracy: 0.935597
+Time per epoch: 0:01:00.316336, Est. complete in: 0:24:07
+
+ ------------------------------ Train epoch: 277 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003919, mean accuracy: 0.999460
+Validation...
+mean cross_entropy: 0.256444, mean accuracy: 0.935397
+Time per epoch: 0:01:00.599746, Est. complete in: 0:23:13
+
+ ------------------------------ Train epoch: 278 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003998, mean accuracy: 0.999380
+Validation...
+mean cross_entropy: 0.253512, mean accuracy: 0.935998
+Time per epoch: 0:01:00.570863, Est. complete in: 0:22:12
+
+ ------------------------------ Train epoch: 279 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004263, mean accuracy: 0.999340
+Validation...
+mean cross_entropy: 0.261485, mean accuracy: 0.934996
+Time per epoch: 0:01:00.545468, Est. complete in: 0:21:11
+
+ ------------------------------ Train epoch: 280 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004242, mean accuracy: 0.999260
+Validation...
+mean cross_entropy: 0.251082, mean accuracy: 0.936699
+Time per epoch: 0:01:00.391734, Est. complete in: 0:20:07
+
+ ------------------------------ Train epoch: 281 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003953, mean accuracy: 0.999520
+Validation...
+mean cross_entropy: 0.259538, mean accuracy: 0.934896
+Time per epoch: 0:01:00.303271, Est. complete in: 0:19:05
+
+ ------------------------------ Train epoch: 282 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004033, mean accuracy: 0.999360
+Validation...
+mean cross_entropy: 0.256950, mean accuracy: 0.936899
+Time per epoch: 0:01:00.251189, Est. complete in: 0:18:04
+
+ ------------------------------ Train epoch: 283 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004054, mean accuracy: 0.999320
+Validation...
+mean cross_entropy: 0.253887, mean accuracy: 0.937200
+Time per epoch: 0:01:00.297166, Est. complete in: 0:17:05
+
+ ------------------------------ Train epoch: 284 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003927, mean accuracy: 0.999380
+Validation...
+mean cross_entropy: 0.252018, mean accuracy: 0.936699
+Time per epoch: 0:01:00.187022, Est. complete in: 0:16:02
+
+ ------------------------------ Train epoch: 285 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004129, mean accuracy: 0.999380
+Validation...
+mean cross_entropy: 0.259027, mean accuracy: 0.936198
+Time per epoch: 0:01:00.282831, Est. complete in: 0:15:04
+
+ ------------------------------ Train epoch: 286 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003686, mean accuracy: 0.999520
+Validation...
+mean cross_entropy: 0.255241, mean accuracy: 0.936599
+Time per epoch: 0:01:00.159032, Est. complete in: 0:14:02
+
+ ------------------------------ Train epoch: 287 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003802, mean accuracy: 0.999480
+Validation...
+mean cross_entropy: 0.252010, mean accuracy: 0.938502
+Time per epoch: 0:01:00.588594, Est. complete in: 0:13:07
+
+ ------------------------------ Train epoch: 288 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003710, mean accuracy: 0.999540
+Validation...
+mean cross_entropy: 0.255403, mean accuracy: 0.936599
+Time per epoch: 0:01:00.536123, Est. complete in: 0:12:06
+
+ ------------------------------ Train epoch: 289 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004056, mean accuracy: 0.999380
+Validation...
+mean cross_entropy: 0.253556, mean accuracy: 0.937200
+Time per epoch: 0:01:00.463625, Est. complete in: 0:11:05
+
+ ------------------------------ Train epoch: 290 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004012, mean accuracy: 0.999280
+Validation...
+mean cross_entropy: 0.251209, mean accuracy: 0.937099
+Time per epoch: 0:01:00.212709, Est. complete in: 0:10:02
+
+ ------------------------------ Train epoch: 291 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003756, mean accuracy: 0.999520
+Validation...
+mean cross_entropy: 0.253859, mean accuracy: 0.937400
+Time per epoch: 0:01:00.228631, Est. complete in: 0:09:02
+
+ ------------------------------ Train epoch: 292 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.004032, mean accuracy: 0.999460
+Validation...
+mean cross_entropy: 0.250568, mean accuracy: 0.937800
+Time per epoch: 0:01:00.326684, Est. complete in: 0:08:02
+
+ ------------------------------ Train epoch: 293 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003700, mean accuracy: 0.999560
+Validation...
+mean cross_entropy: 0.253873, mean accuracy: 0.936198
+Time per epoch: 0:01:00.332601, Est. complete in: 0:07:02
+
+ ------------------------------ Train epoch: 294 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003804, mean accuracy: 0.999480
+Validation...
+mean cross_entropy: 0.253639, mean accuracy: 0.936198
+Time per epoch: 0:01:00.097375, Est. complete in: 0:06:00
+
+ ------------------------------ Train epoch: 295 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003379, mean accuracy: 0.999640
+Validation...
+mean cross_entropy: 0.251244, mean accuracy: 0.937300
+Time per epoch: 0:01:00.102714, Est. complete in: 0:05:00
+
+ ------------------------------ Train epoch: 296 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003851, mean accuracy: 0.999620
+Validation...
+mean cross_entropy: 0.252061, mean accuracy: 0.936699
+Time per epoch: 0:01:00.134384, Est. complete in: 0:04:00
+
+ ------------------------------ Train epoch: 297 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003773, mean accuracy: 0.999480
+Validation...
+mean cross_entropy: 0.254859, mean accuracy: 0.936699
+Time per epoch: 0:01:00.581375, Est. complete in: 0:03:01
+
+ ------------------------------ Train epoch: 298 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003749, mean accuracy: 0.999500
+Validation...
+mean cross_entropy: 0.251939, mean accuracy: 0.937099
+Time per epoch: 0:01:01.967162, Est. complete in: 0:02:03
+
+ ------------------------------ Train epoch: 299 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003998, mean accuracy: 0.999400
+Validation...
+mean cross_entropy: 0.253226, mean accuracy: 0.935697
+Time per epoch: 0:01:00.395180, Est. complete in: 0:01:00
+
+ ------------------------------ Train epoch: 300 ------------------------------ 
+
+Training...
+mean cross_entropy: 0.003400, mean accuracy: 0.999720
+Validation...
+mean cross_entropy: 0.249947, mean accuracy: 0.937099
+Time per epoch: 0:01:00.331035, Est. complete in: 0:00:00
+
+Total training time: 5:43:36.717412
+Data provider test images:  10000
+Testing...
+mean cross_entropy: 0.249731, mean accuracy: 0.937100

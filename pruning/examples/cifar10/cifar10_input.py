@@ -137,7 +137,7 @@ def _generate_image_and_label_batch(image, label, min_queue_examples,
   return images, tf.reshape(label_batch, [batch_size])
 
 
-def distorted_inputs(data_dir, batch_size):
+def distorted_inputs(batch_size):
   """Construct distorted input for CIFAR training using the Reader ops.
 
   Args:
@@ -148,6 +148,7 @@ def distorted_inputs(data_dir, batch_size):
     images: Images. 4D tensor of [batch_size, IMAGE_SIZE, IMAGE_SIZE, 3] size.
     labels: Labels. 1D tensor of [batch_size] size.
   """
+  data_dir = '/home/gridsan/salford/Kepner-sparse-nn/data/cifar10/'
   filenames = [
       os.path.join(data_dir, 'data_batch_%d.bin' % i) for i in xrange(1, 6)
   ]

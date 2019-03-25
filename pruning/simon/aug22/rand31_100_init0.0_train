@@ -1,0 +1,242 @@
+/state/partition1/llgrid/pkg/anaconda3-5.0.1/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+INFO:tensorflow:Summary name training accuracy is illegal; using training_accuracy instead.
+INFO:tensorflow:Summary name dense1/weight_loss (raw) is illegal; using dense1/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name dense2/weight_loss (raw) is illegal; using dense2/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name logits/weight_loss (raw) is illegal; using logits/weight_loss__raw_ instead.
+INFO:tensorflow:Summary name cross_entropy (raw) is illegal; using cross_entropy__raw_ instead.
+INFO:tensorflow:Summary name total_loss (raw) is illegal; using total_loss__raw_ instead.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-08-20 11:22:03.389662: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-20 11:22:03.992191: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-20 11:22:03.992403: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-20 11:22:03.992492: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+2018-08-20 11:22:04.023743: E tensorflow/core/common_runtime/bfc_allocator.cc:244] tried to allocate 0 bytes
+2018-08-20 11:22:04.023865: W tensorflow/core/common_runtime/allocator_retry.cc:32] Request to allocate 0 bytes
+2018-08-20 11:22:04.023978: E tensorflow/core/common_runtime/bfc_allocator.cc:378] tried to deallocate nullptr
+INFO:tensorflow:Saving checkpoints for 0 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:Instantiated tensors with assign ops: dense1/mask;  dense2/mask
+INFO:tensorflow:global_step/sec: 5.14853
+INFO:tensorflow:2018-08-20 11:23:14.983903: step 100, loss = 7.83 (5689.5 examples/sec; 0.018 sec/batch)
+INFO:tensorflow:global_step/sec: 5.56863
+INFO:tensorflow:Saving checkpoints for 200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:23:34.004219: step 200, loss = 6.64 (681.5 examples/sec; 0.147 sec/batch)
+INFO:tensorflow:global_step/sec: 5.09833
+INFO:tensorflow:2018-08-20 11:23:52.561652: step 300, loss = 5.58 (4104.0 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 5.50705
+INFO:tensorflow:Saving checkpoints for 400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:24:11.777388: step 400, loss = 4.94 (5932.9 examples/sec; 0.017 sec/batch)
+INFO:tensorflow:global_step/sec: 4.90545
+INFO:tensorflow:2018-08-20 11:24:31.103042: step 500, loss = 4.39 (4628.9 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.75668
+INFO:tensorflow:Saving checkpoints for 600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:24:49.624247: step 600, loss = 3.61 (4170.2 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 4.79704
+INFO:tensorflow:2018-08-20 11:25:09.327400: step 700, loss = 3.63 (3503.7 examples/sec; 0.029 sec/batch)
+INFO:tensorflow:global_step/sec: 5.76536
+INFO:tensorflow:Saving checkpoints for 800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:25:27.809080: step 800, loss = 3.04 (6559.2 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 4.96869
+INFO:tensorflow:2018-08-20 11:25:46.796179: step 900, loss = 2.95 (3768.8 examples/sec; 0.027 sec/batch)
+INFO:tensorflow:global_step/sec: 5.80787
+INFO:tensorflow:Saving checkpoints for 1000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:26:05.004382: step 1000, loss = 2.62 (1366.2 examples/sec; 0.073 sec/batch)
+INFO:tensorflow:global_step/sec: 5.01298
+INFO:tensorflow:2018-08-20 11:26:23.967482: step 1100, loss = 2.39 (3147.4 examples/sec; 0.032 sec/batch)
+INFO:tensorflow:global_step/sec: 5.74893
+INFO:tensorflow:Saving checkpoints for 1200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:26:42.466119: step 1200, loss = 2.10 (1764.8 examples/sec; 0.057 sec/batch)
+INFO:tensorflow:global_step/sec: 5.01982
+INFO:tensorflow:2018-08-20 11:27:01.303321: step 1300, loss = 2.18 (1923.4 examples/sec; 0.052 sec/batch)
+INFO:tensorflow:global_step/sec: 5.6522
+INFO:tensorflow:Saving checkpoints for 1400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:27:20.722046: step 1400, loss = 2.11 (7718.1 examples/sec; 0.013 sec/batch)
+INFO:tensorflow:global_step/sec: 4.84651
+INFO:tensorflow:2018-08-20 11:27:39.595420: step 1500, loss = 1.95 (5404.6 examples/sec; 0.019 sec/batch)
+INFO:tensorflow:global_step/sec: 5.40013
+INFO:tensorflow:Saving checkpoints for 1600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:27:59.043545: step 1600, loss = 1.91 (4226.2 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 5.10523
+INFO:tensorflow:2018-08-20 11:28:17.698488: step 1700, loss = 1.51 (6279.7 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 5.68207
+INFO:tensorflow:Saving checkpoints for 1800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:28:36.180566: step 1800, loss = 1.84 (9098.7 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 5.29915
+INFO:tensorflow:2018-08-20 11:28:54.191010: step 1900, loss = 1.51 (2632.3 examples/sec; 0.038 sec/batch)
+INFO:tensorflow:global_step/sec: 5.57804
+INFO:tensorflow:Saving checkpoints for 2000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:29:12.865001: step 2000, loss = 1.59 (6799.9 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 5.14955
+INFO:tensorflow:2018-08-20 11:29:31.622761: step 2100, loss = 1.48 (813.3 examples/sec; 0.123 sec/batch)
+INFO:tensorflow:global_step/sec: 5.17911
+INFO:tensorflow:Saving checkpoints for 2200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:29:53.747629: step 2200, loss = 1.47 (8372.9 examples/sec; 0.012 sec/batch)
+INFO:tensorflow:global_step/sec: 4.75148
+INFO:tensorflow:2018-08-20 11:30:11.907423: step 2300, loss = 1.24 (1869.8 examples/sec; 0.053 sec/batch)
+INFO:tensorflow:global_step/sec: 5.60417
+INFO:tensorflow:Saving checkpoints for 2400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:30:30.621418: step 2400, loss = 1.46 (7226.2 examples/sec; 0.014 sec/batch)
+INFO:tensorflow:global_step/sec: 5.22903
+INFO:tensorflow:2018-08-20 11:30:48.842205: step 2500, loss = 1.51 (4954.7 examples/sec; 0.020 sec/batch)
+INFO:tensorflow:global_step/sec: 5.59329
+INFO:tensorflow:Saving checkpoints for 2600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:31:07.660433: step 2600, loss = 1.44 (6027.8 examples/sec; 0.017 sec/batch)
+INFO:tensorflow:global_step/sec: 5.13896
+INFO:tensorflow:2018-08-20 11:31:26.203449: step 2700, loss = 1.49 (2364.6 examples/sec; 0.042 sec/batch)
+INFO:tensorflow:global_step/sec: 5.5747
+INFO:tensorflow:Saving checkpoints for 2800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:31:45.222081: step 2800, loss = 1.17 (6845.9 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 4.99203
+INFO:tensorflow:2018-08-20 11:32:04.148970: step 2900, loss = 1.56 (5176.4 examples/sec; 0.019 sec/batch)
+INFO:tensorflow:global_step/sec: 5.56151
+INFO:tensorflow:Saving checkpoints for 3000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:32:23.084985: step 3000, loss = 1.24 (3385.1 examples/sec; 0.030 sec/batch)
+INFO:tensorflow:global_step/sec: 4.91945
+INFO:tensorflow:2018-08-20 11:32:42.459536: step 3100, loss = 1.32 (4616.1 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.40792
+INFO:tensorflow:Saving checkpoints for 3200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:33:01.994345: step 3200, loss = 1.28 (4723.3 examples/sec; 0.021 sec/batch)
+INFO:tensorflow:global_step/sec: 5.01555
+INFO:tensorflow:2018-08-20 11:33:20.892068: step 3300, loss = 1.32 (4046.4 examples/sec; 0.025 sec/batch)
+INFO:tensorflow:global_step/sec: 5.85697
+INFO:tensorflow:Saving checkpoints for 3400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:33:38.867027: step 3400, loss = 1.08 (8727.6 examples/sec; 0.011 sec/batch)
+INFO:tensorflow:global_step/sec: 5.00955
+INFO:tensorflow:2018-08-20 11:33:57.925882: step 3500, loss = 1.35 (4341.9 examples/sec; 0.023 sec/batch)
+INFO:tensorflow:global_step/sec: 5.66062
+INFO:tensorflow:Saving checkpoints for 3600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:34:17.634219: step 3600, loss = 1.40 (3357.5 examples/sec; 0.030 sec/batch)
+INFO:tensorflow:global_step/sec: 5.037
+INFO:tensorflow:2018-08-20 11:34:35.438079: step 3700, loss = 1.34 (6105.6 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 5.2681
+INFO:tensorflow:Saving checkpoints for 3800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:34:55.379485: step 3800, loss = 1.37 (2317.2 examples/sec; 0.043 sec/batch)
+INFO:tensorflow:global_step/sec: 5.05244
+INFO:tensorflow:2018-08-20 11:35:14.242328: step 3900, loss = 1.07 (2183.0 examples/sec; 0.046 sec/batch)
+INFO:tensorflow:global_step/sec: 5.31825
+INFO:tensorflow:Saving checkpoints for 4000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:35:33.974025: step 4000, loss = 1.47 (4249.7 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 5.0597
+INFO:tensorflow:2018-08-20 11:35:52.786473: step 4100, loss = 1.16 (4337.5 examples/sec; 0.023 sec/batch)
+INFO:tensorflow:global_step/sec: 5.44681
+INFO:tensorflow:Saving checkpoints for 4200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:36:11.987920: step 4200, loss = 1.30 (5457.1 examples/sec; 0.018 sec/batch)
+INFO:tensorflow:global_step/sec: 5.03099
+INFO:tensorflow:2018-08-20 11:36:31.031018: step 4300, loss = 1.24 (3211.9 examples/sec; 0.031 sec/batch)
+INFO:tensorflow:global_step/sec: 5.52832
+INFO:tensorflow:Saving checkpoints for 4400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:36:50.163798: step 4400, loss = 1.25 (7259.2 examples/sec; 0.014 sec/batch)
+INFO:tensorflow:global_step/sec: 4.62023
+INFO:tensorflow:2018-08-20 11:37:10.754899: step 4500, loss = 1.08 (4560.8 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.49189
+INFO:tensorflow:Saving checkpoints for 4600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:37:29.965627: step 4600, loss = 1.34 (6747.4 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 4.62805
+INFO:tensorflow:2018-08-20 11:37:50.567393: step 4700, loss = 1.33 (5361.4 examples/sec; 0.019 sec/batch)
+INFO:tensorflow:global_step/sec: 5.40972
+INFO:tensorflow:Saving checkpoints for 4800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:38:10.098124: step 4800, loss = 1.31 (6951.9 examples/sec; 0.014 sec/batch)
+INFO:tensorflow:global_step/sec: 5.10314
+INFO:tensorflow:2018-08-20 11:38:28.648596: step 4900, loss = 1.34 (5274.7 examples/sec; 0.019 sec/batch)
+INFO:tensorflow:global_step/sec: 5.70669
+INFO:tensorflow:Saving checkpoints for 5000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:38:47.846819: step 5000, loss = 1.05 (3677.0 examples/sec; 0.027 sec/batch)
+INFO:tensorflow:global_step/sec: 4.75961
+INFO:tensorflow:2018-08-20 11:39:07.209189: step 5100, loss = 1.45 (2161.7 examples/sec; 0.046 sec/batch)
+INFO:tensorflow:global_step/sec: 5.877
+INFO:tensorflow:Saving checkpoints for 5200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:39:25.377520: step 5200, loss = 1.16 (913.7 examples/sec; 0.109 sec/batch)
+INFO:tensorflow:global_step/sec: 4.83292
+INFO:tensorflow:2018-08-20 11:39:44.891451: step 5300, loss = 1.28 (4594.1 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.38175
+INFO:tensorflow:Saving checkpoints for 5400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:40:04.311755: step 5400, loss = 1.23 (5433.4 examples/sec; 0.018 sec/batch)
+INFO:tensorflow:global_step/sec: 4.96479
+INFO:tensorflow:2018-08-20 11:40:23.614758: step 5500, loss = 1.23 (4569.2 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.42962
+INFO:tensorflow:Saving checkpoints for 5600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:40:43.055128: step 5600, loss = 1.06 (6457.9 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 5.3448
+INFO:tensorflow:2018-08-20 11:41:00.745928: step 5700, loss = 1.26 (3909.9 examples/sec; 0.026 sec/batch)
+INFO:tensorflow:global_step/sec: 5.41297
+INFO:tensorflow:Saving checkpoints for 5800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:41:20.493639: step 5800, loss = 1.34 (4087.1 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 4.82132
+INFO:tensorflow:2018-08-20 11:41:39.967830: step 5900, loss = 1.29 (3112.8 examples/sec; 0.032 sec/batch)
+INFO:tensorflow:global_step/sec: 5.16313
+INFO:tensorflow:Saving checkpoints for 6000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:42:00.645507: step 6000, loss = 1.37 (696.2 examples/sec; 0.144 sec/batch)
+INFO:tensorflow:global_step/sec: 4.82395
+INFO:tensorflow:2018-08-20 11:42:20.115312: step 6100, loss = 1.03 (1221.0 examples/sec; 0.082 sec/batch)
+INFO:tensorflow:global_step/sec: 5.69936
+INFO:tensorflow:Saving checkpoints for 6200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:42:38.651972: step 6200, loss = 1.45 (4458.5 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 4.99726
+INFO:tensorflow:2018-08-20 11:42:57.649072: step 6300, loss = 1.18 (1711.7 examples/sec; 0.058 sec/batch)
+INFO:tensorflow:global_step/sec: 5.56177
+INFO:tensorflow:Saving checkpoints for 6400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:43:16.646279: step 6400, loss = 1.25 (5761.3 examples/sec; 0.017 sec/batch)
+INFO:tensorflow:global_step/sec: 4.81528
+INFO:tensorflow:2018-08-20 11:43:36.366555: step 6500, loss = 1.23 (3458.7 examples/sec; 0.029 sec/batch)
+INFO:tensorflow:global_step/sec: 5.9695
+INFO:tensorflow:Saving checkpoints for 6600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:43:54.088353: step 6600, loss = 1.22 (3031.1 examples/sec; 0.033 sec/batch)
+INFO:tensorflow:global_step/sec: 5.01037
+INFO:tensorflow:2018-08-20 11:44:13.069360: step 6700, loss = 1.07 (4731.0 examples/sec; 0.021 sec/batch)
+INFO:tensorflow:global_step/sec: 5.60099
+INFO:tensorflow:Saving checkpoints for 6800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:44:31.683282: step 6800, loss = 1.34 (3748.1 examples/sec; 0.027 sec/batch)
+INFO:tensorflow:global_step/sec: 4.90982
+INFO:tensorflow:2018-08-20 11:44:51.291172: step 6900, loss = 1.34 (4569.5 examples/sec; 0.022 sec/batch)
+INFO:tensorflow:global_step/sec: 5.6712
+INFO:tensorflow:Saving checkpoints for 7000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:45:10.500583: step 7000, loss = 1.34 (432.1 examples/sec; 0.231 sec/batch)
+INFO:tensorflow:global_step/sec: 4.71452
+INFO:tensorflow:2018-08-20 11:45:30.137323: step 7100, loss = 1.32 (4170.0 examples/sec; 0.024 sec/batch)
+INFO:tensorflow:global_step/sec: 5.53515
+INFO:tensorflow:Saving checkpoints for 7200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:45:49.487260: step 7200, loss = 1.03 (2599.5 examples/sec; 0.038 sec/batch)
+INFO:tensorflow:global_step/sec: 5.02826
+INFO:tensorflow:2018-08-20 11:46:08.088524: step 7300, loss = 1.44 (4677.6 examples/sec; 0.021 sec/batch)
+INFO:tensorflow:global_step/sec: 5.40116
+INFO:tensorflow:Saving checkpoints for 7400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:46:27.575747: step 7400, loss = 1.15 (6894.7 examples/sec; 0.015 sec/batch)
+INFO:tensorflow:global_step/sec: 5.08754
+INFO:tensorflow:2018-08-20 11:46:46.253956: step 7500, loss = 1.28 (6064.9 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 5.40214
+INFO:tensorflow:Saving checkpoints for 7600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:47:05.631872: step 7600, loss = 1.23 (10421.4 examples/sec; 0.010 sec/batch)
+INFO:tensorflow:global_step/sec: 5.27884
+INFO:tensorflow:2018-08-20 11:47:23.781905: step 7700, loss = 1.21 (1118.8 examples/sec; 0.089 sec/batch)
+INFO:tensorflow:global_step/sec: 5.11802
+INFO:tensorflow:Saving checkpoints for 7800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:47:44.246979: step 7800, loss = 1.06 (5015.1 examples/sec; 0.020 sec/batch)
+INFO:tensorflow:global_step/sec: 5.11911
+INFO:tensorflow:2018-08-20 11:48:02.807746: step 7900, loss = 1.30 (2393.8 examples/sec; 0.042 sec/batch)
+INFO:tensorflow:global_step/sec: 5.28614
+INFO:tensorflow:Saving checkpoints for 8000 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:48:22.762600: step 8000, loss = 1.34 (7660.7 examples/sec; 0.013 sec/batch)
+INFO:tensorflow:global_step/sec: 5.10464
+INFO:tensorflow:2018-08-20 11:48:41.314139: step 8100, loss = 1.33 (2464.9 examples/sec; 0.041 sec/batch)
+INFO:tensorflow:global_step/sec: 5.77996
+INFO:tensorflow:Saving checkpoints for 8200 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:48:59.305673: step 8200, loss = 1.34 (5273.4 examples/sec; 0.019 sec/batch)
+INFO:tensorflow:global_step/sec: 4.94328
+INFO:tensorflow:2018-08-20 11:49:18.836629: step 8300, loss = 1.00 (3069.8 examples/sec; 0.033 sec/batch)
+INFO:tensorflow:global_step/sec: 5.53232
+INFO:tensorflow:Saving checkpoints for 8400 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:49:39.362390: step 8400, loss = 1.44 (6339.9 examples/sec; 0.016 sec/batch)
+INFO:tensorflow:global_step/sec: 4.76241
+INFO:tensorflow:2018-08-20 11:49:57.924635: step 8500, loss = 1.15 (2117.9 examples/sec; 0.047 sec/batch)
+INFO:tensorflow:global_step/sec: 5.49487
+INFO:tensorflow:Saving checkpoints for 8600 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:50:17.031272: step 8600, loss = 1.25 (4287.8 examples/sec; 0.023 sec/batch)
+INFO:tensorflow:global_step/sec: 4.77407
+INFO:tensorflow:2018-08-20 11:50:37.045838: step 8700, loss = 1.25 (4344.8 examples/sec; 0.023 sec/batch)
+INFO:tensorflow:global_step/sec: 5.78759
+INFO:tensorflow:Saving checkpoints for 8800 into /home/gridsan/salford/Kepner-sparse-nn/saved/aug22/rand31_100_init0.0/model.ckpt.
+INFO:tensorflow:2018-08-20 11:50:55.262291: step 8800, loss = 1.22 (3604.1 examples/sec; 0.028 sec/batch)
+slurmstepd: error: *** JOB 469966 ON node-047 CANCELLED AT 2018-08-20T11:50:58 ***

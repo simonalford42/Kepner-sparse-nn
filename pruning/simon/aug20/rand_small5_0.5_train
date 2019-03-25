@@ -1,0 +1,12 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "train.py", line 19, in <module>
+    import utils
+  File "/home/gridsan/salford/Kepner-sparse-nn/pruning/simon/utils.py", line 9, in <module>
+    import train
+  File "/home/gridsan/salford/Kepner-sparse-nn/pruning/simon/train.py", line 28, in <module>
+    INIT_DICT = tensor_init.rand_small_5(0.5)
+  File "/home/gridsan/salford/Kepner-sparse-nn/pruning/simon/tensor_init.py", line 36, in rand_small_5
+    arr, size=(5,5,1,50), p=[p, 1-p]))
+NameError: global name 'p' is not defined

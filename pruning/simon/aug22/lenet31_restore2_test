@@ -1,0 +1,8 @@
+/state/partition1/llgrid/pkg/anaconda2-5.0.1/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Summary name dense1/dense1_2/activation sparsity is illegal; using dense1/dense1_2/activation_sparsity instead.
+INFO:tensorflow:Summary name dense2/dense2_2/activation sparsity is illegal; using dense2/dense2_2/activation_sparsity instead.
+INFO:tensorflow:Summary name logits/logits_2/activation sparsity is illegal; using logits/logits_2/activation_sparsity instead.
+slurmstepd: error: *** JOB 470632 ON node-041 CANCELLED AT 2018-08-21T01:38:15 ***
+slurmstepd: error: *** JOB 470634 ON node-047 CANCELLED AT 2018-08-21T01:38:15 ***
+slurmstepd: error: *** JOB 470630 ON node-060 CANCELLED AT 2018-08-21T01:38:15 ***

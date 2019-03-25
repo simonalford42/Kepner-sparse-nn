@@ -208,7 +208,8 @@ def kemr_net(radix_lists, B):
 
 
 if __name__ == '__main__':
-    radix_lists = [[2, 2, 2]]
-    layers, info = emr_net(radix_lists)
-    print(str(layers))
-    print(str(info))
+    for b in range(3, 4):
+        N = [[10, 10]]
+        B = [8, b, 1]
+        layers, info = kemr_net(N, B)
+        print(str(info))

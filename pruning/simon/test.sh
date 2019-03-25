@@ -1,3 +1,2 @@
 #!/bin/sh
-python test.py
-
+python test.py $1

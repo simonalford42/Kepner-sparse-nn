@@ -1,0 +1,15 @@
+testing
+done
+testing 2
+done 2
+python 3 done
+ERROR: LoadError: syntax: malformed expression
+while loading /home/gridsan/salford/Kepner-sparse-nn/x_net/run_tests.jl, in expression starting on line 63
+hi1
+hi2
+starting
+done jl
+Bool[true]
+starting 2
+done 2 jl
+julia 3 done

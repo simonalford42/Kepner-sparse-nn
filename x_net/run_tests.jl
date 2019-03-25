@@ -46,11 +46,13 @@ println(cond)
 
 f = open("test/kemr/kemr"*ARGS[1]*".txt")
 Ws = Array{Any, 1}()
+println("starting 2")
 for line in readlines(f)
 	toople = eval(parse(line))
 	W = map(x -> Array(x), kemr_net(toople[1], toople[2]))
 	push!(Ws, W)
 end
+println("done 2 jl")
 
 f = open("test/kemr.txt")
 preWs = Array{Any, 1}()
@@ -64,7 +66,7 @@ for preW in preWs
 	push!(pyWs, W)
 end
 
-if 1 or length(Ws) != length(pyWs)
+if length(Ws) != length(pyWs)
 	error("length(Ws) != length(pyWs)")
 end
 
