@@ -66,7 +66,7 @@ def emr_net(radix_lists):
     # calculate info
     shape = tuple([num_neurons] * (num_layers + 1))
     # print('shape: ' + str(shape))
-    paths  = np.prod([np.prod(radix_list) for radix_list in radix_lists[1:]])
+    paths  = np.prod([np.prod(long(radix_list)) for radix_list in radix_lists[1:]])
     # print('paths: ' + str(paths))
     flattened_radices = [radix for radix_list in radix_lists
         for radix in radix_list]
@@ -208,8 +208,7 @@ def kemr_net(radix_lists, B):
 
 
 if __name__ == '__main__':
-    for b in range(3, 4):
-        N = [[10, 10]]
-        B = [8, b, 1]
-        layers, info = kemr_net(N, B)
-        print(str(info))
+    N = [[32, 32], [32, 32], [32,32], [32,32],[32, 32], [32, 32], [32,32], [32,32]]
+    layers, info = emr_net(N)
+    print(str(info))
+    print('layers = ' + str(len(info['shape']) - 1))
