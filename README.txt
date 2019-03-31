@@ -29,3 +29,5 @@ python -m tensorboard.main --logdir=./saved/model_dir
 Then go to the following link in browser: http://127.0.0.1:16006/#scalars&_smoothingWeight=0&run=.
 
 Note: many of the directories storing models have been moved around to restructure things. In doing so, the checkpoint file paths listed became out of date. This is only an issue if one of the models is being used to restore another model; in this case, you will have to go in and update the checkpoint file paths. This can also be done with the function provided in utils.py
+
+Most of the code (without the saved models and other large data files) can be found in the following github repo: https://github.com/simonalford42/Kepner-sparse-nn.git
